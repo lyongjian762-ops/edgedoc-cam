@@ -1,0 +1,51 @@
+__DRM_NODE_MAPPING__
+/sys/class/drm/renderD128
+/sys/devices/platform/display-subsystem
+/sys/bus/platform/drivers/rockchip-drm
+DRIVER=rockchip-drm
+OF_NAME=display-subsystem
+OF_FULLNAME=/display-subsystem
+OF_COMPATIBLE_0=rockchip,display-subsystem
+OF_COMPATIBLE_N=1
+MODALIAS=of:Ndisplay-subsystemT(null)Crockchip,display-subsystem
+/sys/class/drm/renderD129
+/sys/devices/platform/fdab0000.npu
+/sys/bus/platform/drivers/RKNPU
+DRIVER=RKNPU
+OF_NAME=npu
+OF_FULLNAME=/npu@fdab0000
+OF_COMPATIBLE_0=rockchip,rk3588-rknpu
+OF_COMPATIBLE_N=1
+MODALIAS=of:NnpuT(null)Crockchip,rk3588-rknpu
+
+__RKNN_LIBRARY_FILES__
+-rw-r--r-- 1 cat  cat  7726232 Apr 28  2026 /home/cat/ai/xiaomi-ocr-0/rockchip/lib/librknnrt.so
+-rw-r--r-- 1 1005 1004 7259064 Nov 15  2024 /usr/lib/librknnrt.so
+/usr/lib/librknnrt.so
+dpkg-query: no path found matching pattern /usr/lib/librknnrt.so
+
+__RKNN_SERVER_BINARY__
+-rwxr-xr-x 1 1005 1004 455600 Nov 15  2024 /usr/bin/rknn_server
+/usr/bin/rknn_server: ELF 64-bit LSB executable, ARM aarch64, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux-aarch64.so.1, for GNU/Linux 3.7.0, BuildID[sha1]=f7002d65e7102cca99c578d8b7be08d2bc48fe73, stripped
+
+__RKNN_VERSION_STRINGS__
+librknnrt version: 2.3.0 (c949ad889d@2024-11-07T11:35:33)
+NN Compiler/Model Version is %d.%d.%d now
+rknn_set_input_shape is deprecated next version! please call rknn_set_input_shapes()
+rknn_query, info_len(%d) < sizeof(rknn_sdk_version)(%d)!
+rknn_matmul_create_dynamic_shape, driver version is unknown!
+RKNN model version is 
+, but current librknnrt.so is support model version <= 
+RKNN Model Information, version: %d, toolkit version: %s, target: %s, target platform: %s, framework name: %s, framework layout: %s, model inference type: %s
+RKNN Model version: %d.%d.%d not match with rknn runtime version: %d.%d.%d
+version
+(compiler version: 
+Current driver version: %d.%d.%d, recommend to upgrade the driver to the new version: >= %d.%d.%d
+This shared library is not supported on the current platform, hw_version = %d
+RKNN Driver Information, version: %d.%d.%d
+Mismatch driver version, %s requires driver version >= %d.%d.%d, but you have driver version: %d.%d.%d which is incompatible!
+Illegal core num, rknn model version illegal
+wrong version
+failed to check rknpu hardware version: %#x
+Unsupport LayerNormalization! Please lower the OPSET version of the onnx model to below 16.
+Do not support OpenCL version: 

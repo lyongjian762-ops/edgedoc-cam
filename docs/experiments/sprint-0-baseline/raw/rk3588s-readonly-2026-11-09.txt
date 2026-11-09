@@ -1,0 +1,920 @@
+__CAPTURED_AT__
+2026-04-28T03:53:14+08:00
+
+__BOARD_MODEL__
+Embedfire LubanCat-4 V1
+__OS_RELEASE__
+PRETTY_NAME="Debian GNU/Linux 12 (bookworm)"
+NAME="Debian GNU/Linux"
+VERSION_ID="12"
+VERSION="12 (bookworm)"
+VERSION_CODENAME=bookworm
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
+BUILD_INFO="root@dev120.embedfire.local Fri Sep  4 16:48:41 CST 2026"
+
+__KERNEL__
+Linux lubancat 6.1.99-rk3588 #10 SMP Thu Sep  3 16:33:19 CST 2026 aarch64 GNU/Linux
+
+__MEMORY__
+               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       192Mi       3.5Gi       1.7Mi       179Mi       3.6Gi
+Swap:             0B          0B          0B
+MemTotal:        3991612 kB
+MemFree:         3665540 kB
+MemAvailable:    3795060 kB
+Buffers:           35064 kB
+Cached:           104380 kB
+SwapCached:            0 kB
+Active:            51084 kB
+Inactive:         117280 kB
+
+__STORAGE__
+Filesystem     Type  Size  Used Avail Use% Mounted on
+/dev/mmcblk1p3 ext4   58G   18G   38G  32% /
+/dev/mmcblk1p2 ext2  120M   58M   56M  51% /boot
+NAME          SIZE TYPE FSTYPE MOUNTPOINTS
+mmcblk0      29.1G disk        
+├─mmcblk0p1     8M part        
+├─mmcblk0p2   128M part ext2   
+└─mmcblk0p3    29G part ext4   
+mmcblk0boot0    4M disk        
+mmcblk0boot1    4M disk        
+mmcblk1      58.2G disk        
+├─mmcblk1p1     8M part        
+├─mmcblk1p2   128M part ext2   /boot
+└─mmcblk1p3  58.1G part ext4   /media/usb0
+                               /
+zram0           0B disk        
+
+__IMX415_BINDING__
+lrwxrwxrwx 1 root root 0 Apr 28 03:48 /sys/bus/i2c/devices/6-001a -> ../../../devices/platform/fec80000.i2c/i2c-6/6-001a
+lrwxrwxrwx 1 root root 0 Apr 28 03:53 /sys/bus/i2c/devices/6-001a/driver -> ../../../../../bus/i2c/drivers/imx415
+/sys/bus/i2c/drivers/imx415
+
+__MEDIA0_TOPOLOGY__
+Media controller API version 6.1.99
+
+Media device information
+------------------------
+driver          rkcif
+model           rkcif-mipi-lvds2
+serial          
+bus info        platform:rkcif-mipi-lvds2
+hw revision     0x0
+driver version  6.1.99
+
+Device topology
+- entity 1: stream_cif_mipi_id0 (1 pad, 11 links)
+            type Node subtype V4L flags 0
+            device node name /dev/video0
+	pad0: Sink
+		<- "rockchip-mipi-csi2":1 [ENABLED]
+		<- "rockchip-mipi-csi2":2 []
+		<- "rockchip-mipi-csi2":3 []
+		<- "rockchip-mipi-csi2":4 []
+		<- "rockchip-mipi-csi2":5 []
+		<- "rockchip-mipi-csi2":6 []
+		<- "rockchip-mipi-csi2":7 []
+		<- "rockchip-mipi-csi2":8 []
+		<- "rockchip-mipi-csi2":9 []
+		<- "rockchip-mipi-csi2":10 []
+		<- "rockchip-mipi-csi2":11 []
+
+- entity 5: stream_cif_mipi_id1 (1 pad, 11 links)
+            type Node subtype V4L flags 0
+            device node name /dev/video1
+	pad0: Sink
+		<- "rockchip-mipi-csi2":1 []
+		<- "rockchip-mipi-csi2":2 [ENABLED]
+		<- "rockchip-mipi-csi2":3 []
+		<- "rockchip-mipi-csi2":4 []
+		<- "rockchip-mipi-csi2":5 []
+		<- "rockchip-mipi-csi2":6 []
+		<- "rockchip-mipi-csi2":7 []
+		<- "rockchip-mipi-csi2":8 []
+		<- "rockchip-mipi-csi2":9 []
+		<- "rockchip-mipi-csi2":10 []
+		<- "rockchip-mipi-csi2":11 []
+
+- entity 9: stream_cif_mipi_id2 (1 pad, 11 links)
+            type Node subtype V4L flags 0
+            device node name /dev/video2
+	pad0: Sink
+		<- "rockchip-mipi-csi2":1 []
+		<- "rockchip-mipi-csi2":2 []
+		<- "rockchip-mipi-csi2":3 [ENABLED]
+		<- "rockchip-mipi-csi2":4 []
+		<- "rockchip-mipi-csi2":5 []
+		<- "rockchip-mipi-csi2":6 []
+		<- "rockchip-mipi-csi2":7 []
+		<- "rockchip-mipi-csi2":8 []
+		<- "rockchip-mipi-csi2":9 []
+		<- "rockchip-mipi-csi2":10 []
+		<- "rockchip-mipi-csi2":11 []
+
+- entity 13: stream_cif_mipi_id3 (1 pad, 11 links)
+             type Node subtype V4L flags 0
+             device node name /dev/video3
+	pad0: Sink
+		<- "rockchip-mipi-csi2":1 []
+		<- "rockchip-mipi-csi2":2 []
+		<- "rockchip-mipi-csi2":3 []
+		<- "rockchip-mipi-csi2":4 [ENABLED]
+		<- "rockchip-mipi-csi2":5 []
+		<- "rockchip-mipi-csi2":6 []
+		<- "rockchip-mipi-csi2":7 []
+		<- "rockchip-mipi-csi2":8 []
+		<- "rockchip-mipi-csi2":9 []
+		<- "rockchip-mipi-csi2":10 []
+		<- "rockchip-mipi-csi2":11 []
+
+- entity 17: rkcif_scale_ch0 (1 pad, 11 links)
+             type Node subtype V4L flags 0
+             device node name /dev/video4
+	pad0: Sink
+		<- "rockchip-mipi-csi2":1 []
+		<- "rockchip-mipi-csi2":2 []
+		<- "rockchip-mipi-csi2":3 []
+		<- "rockchip-mipi-csi2":4 []
+		<- "rockchip-mipi-csi2":5 [ENABLED]
+		<- "rockchip-mipi-csi2":6 []
+		<- "rockchip-mipi-csi2":7 []
+		<- "rockchip-mipi-csi2":8 []
+		<- "rockchip-mipi-csi2":9 []
+		<- "rockchip-mipi-csi2":10 []
+		<- "rockchip-mipi-csi2":11 []
+
+- entity 21: rkcif_scale_ch1 (1 pad, 11 links)
+             type Node subtype V4L flags 0
+             device node name /dev/video5
+	pad0: Sink
+		<- "rockchip-mipi-csi2":1 []
+		<- "rockchip-mipi-csi2":2 []
+		<- "rockchip-mipi-csi2":3 []
+		<- "rockchip-mipi-csi2":4 []
+		<- "rockchip-mipi-csi2":5 []
+		<- "rockchip-mipi-csi2":6 [ENABLED]
+		<- "rockchip-mipi-csi2":7 []
+		<- "rockchip-mipi-csi2":8 []
+		<- "rockchip-mipi-csi2":9 []
+		<- "rockchip-mipi-csi2":10 []
+		<- "rockchip-mipi-csi2":11 []
+
+- entity 25: rkcif_scale_ch2 (1 pad, 11 links)
+             type Node subtype V4L flags 0
+             device node name /dev/video6
+	pad0: Sink
+		<- "rockchip-mipi-csi2":1 []
+		<- "rockchip-mipi-csi2":2 []
+		<- "rockchip-mipi-csi2":3 []
+		<- "rockchip-mipi-csi2":4 []
+		<- "rockchip-mipi-csi2":5 []
+		<- "rockchip-mipi-csi2":6 []
+		<- "rockchip-mipi-csi2":7 [ENABLED]
+		<- "rockchip-mipi-csi2":8 []
+		<- "rockchip-mipi-csi2":9 []
+		<- "rockchip-mipi-csi2":10 []
+		<- "rockchip-mipi-csi2":11 []
+
+- entity 29: rkcif_scale_ch3 (1 pad, 11 links)
+             type Node subtype V4L flags 0
+             device node name /dev/video7
+	pad0: Sink
+		<- "rockchip-mipi-csi2":1 []
+		<- "rockchip-mipi-csi2":2 []
+		<- "rockchip-mipi-csi2":3 []
+		<- "rockchip-mipi-csi2":4 []
+		<- "rockchip-mipi-csi2":5 []
+		<- "rockchip-mipi-csi2":6 []
+		<- "rockchip-mipi-csi2":7 []
+		<- "rockchip-mipi-csi2":8 [ENABLED]
+		<- "rockchip-mipi-csi2":9 []
+		<- "rockchip-mipi-csi2":10 []
+		<- "rockchip-mipi-csi2":11 []
+
+- entity 33: rkcif_tools_id0 (1 pad, 11 links)
+             type Node subtype V4L flags 0
+             device node name /dev/video8
+	pad0: Sink
+		<- "rockchip-mipi-csi2":1 []
+		<- "rockchip-mipi-csi2":2 []
+		<- "rockchip-mipi-csi2":3 []
+		<- "rockchip-mipi-csi2":4 []
+		<- "rockchip-mipi-csi2":5 []
+		<- "rockchip-mipi-csi2":6 []
+		<- "rockchip-mipi-csi2":7 []
+		<- "rockchip-mipi-csi2":8 []
+		<- "rockchip-mipi-csi2":9 [ENABLED]
+		<- "rockchip-mipi-csi2":10 []
+		<- "rockchip-mipi-csi2":11 []
+
+- entity 37: rkcif_tools_id1 (1 pad, 11 links)
+             type Node subtype V4L flags 0
+             device node name /dev/video9
+	pad0: Sink
+		<- "rockchip-mipi-csi2":1 []
+		<- "rockchip-mipi-csi2":2 []
+		<- "rockchip-mipi-csi2":3 []
+		<- "rockchip-mipi-csi2":4 []
+		<- "rockchip-mipi-csi2":5 []
+		<- "rockchip-mipi-csi2":6 []
+		<- "rockchip-mipi-csi2":7 []
+		<- "rockchip-mipi-csi2":8 []
+		<- "rockchip-mipi-csi2":9 []
+		<- "rockchip-mipi-csi2":10 [ENABLED]
+		<- "rockchip-mipi-csi2":11 []
+
+- entity 41: rkcif_tools_id2 (1 pad, 11 links)
+             type Node subtype V4L flags 0
+             device node name /dev/video10
+	pad0: Sink
+		<- "rockchip-mipi-csi2":1 []
+		<- "rockchip-mipi-csi2":2 []
+		<- "rockchip-mipi-csi2":3 []
+		<- "rockchip-mipi-csi2":4 []
+		<- "rockchip-mipi-csi2":5 []
+		<- "rockchip-mipi-csi2":6 []
+		<- "rockchip-mipi-csi2":7 []
+		<- "rockchip-mipi-csi2":8 []
+		<- "rockchip-mipi-csi2":9 []
+		<- "rockchip-mipi-csi2":10 []
+		<- "rockchip-mipi-csi2":11 [ENABLED]
+
+- entity 45: rockchip-mipi-csi2 (12 pads, 122 links)
+             type V4L2 subdev subtype Unknown flags 0
+             device node name /dev/v4l-subdev0
+	pad0: Sink
+		[fmt:SGBRG10_1X10/1944x1096 field:none
+		 crop.bounds:(12,8)/1920x1080
+		 crop:(12,8)/1920x1080]
+		<- "rockchip-csi2-dphy0":1 [ENABLED]
+	pad1: Source
+		-> "stream_cif_mipi_id0":0 [ENABLED]
+		-> "stream_cif_mipi_id1":0 []
+		-> "stream_cif_mipi_id2":0 []
+		-> "stream_cif_mipi_id3":0 []
+		-> "rkcif_scale_ch0":0 []
+		-> "rkcif_scale_ch1":0 []
+		-> "rkcif_scale_ch2":0 []
+		-> "rkcif_scale_ch3":0 []
+		-> "rkcif_tools_id0":0 []
+		-> "rkcif_tools_id1":0 []
+		-> "rkcif_tools_id2":0 []
+	pad2: Source
+		-> "stream_cif_mipi_id0":0 []
+		-> "stream_cif_mipi_id1":0 [ENABLED]
+		-> "stream_cif_mipi_id2":0 []
+		-> "stream_cif_mipi_id3":0 []
+		-> "rkcif_scale_ch0":0 []
+		-> "rkcif_scale_ch1":0 []
+		-> "rkcif_scale_ch2":0 []
+		-> "rkcif_scale_ch3":0 []
+		-> "rkcif_tools_id0":0 []
+		-> "rkcif_tools_id1":0 []
+		-> "rkcif_tools_id2":0 []
+	pad3: Source
+		-> "stream_cif_mipi_id0":0 []
+		-> "stream_cif_mipi_id1":0 []
+		-> "stream_cif_mipi_id2":0 [ENABLED]
+		-> "stream_cif_mipi_id3":0 []
+		-> "rkcif_scale_ch0":0 []
+		-> "rkcif_scale_ch1":0 []
+		-> "rkcif_scale_ch2":0 []
+		-> "rkcif_scale_ch3":0 []
+		-> "rkcif_tools_id0":0 []
+		-> "rkcif_tools_id1":0 []
+		-> "rkcif_tools_id2":0 []
+	pad4: Source
+		-> "stream_cif_mipi_id0":0 []
+		-> "stream_cif_mipi_id1":0 []
+		-> "stream_cif_mipi_id2":0 []
+		-> "stream_cif_mipi_id3":0 [ENABLED]
+		-> "rkcif_scale_ch0":0 []
+		-> "rkcif_scale_ch1":0 []
+		-> "rkcif_scale_ch2":0 []
+		-> "rkcif_scale_ch3":0 []
+		-> "rkcif_tools_id0":0 []
+		-> "rkcif_tools_id1":0 []
+		-> "rkcif_tools_id2":0 []
+	pad5: Source
+		-> "stream_cif_mipi_id0":0 []
+		-> "stream_cif_mipi_id1":0 []
+		-> "stream_cif_mipi_id2":0 []
+		-> "stream_cif_mipi_id3":0 []
+		-> "rkcif_scale_ch0":0 [ENABLED]
+		-> "rkcif_scale_ch1":0 []
+		-> "rkcif_scale_ch2":0 []
+		-> "rkcif_scale_ch3":0 []
+		-> "rkcif_tools_id0":0 []
+		-> "rkcif_tools_id1":0 []
+		-> "rkcif_tools_id2":0 []
+	pad6: Source
+		-> "stream_cif_mipi_id0":0 []
+		-> "stream_cif_mipi_id1":0 []
+		-> "stream_cif_mipi_id2":0 []
+		-> "stream_cif_mipi_id3":0 []
+		-> "rkcif_scale_ch0":0 []
+		-> "rkcif_scale_ch1":0 [ENABLED]
+		-> "rkcif_scale_ch2":0 []
+		-> "rkcif_scale_ch3":0 []
+		-> "rkcif_tools_id0":0 []
+		-> "rkcif_tools_id1":0 []
+		-> "rkcif_tools_id2":0 []
+	pad7: Source
+		-> "stream_cif_mipi_id0":0 []
+		-> "stream_cif_mipi_id1":0 []
+		-> "stream_cif_mipi_id2":0 []
+		-> "stream_cif_mipi_id3":0 []
+		-> "rkcif_scale_ch0":0 []
+		-> "rkcif_scale_ch1":0 []
+		-> "rkcif_scale_ch2":0 [ENABLED]
+		-> "rkcif_scale_ch3":0 []
+		-> "rkcif_tools_id0":0 []
+		-> "rkcif_tools_id1":0 []
+		-> "rkcif_tools_id2":0 []
+	pad8: Source
+		-> "stream_cif_mipi_id0":0 []
+		-> "stream_cif_mipi_id1":0 []
+		-> "stream_cif_mipi_id2":0 []
+		-> "stream_cif_mipi_id3":0 []
+		-> "rkcif_scale_ch0":0 []
+		-> "rkcif_scale_ch1":0 []
+		-> "rkcif_scale_ch2":0 []
+		-> "rkcif_scale_ch3":0 [ENABLED]
+		-> "rkcif_tools_id0":0 []
+		-> "rkcif_tools_id1":0 []
+		-> "rkcif_tools_id2":0 []
+	pad9: Source
+		-> "stream_cif_mipi_id0":0 []
+		-> "stream_cif_mipi_id1":0 []
+		-> "stream_cif_mipi_id2":0 []
+		-> "stream_cif_mipi_id3":0 []
+		-> "rkcif_scale_ch0":0 []
+		-> "rkcif_scale_ch1":0 []
+		-> "rkcif_scale_ch2":0 []
+		-> "rkcif_scale_ch3":0 []
+		-> "rkcif_tools_id0":0 [ENABLED]
+		-> "rkcif_tools_id1":0 []
+		-> "rkcif_tools_id2":0 []
+	pad10: Source
+		-> "stream_cif_mipi_id0":0 []
+		-> "stream_cif_mipi_id1":0 []
+		-> "stream_cif_mipi_id2":0 []
+		-> "stream_cif_mipi_id3":0 []
+		-> "rkcif_scale_ch0":0 []
+		-> "rkcif_scale_ch1":0 []
+		-> "rkcif_scale_ch2":0 []
+		-> "rkcif_scale_ch3":0 []
+		-> "rkcif_tools_id0":0 []
+		-> "rkcif_tools_id1":0 [ENABLED]
+		-> "rkcif_tools_id2":0 []
+	pad11: Source
+		-> "stream_cif_mipi_id0":0 []
+		-> "stream_cif_mipi_id1":0 []
+		-> "stream_cif_mipi_id2":0 []
+		-> "stream_cif_mipi_id3":0 []
+		-> "rkcif_scale_ch0":0 []
+		-> "rkcif_scale_ch1":0 []
+		-> "rkcif_scale_ch2":0 []
+		-> "rkcif_scale_ch3":0 []
+		-> "rkcif_tools_id0":0 []
+		-> "rkcif_tools_id1":0 []
+		-> "rkcif_tools_id2":0 [ENABLED]
+
+- entity 58: rockchip-csi2-dphy0 (2 pads, 2 links)
+             type V4L2 subdev subtype Unknown flags 0
+             device node name /dev/v4l-subdev1
+	pad0: Sink
+		[fmt:SGBRG10_1X10/1944x1096@10000/600000 field:none
+		 crop.bounds:(12,8)/1920x1080]
+		<- "m02_b_imx415 6-001a":0 [ENABLED]
+	pad1: Source
+		-> "rockchip-mipi-csi2":0 [ENABLED]
+
+- entity 63: m02_b_imx415 6-001a (1 pad, 1 link)
+             type V4L2 subdev subtype Sensor flags 0
+             device node name /dev/v4l-subdev2
+	pad0: Source
+		[fmt:SGBRG10_1X10/1944x1096@10000/600000 field:none
+		 crop.bounds:(12,8)/1920x1080]
+		-> "rockchip-csi2-dphy0":0 [ENABLED]
+
+
+__MEDIA1_TOPOLOGY__
+Media controller API version 6.1.99
+
+Media device information
+------------------------
+driver          rkisp1-vir0
+model           rkisp0
+serial          
+bus info        platform:rkisp1-vir0
+hw revision     0x0
+driver version  6.1.99
+
+Device topology
+- entity 1: rkisp-isp-subdev (4 pads, 10 links)
+            type V4L2 subdev subtype Unknown flags 0
+            device node name /dev/v4l-subdev3
+	pad0: Sink
+		[fmt:SGBRG10_1X10/1920x1080 field:none
+		 crop.bounds:(0,0)/1920x1080
+		 crop:(0,0)/1920x1080]
+		<- "rkisp_rawrd0_m":0 []
+		<- "rkisp_rawrd2_s":0 []
+		<- "rkisp_rawrd1_l":0 []
+		<- "rkcif-mipi-lvds2":0 [ENABLED]
+	pad1: Sink
+		<- "rkisp-input-params":0 [ENABLED]
+	pad2: Source
+		[fmt:YUYV8_2X8/1920x1080 field:none colorspace:smpte170m quantization:full-range
+		 crop.bounds:(0,0)/1920x1080
+		 crop:(0,0)/1920x1080]
+		-> "rkisp_mainpath":0 [ENABLED]
+		-> "rkisp_selfpath":0 [ENABLED]
+		-> "rkisp_fbcpath":0 [ENABLED]
+		-> "rkisp_iqtool":0 [ENABLED]
+	pad3: Source
+		-> "rkisp-statistics":0 [ENABLED]
+
+- entity 6: rkisp_mainpath (1 pad, 1 link)
+            type Node subtype V4L flags 0
+            device node name /dev/video11
+	pad0: Sink
+		<- "rkisp-isp-subdev":2 [ENABLED]
+
+- entity 12: rkisp_selfpath (1 pad, 1 link)
+             type Node subtype V4L flags 0
+             device node name /dev/video12
+	pad0: Sink
+		<- "rkisp-isp-subdev":2 [ENABLED]
+
+- entity 18: rkisp_fbcpath (1 pad, 1 link)
+             type Node subtype V4L flags 0
+             device node name /dev/video13
+	pad0: Sink
+		<- "rkisp-isp-subdev":2 [ENABLED]
+
+- entity 24: rkisp_iqtool (1 pad, 1 link)
+             type Node subtype V4L flags 0
+             device node name /dev/video14
+	pad0: Sink
+		<- "rkisp-isp-subdev":2 [ENABLED]
+
+- entity 30: rkisp_rawrd0_m (1 pad, 1 link)
+             type Node subtype V4L flags 0
+             device node name /dev/video15
+	pad0: Source
+		-> "rkisp-isp-subdev":0 []
+
+- entity 36: rkisp_rawrd2_s (1 pad, 1 link)
+             type Node subtype V4L flags 0
+             device node name /dev/video16
+	pad0: Source
+		-> "rkisp-isp-subdev":0 []
+
+- entity 42: rkisp_rawrd1_l (1 pad, 1 link)
+             type Node subtype V4L flags 0
+             device node name /dev/video17
+	pad0: Source
+		-> "rkisp-isp-subdev":0 []
+
+- entity 48: rkisp-statistics (1 pad, 1 link)
+             type Node subtype V4L flags 0
+             device node name /dev/video18
+	pad0: Sink
+		<- "rkisp-isp-subdev":3 [ENABLED]
+
+- entity 54: rkisp-input-params (1 pad, 1 link)
+             type Node subtype V4L flags 0
+             device node name /dev/video19
+	pad0: Source
+		-> "rkisp-isp-subdev":1 [ENABLED]
+
+- entity 60: rkcif-mipi-lvds2 (1 pad, 1 link)
+             type V4L2 subdev subtype Unknown flags 0
+             device node name /dev/v4l-subdev4
+	pad0: Source
+		[fmt:SGBRG10_1X10/1920x1080@10000/600000 field:none]
+		-> "rkisp-isp-subdev":0 [ENABLED]
+
+
+__V4L2_CAMERA_ALIAS__
+lrwxrwxrwx 1 root root 7 Apr 28 03:48 /dev/video-camera0 -> video11
+Driver Info:
+	Driver name      : rkisp_v6
+	Card type        : rkisp_mainpath
+	Bus info         : platform:rkisp1-vir0
+	Driver version   : 2.9.0
+	Capabilities     : 0x84201000
+		Video Capture Multiplanar
+		Streaming
+		Extended Pix Format
+		Device Capabilities
+	Device Caps      : 0x04201000
+		Video Capture Multiplanar
+		Streaming
+		Extended Pix Format
+Media Driver Info:
+	Driver name      : rkisp1-vir0
+	Model            : rkisp0
+	Serial           : 
+	Bus info         : platform:rkisp1-vir0
+	Media version    : 6.1.99
+	Hardware revision: 0x00000000 (0)
+	Driver version   : 6.1.99
+Interface Info:
+	ID               : 0x03000007
+	Type             : V4L Video
+Entity Info:
+	ID               : 0x00000006 (6)
+	Name             : rkisp_mainpath
+	Function         : V4L2 I/O
+	Pad 0x01000009   : 0: Sink
+	  Link 0x0200000a: from remote pad 0x1000004 of entity 'rkisp-isp-subdev' (Unknown V4L2 Sub-Device): Data, Enabled
+Priority: 2
+Format Video Capture Multiplanar:
+	Width/Height      : 1920/1080
+	Pixel Format      : 'NV12' (Y/UV 4:2:0)
+	Field             : None
+	Number of planes  : 1
+	Flags             : 
+	Colorspace        : Default
+	Transfer Function : Default
+	YCbCr/HSV Encoding: Default
+	Quantization      : Full Range
+	Plane 0           :
+	   Bytes per Line : 1920
+	   Size Image     : 3110400
+Selection Video Capture: crop, Left 0, Top 0, Width 1920, Height 1080, Flags: 
+Selection Video Capture: crop_bounds, Left 0, Top 0, Width 1920, Height 1080, Flags: 
+Selection Video Output: crop, Left 0, Top 0, Width 1920, Height 1080, Flags: 
+Selection Video Output: crop_bounds, Left 0, Top 0, Width 1920, Height 1080, Flags: 
+
+Image Processing Controls
+
+                     pixel_rate 0x009f0902 (int64)  : min=0 max=1000000000 step=1 default=1000000000 value=356800000 flags=read-only, volatile
+ioctl: VIDIOC_ENUM_FMT
+	Type: Video Capture Multiplanar
+
+	[0]: 'UYVY' (UYVY 4:2:2)
+		Size: Stepwise 32x32 - 1920x1080 with step 8/8
+	[1]: 'NV16' (Y/UV 4:2:2)
+		Size: Stepwise 32x32 - 1920x1080 with step 8/8
+	[2]: 'NV61' (Y/VU 4:2:2)
+		Size: Stepwise 32x32 - 1920x1080 with step 8/8
+	[3]: 'NV21' (Y/VU 4:2:0)
+		Size: Stepwise 32x32 - 1920x1080 with step 8/8
+	[4]: 'NV12' (Y/UV 4:2:0)
+		Size: Stepwise 32x32 - 1920x1080 with step 8/8
+	[5]: 'NM21' (Y/VU 4:2:0 (N-C))
+		Size: Stepwise 32x32 - 1920x1080 with step 8/8
+	[6]: 'NM12' (Y/UV 4:2:0 (N-C))
+		Size: Stepwise 32x32 - 1920x1080 with step 8/8
+
+__V4L2_CIF_RAW_NODE__
+Driver Info:
+	Driver name      : rkcif
+	Card type        : rkcif
+	Bus info         : platform:rkcif-mipi-lvds2
+	Driver version   : 6.1.99
+	Capabilities     : 0x84201000
+		Video Capture Multiplanar
+		Streaming
+		Extended Pix Format
+		Device Capabilities
+	Device Caps      : 0x04201000
+		Video Capture Multiplanar
+		Streaming
+		Extended Pix Format
+Media Driver Info:
+	Driver name      : rkcif
+	Model            : rkcif-mipi-lvds2
+	Serial           : 
+	Bus info         : platform:rkcif-mipi-lvds2
+	Media version    : 6.1.99
+	Hardware revision: 0x00000000 (0)
+	Driver version   : 6.1.99
+Interface Info:
+	ID               : 0x03000002
+	Type             : V4L Video
+Entity Info:
+	ID               : 0x00000001 (1)
+	Name             : stream_cif_mipi_id0
+	Function         : V4L2 I/O
+	Pad 0x01000004   : 0: Sink
+	  Link 0x02000043: from remote pad 0x100002f of entity 'rockchip-mipi-csi2' (Unknown V4L2 Sub-Device): Data, Enabled
+	  Link 0x02000059: from remote pad 0x1000030 of entity 'rockchip-mipi-csi2' (Unknown V4L2 Sub-Device): Data
+	  Link 0x0200006f: from remote pad 0x1000031 of entity 'rockchip-mipi-csi2' (Unknown V4L2 Sub-Device): Data
+	  Link 0x02000085: from remote pad 0x1000032 of entity 'rockchip-mipi-csi2' (Unknown V4L2 Sub-Device): Data
+	  Link 0x0200009b: from remote pad 0x1000033 of entity 'rockchip-mipi-csi2' (Unknown V4L2 Sub-Device): Data
+	  Link 0x020000b1: from remote pad 0x1000034 of entity 'rockchip-mipi-csi2' (Unknown V4L2 Sub-Device): Data
+	  Link 0x020000c7: from remote pad 0x1000035 of entity 'rockchip-mipi-csi2' (Unknown V4L2 Sub-Device): Data
+	  Link 0x020000dd: from remote pad 0x1000036 of entity 'rockchip-mipi-csi2' (Unknown V4L2 Sub-Device): Data
+	  Link 0x020000f3: from remote pad 0x1000037 of entity 'rockchip-mipi-csi2' (Unknown V4L2 Sub-Device): Data
+	  Link 0x02000109: from remote pad 0x1000038 of entity 'rockchip-mipi-csi2' (Unknown V4L2 Sub-Device): Data
+	  Link 0x0200011f: from remote pad 0x1000039 of entity 'rockchip-mipi-csi2' (Unknown V4L2 Sub-Device): Data
+Priority: 2
+Format Video Capture Multiplanar:
+	Width/Height      : 1920/1080
+	Pixel Format      : 'GB10' (10-bit Bayer GBGB/RGRG)
+	Field             : None
+	Number of planes  : 1
+	Flags             : premultiplied-alpha, 0x000000fe
+	Colorspace        : Unknown (0x0bb03d94)
+	Transfer Function : Default
+	YCbCr/HSV Encoding: Unknown (0x000000ff)
+	Quantization      : Default
+	Plane 0           :
+	   Bytes per Line : 2560
+	   Size Image     : 2764800
+Selection Video Capture: crop, Left 12, Top 8, Width 1920, Height 1080, Flags: 
+Selection Video Capture: crop_bounds, Left 12, Top 8, Width 1920, Height 1080, Flags: 
+Selection Video Output: crop, Left 12, Top 8, Width 1920, Height 1080, Flags: 
+Selection Video Output: crop_bounds, Left 12, Top 8, Width 1920, Height 1080, Flags: 
+ioctl: VIDIOC_ENUM_FMT
+	Type: Video Capture Multiplanar
+
+	[0]: 'RG10' (10-bit Bayer RGRG/GBGB)
+		Size: Stepwise 64x64 - 1944x1096 with step 8/8
+	[1]: 'BA10' (10-bit Bayer GRGR/BGBG)
+		Size: Stepwise 64x64 - 1944x1096 with step 8/8
+	[2]: 'GB10' (10-bit Bayer GBGB/RGRG)
+		Size: Stepwise 64x64 - 1944x1096 with step 8/8
+	[3]: 'BG10' (10-bit Bayer BGBG/GRGR)
+		Size: Stepwise 64x64 - 1944x1096 with step 8/8
+	[4]: 'Y10 ' (10-bit Greyscale)
+		Size: Stepwise 64x64 - 1944x1096 with step 8/8
+
+__DRIVER_LOGS__
+[    7.558081] platform mipi2-csi2: Fixed dependency cycle(s) with /rkcif-mipi-lvds2
+[    7.558099] platform rkcif-mipi-lvds2: Fixed dependency cycle(s) with /mipi2-csi2
+[    7.558184] platform rkcif-mipi-lvds2-sditf: Fixed dependency cycle(s) with /rkisp1-vir0
+[    7.558201] platform rkisp1-vir0: Fixed dependency cycle(s) with /rkcif-mipi-lvds2-sditf
+[    8.501148] platform csi2-dphy0: Fixed dependency cycle(s) with /i2c@fec80000/dphy0-imx415@1a
+[    8.502315] rkcifhw fdce0000.rkcif: Adding to iommu group 16
+[    8.503031] rkcifhw fdce0000.rkcif: attach rk3588s2
+[    8.503111] rkcifhw fdce0000.rkcif: No reserved memory region assign to CIF
+[    8.503201] rkcif rkcif-mipi-lvds2: Adding to iommu group 16
+[    8.503216] rkcif rkcif-mipi-lvds2: rkcif driver version: v00.02.00
+[    8.503275] rkcif rkcif-mipi-lvds2: attach to cif hw node
+[    8.503282] rkcif rkcif-mipi-lvds2: rkcif wait line 0
+[    8.503289] rkcif rkcif-mipi-lvds2: rkcif fastboot reserve bufs num 3
+[    8.503333] : rkcif_update_sensor_info: stream[0] get remote sensor_sd failed!
+[    8.503341] : rkcif_scale_set_fmt: req(40, 30) src out(0, 0)
+[    8.503355] : rkcif_update_sensor_info: stream[0] get remote sensor_sd failed!
+[    8.503362] : rkcif_scale_set_fmt: req(40, 30) src out(0, 0)
+[    8.503376] : rkcif_update_sensor_info: stream[0] get remote sensor_sd failed!
+[    8.503383] : rkcif_scale_set_fmt: req(40, 30) src out(0, 0)
+[    8.503396] : rkcif_update_sensor_info: stream[0] get remote sensor_sd failed!
+[    8.503404] : rkcif_scale_set_fmt: req(40, 30) src out(0, 0)
+[    8.503996] rkcif rkcif-mipi-lvds2: No memory-region-thunderboot specified
+[    8.505490] rkcif rkcif-mipi-lvds2: Entity type for entity rockchip-mipi-csi2 was not initialized!
+[    8.505507] rockchip-mipi-csi2: probe success, v4l2_dev:rkcif-mipi-lvds2!
+[    8.505990] rkisp_hw fdcc0000.rkisp: Adding to iommu group 15
+[    8.506128] rkisp_hw fdcc0000.rkisp: is_thunderboot: 0
+[    8.506137] rkisp_hw fdcc0000.rkisp: Missing rockchip,grf property
+[    8.506152] rkisp_hw fdcc0000.rkisp: max input:0x0@0fps
+[    8.506244] rkisp_hw fdcc0000.rkisp: no find phandle sram
+[    8.506403] rkisp rkisp1-vir0: rkisp driver version: v02.09.00
+[    8.506467] rkisp rkisp1-vir0: No memory-region-thunderboot specified
+[    8.506528] rkisp rkisp1-vir0: Entity type for entity rkisp-isp-subdev was not initialized!
+[    8.657410] imx415 6-001a: driver version: 00.01.08
+[    8.657432] imx415 6-001a:  Get hdr mode failed! no hdr default
+[    8.657453] imx415 6-001a: detect imx415 lane 4
+[    8.657498] imx415 6-001a: Failed to get power-gpios
+[    8.657514] imx415 6-001a: no pinctrl
+[    8.657527] imx415 6-001a: Looking up dvdd-supply from device tree
+[    8.657766] imx415 6-001a: Looking up dovdd-supply from device tree
+[    8.657904] imx415 6-001a: Looking up avdd-supply from device tree
+[    8.726360] imx415 6-001a: Detected imx415 id 0000e0
+[    8.774162] imx415 6-001a: Consider updating driver imx415 to match on endpoints
+[    8.774212] rockchip-csi2-dphy csi2-dphy0: dphy0 matches m02_b_imx415 6-001a:bus type 5
+[    8.774850] rkcif-mipi-lvds2: Async subdev notifier completed
+[    8.775336] rkisp1-vir0: Async subdev notifier completed
+[    8.826227] rkcif rkcif-mipi-lvds2: clear unready subdev num: 0
+[    8.826823] RKNPU fdab0000.npu: Adding to iommu group 0
+[    8.826954] RKNPU fdab0000.npu: RKNPU: rknpu iommu is enabled, using iommu mode
+[    8.827070] RKNPU fdab0000.npu: Looking up rknpu-supply from device tree
+[    8.830534] RKNPU fdab0000.npu: Looking up mem-supply from device tree
+[    8.831021] RKNPU fdab0000.npu: can't request region for resource [mem 0xfdab0000-0xfdabffff]
+[    8.831052] RKNPU fdab0000.npu: can't request region for resource [mem 0xfdac0000-0xfdacffff]
+[    8.831073] RKNPU fdab0000.npu: can't request region for resource [mem 0xfdad0000-0xfdadffff]
+[    8.831292] [drm] Initialized rknpu 0.9.8 20240828 for fdab0000.npu on minor 1
+[    8.831934] RKNPU fdab0000.npu: Looking up rknpu-supply from device tree
+[    8.833644] RKNPU fdab0000.npu: RKNPU: bin=0
+[    8.833831] RKNPU fdab0000.npu: leakage=9
+[    8.833860] RKNPU fdab0000.npu: Looking up rknpu-supply from device tree
+[    8.833875] debugfs: Directory 'fdab0000.npu-rknpu' with parent 'vdd_npu_s0' already present!
+[    8.855292] RKNPU fdab0000.npu: pvtm=917
+[    8.860725] RKNPU fdab0000.npu: pvtm-volt-sel=5
+[    8.860771] RKNPU fdab0000.npu: Looking up rknpu-supply from device tree
+[    8.860786] debugfs: Directory 'fdab0000.npu-rknpu' with parent 'vdd_npu_s0' already present!
+[    8.861248] RKNPU fdab0000.npu: Looking up mem-supply from device tree
+[    8.862749] RKNPU fdab0000.npu: avs=0
+[    8.862820] RKNPU fdab0000.npu: rockchip_pvtpll_set_volt_sel: error cfg clk_id=6 voltsel (-1)
+[    8.862927] RKNPU fdab0000.npu: l=15000 h=85000 hyst=5000 l_limit=0 h_limit=800000000 h_table=0
+[    8.890970] rkisp rkisp1-vir0: clear unready subdev num: 0
+[   16.447195] imx415 6-001a: set fmt: cur_mode: 1944x1096, hdr: 0, bpp: 10
+[   16.447214] imx415 6-001a: capture_mode is 1920x1080
+[   16.541096] imx415 6-001a: set exposure(shr0) 1845 = cur_vts(2250) - val(405)
+[   16.542403] rkisp rkisp1-vir0: first params buf queue
+
+__NPU_DEVICES__
+ls: cannot access '/dev/rknpu*': No such file or directory
+ls: cannot access '/dev/rknn*': No such file or directory
+ls: cannot access '/sys/class/misc/rknpu': No such file or directory
+
+__NPU_MODULES__
+
+__RUNTIME_PACKAGES__
+dpkg-query: no packages found matching librknnrt*
+dpkg-query: no packages found matching rknn*
+librga-dev 2.2.0-1
+librga2 2.2.0-1
+librga2-dbgsym 2.2.0-1
+
+__RUNTIME_LIBRARIES__
+
+__RUNTIME_TOOLS__
+/usr/bin/media-ctl
+/usr/bin/v4l2-ctl
+/usr/bin/rknn_server
+Python 3.11.2
+
+__PYTHON_OCR_PACKAGES__
+
+__XIAOMI_OCR_PATH__
+total 304M
+drwxr-xr-x  8 cat cat 4.0K Apr 28  2026 .
+drwxr-xr-x  3 cat cat 4.0K Apr 28  2026 ..
+drwxr-xr-x  5 cat cat 4.0K Apr 28  2026 .venv
+-rw-r--r--  1 cat cat 4.0K Apr 28  2026 README_zh.md
+drwxr-xr-x  8 cat cat 4.0K Apr 28  2026 Xiaomi-OCR-0
+-rw-r--r--  1 cat cat  26K Apr 28  2026 build.log
+-rw-r--r--  1 cat cat  961 Apr 28  2026 configure.log
+-rw-r--r--  1 cat cat  102 Apr 28  2026 demo-smoke.log
+-rw-r--r--  1 cat cat    6 Apr 28  2026 demo-smoke.pid
+-rw-r--r--  1 cat cat  446 Apr 28  2026 fast-link.log
+-rw-r--r--  1 cat cat 177M Apr 28  2026 llama-src.tar
+drwxr-xr-x 30 cat cat 4.0K Apr 28  2026 llama.cpp
+-rw-r--r--  1 cat cat 3.0K Apr 28  2026 model-smoke.log
+-rw-r--r--  1 cat cat    6 Apr 28  2026 model-smoke.pid
+drwxr-xr-x  2 cat cat 4.0K Apr 28  2026 models
+-rw-r--r--  1 cat cat 1.2K Apr 28  2026 ocr-smoke-result.json
+-rw-r--r--  1 cat cat  11K Apr 28  2026 ocr-smoke-test.png
+drwxr-xr-x  3 cat cat 4.0K Apr 28  2026 rockchip
+-rwxr--r--  1 cat cat  325 Apr 28  2026 run-demo.sh
+-rwxr--r--  1 cat cat  440 Apr 28  2026 run-model.sh
+drwxr-xr-x  2 cat cat 4.0K Nov  4  2026 wheels
+-rw-r--r--  1 cat cat 118M Apr 28  2026 wheels.tar
+-rw-r--r--  1 cat cat 8.9M Apr 28  2026 xiaomi-src.tar
+/home/cat/ai/xiaomi-ocr-0/.venv/bin/Activate.ps1	9033 bytes
+/home/cat/ai/xiaomi-ocr-0/.venv/bin/activate	2002 bytes
+/home/cat/ai/xiaomi-ocr-0/.venv/bin/activate.csh	928 bytes
+/home/cat/ai/xiaomi-ocr-0/.venv/bin/activate.fish	2204 bytes
+/home/cat/ai/xiaomi-ocr-0/.venv/bin/ccmake	182 bytes
+/home/cat/ai/xiaomi-ocr-0/.venv/bin/cmake	180 bytes
+/home/cat/ai/xiaomi-ocr-0/.venv/bin/cpack	180 bytes
+/home/cat/ai/xiaomi-ocr-0/.venv/bin/ctest	180 bytes
+/home/cat/ai/xiaomi-ocr-0/.venv/bin/f2py	190 bytes
+/home/cat/ai/xiaomi-ocr-0/.venv/bin/ftfy	181 bytes
+/home/cat/ai/xiaomi-ocr-0/.venv/bin/httpx2	185 bytes
+/home/cat/ai/xiaomi-ocr-0/.venv/bin/idna	181 bytes
+/home/cat/ai/xiaomi-ocr-0/.venv/bin/numpy-config	190 bytes
+/home/cat/ai/xiaomi-ocr-0/.venv/bin/pip	193 bytes
+/home/cat/ai/xiaomi-ocr-0/.venv/bin/pip3	193 bytes
+/home/cat/ai/xiaomi-ocr-0/.venv/bin/pip3.11	193 bytes
+/home/cat/ai/xiaomi-ocr-0/.venv/bin/pypdfium2	203 bytes
+/home/cat/ai/xiaomi-ocr-0/.venv/bin/tqdm	181 bytes
+/home/cat/ai/xiaomi-ocr-0/.venv/pyvenv.cfg	184 bytes
+/home/cat/ai/xiaomi-ocr-0/README_zh.md	4044 bytes
+/home/cat/ai/xiaomi-ocr-0/Xiaomi-OCR-0/.gitignore	296 bytes
+/home/cat/ai/xiaomi-ocr-0/Xiaomi-OCR-0/INSTALL.md	7716 bytes
+/home/cat/ai/xiaomi-ocr-0/Xiaomi-OCR-0/LICENSE	11550 bytes
+/home/cat/ai/xiaomi-ocr-0/Xiaomi-OCR-0/OLLAMA.md	4422 bytes
+/home/cat/ai/xiaomi-ocr-0/Xiaomi-OCR-0/README.md	15584 bytes
+/home/cat/ai/xiaomi-ocr-0/Xiaomi-OCR-0/README_zh.md	13701 bytes
+/home/cat/ai/xiaomi-ocr-0/Xiaomi-OCR-0/SKILL.md	3885 bytes
+/home/cat/ai/xiaomi-ocr-0/Xiaomi-OCR-0/THIRD_PARTY_NOTICES.md	791 bytes
+/home/cat/ai/xiaomi-ocr-0/Xiaomi-OCR-0/demo/README.md	4582 bytes
+/home/cat/ai/xiaomi-ocr-0/Xiaomi-OCR-0/demo/server.py	51491 bytes
+/home/cat/ai/xiaomi-ocr-0/Xiaomi-OCR-0/evaluation_pipeline/README.md	8803 bytes
+/home/cat/ai/xiaomi-ocr-0/Xiaomi-OCR-0/evaluation_pipeline/README_zh.md	8255 bytes
+/home/cat/ai/xiaomi-ocr-0/Xiaomi-OCR-0/evaluation_pipeline/__init__.py	0 bytes
+/home/cat/ai/xiaomi-ocr-0/Xiaomi-OCR-0/evaluation_pipeline/cropping.py	2505 bytes
+/home/cat/ai/xiaomi-ocr-0/Xiaomi-OCR-0/evaluation_pipeline/e2e_img2md.py	30087 bytes
+/home/cat/ai/xiaomi-ocr-0/Xiaomi-OCR-0/evaluation_pipeline/layout_detect_paddlex.py	15182 bytes
+/home/cat/ai/xiaomi-ocr-0/Xiaomi-OCR-0/evaluation_pipeline/twostage_img2md.py	47172 bytes
+/home/cat/ai/xiaomi-ocr-0/Xiaomi-OCR-0/example_pics/dense-equations.gif	2452638 bytes
+/home/cat/ai/xiaomi-ocr-0/Xiaomi-OCR-0/example_pics/dense-equations.jpg	401147 bytes
+/home/cat/ai/xiaomi-ocr-0/Xiaomi-OCR-0/example_pics/dense-equations.md	4635 bytes
+/home/cat/ai/xiaomi-ocr-0/Xiaomi-OCR-0/example_pics/handwrite-formula.gif	807861 bytes
+/home/cat/ai/xiaomi-ocr-0/Xiaomi-OCR-0/example_pics/handwrite-formula.jpg	247100 bytes
+/home/cat/ai/xiaomi-ocr-0/Xiaomi-OCR-0/example_pics/handwrite-formula.md	2222 bytes
+/home/cat/ai/xiaomi-ocr-0/Xiaomi-OCR-0/example_pics/qianziwen.jpeg	295671 bytes
+/home/cat/ai/xiaomi-ocr-0/Xiaomi-OCR-0/example_pics/qianziwen.md	88 bytes
+/home/cat/ai/xiaomi-ocr-0/Xiaomi-OCR-0/example_pics/receipt.jpg	99714 bytes
+/home/cat/ai/xiaomi-ocr-0/Xiaomi-OCR-0/example_pics/receipt.md	571 bytes
+/home/cat/ai/xiaomi-ocr-0/Xiaomi-OCR-0/examples/mcp-config.json	386 bytes
+/home/cat/ai/xiaomi-ocr-0/Xiaomi-OCR-0/postprocess/README.md	1755 bytes
+/home/cat/ai/xiaomi-ocr-0/Xiaomi-OCR-0/postprocess/__init__.py	0 bytes
+/home/cat/ai/xiaomi-ocr-0/Xiaomi-OCR-0/postprocess/assemble_markdown.py	29321 bytes
+/home/cat/ai/xiaomi-ocr-0/Xiaomi-OCR-0/postprocess/document.py	3789 bytes
+/home/cat/ai/xiaomi-ocr-0/Xiaomi-OCR-0/postprocess/markdown_merge.py	55996 bytes
+/home/cat/ai/xiaomi-ocr-0/Xiaomi-OCR-0/postprocess/otsl.py	8344 bytes
+/home/cat/ai/xiaomi-ocr-0/Xiaomi-OCR-0/postprocess/region.py	14706 bytes
+/home/cat/ai/xiaomi-ocr-0/Xiaomi-OCR-0/postprocess/repetition_guard.py	4670 bytes
+/home/cat/ai/xiaomi-ocr-0/Xiaomi-OCR-0/requirements-paddlex.txt	393 bytes
+/home/cat/ai/xiaomi-ocr-0/Xiaomi-OCR-0/requirements.txt	65 bytes
+/home/cat/ai/xiaomi-ocr-0/build.log	26056 bytes
+/home/cat/ai/xiaomi-ocr-0/configure.log	961 bytes
+/home/cat/ai/xiaomi-ocr-0/demo-smoke.log	102 bytes
+/home/cat/ai/xiaomi-ocr-0/demo-smoke.pid	6 bytes
+/home/cat/ai/xiaomi-ocr-0/fast-link.log	446 bytes
+/home/cat/ai/xiaomi-ocr-0/llama-src.tar	185559040 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/.clang-format	5132 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/.clang-tidy	959 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/.devops/cann.Dockerfile	6001 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/.devops/cpu.Dockerfile	3363 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/.devops/cuda.Dockerfile	3949 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/.devops/intel.Dockerfile	6742 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/.devops/llama-cli-cann.Dockerfile	3078 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/.devops/llama-cpp-cuda.srpm.spec	2809 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/.devops/llama-cpp.srpm.spec	2868 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/.devops/musa.Dockerfile	4028 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/.devops/openvino.Dockerfile	8375 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/.devops/rocm.Dockerfile	4299 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/.devops/s390x.Dockerfile	4848 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/.devops/tools.sh	2520 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/.devops/vulkan.Dockerfile	3629 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/.devops/zendnn.Dockerfile	3253 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/.dockerignore	283 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/.ecrc	170 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/.editorconfig	1334 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/.flake8	637 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/.gemini/settings.json	36 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/.github/labeler.yml	3855 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/.github/pull_request_template.md	758 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/.gitignore	1868 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/.gitmodules	0 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/.pre-commit-config.yaml	463 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/AGENTS.md	12012 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/AUTHORS	100675 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/CLAUDE.md	107 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/CMakeLists.txt	11392 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/CMakePresets.json	4665 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/CODEOWNERS	6672 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/CONTRIBUTING.md	13119 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/LICENSE	1099 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/Makefile	266 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/README.md	7604 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/SECURITY.md	7611 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/app/CMakeLists.txt	903 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/app/download.cpp	2282 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/app/llama.cpp	5189 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/build-xcframework.sh	25544 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/build/CMakeCache.txt	34011 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/build/Makefile	42710 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/build/cmake_install.cmake	7138 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/build/compile_commands.json	252367 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/build/license.cpp	3463 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/build/llama-config-version.cmake	2774 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/build/llama-config.cmake	1813 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/build/llama.pc	247 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/ci/README-MUSA.md	1165 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/ci/README.md	1330 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/ci/run.sh	25939 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/cmake/arm64-apple-clang.cmake	571 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/cmake/arm64-linux-clang.cmake	604 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/cmake/arm64-windows-llvm.cmake	652 bytes
+/home/cat/ai/xiaomi-ocr-0/llama.cpp/cmake/arm64-windows-msvc-cuda.cmake	1334 bytes
+
+__XIAOMI_OCR_BINARIES__
+/home/cat/ai/xiaomi-ocr-0/Xiaomi-OCR-0: directory
+total 100
+-rw-r--r-- 1 cat cat  7716 Apr 28  2026 INSTALL.md
+-rw-r--r-- 1 cat cat 11550 Apr 28  2026 LICENSE
+-rw-r--r-- 1 cat cat  4422 Apr 28  2026 OLLAMA.md
+-rw-r--r-- 1 cat cat 15584 Apr 28  2026 README.md
+-rw-r--r-- 1 cat cat 13701 Apr 28  2026 README_zh.md
+-rw-r--r-- 1 cat cat  3885 Apr 28  2026 SKILL.md
+-rw-r--r-- 1 cat cat   791 Apr 28  2026 THIRD_PARTY_NOTICES.md
+drwxr-xr-x 5 cat cat  4096 Apr 28  2026 demo
+drwxr-xr-x 4 cat cat  4096 Apr 28  2026 evaluation_pipeline
+drwxr-xr-x 2 cat cat  4096 Apr 28  2026 example_pics
+drwxr-xr-x 2 cat cat  4096 Apr 28  2026 examples
+drwxr-xr-x 3 cat cat  4096 Apr 28  2026 postprocess
+-rw-r--r-- 1 cat cat   393 Apr 28  2026 requirements-paddlex.txt
+-rw-r--r-- 1 cat cat    65 Apr 28  2026 requirements.txt
+drwxr-xr-x 3 cat cat  4096 Apr 28  2026 skills
+
+__MODEL_DIRECTORY__
+total 703M
+drwxr-xr-x 2 cat cat 4.0K Apr 28  2026 .
+drwxr-xr-x 8 cat cat 4.0K Apr 28  2026 ..
+-rw-r--r-- 1 cat cat 505M Apr 28  2026 Xiaomi-OCR-0.Q4_K_M.gguf
+-rw-r--r-- 1 cat cat 198M Apr 28  2026 Xiaomi-OCR-0.mmproj-bf16.gguf
