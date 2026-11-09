@@ -1,0 +1,24 @@
+# Local environments and build output
+.venv/
+venv/
+build/
+cmake-build-*/
+__pycache__/
+*.py[cod]
+
+# Model weights and converted models are obtained separately; never store them here.
+models/
+*.gguf
+*.onnx
+*.rknn
+
+# Private capture data and local machine settings
+data/private/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Local benchmark scratch; committed benchmark summaries belong in benchmarks/results/.
+benchmark-output/

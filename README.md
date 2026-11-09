@@ -1,29 +1,55 @@
 # EdgeDoc Cam
 
-离线文档采集与解析终端：LubanCat-4（RK3588S，4 GB）+ IMX415 + Xiaomi-OCR-0。当前处于 Sprint 0，目标是建立可信的环境基线与工程结构。
+**Status: Sprint 0 — engineering setup and hardware baseline**
 
-## 首版范围
+EdgeDoc Cam is an offline document capture and parsing terminal for a LubanCat-4 (RK3588S, 4 GB) and IMX415 camera. It is intended to connect camera capture, Linux media APIs, image quality checks, model inference, and measurable performance in one reproducible system.
 
-面向平整、单张、中英文印刷文档，提供连续预览、按需拍摄及板端 OCR。
+EdgeDoc Cam 是一个离线文档采集与解析终端项目：把 IMX415 摄像头接入 LubanCat-4（RK3588S、4 GB），完成画面采集、质量判断、快照处理和板端 OCR，并用可复现的实验说明性能与稳定性。
+
+## First release goal
+
+Support a single, flat, printed Chinese or English page. Preview may be continuous; OCR is submitted for a selected still image. Handwriting, curved pages, arbitrary forms, tables, formulas, and multipage PDF are outside the first release.
+
+## Data flow
 
 ```text
-IMX415 → MIPI CSI-2 / D-PHY → CIF / ISP → V4L2
-  → 预览 / 质量判断 → 独立快照 → 预处理 → 有界 OCR 队列
-  → Xiaomi-OCR-0 CPU 参考路径 → 文本 / Markdown / JSON 与指标
+IMX415 → MIPI CSI-2 / D-PHY → Rockchip CIF / ISP → V4L2 frame
+                                                        ├─ preview
+                                                        └─ quality gate → immutable snapshot
+                                                                          → crop / rectify
+                                                                          → bounded OCR queue
+                                                                          → Xiaomi-OCR-0
+                                                                          → text / Markdown / JSON + metrics
 ```
 
-预览和 OCR 分离：摄像头持续采集，OCR 只处理选定的静态图像。NPU 是待验证的独立实验，不能仅凭运行库存在就断言模型兼容。
+The measured V4L2 nodes and open questions are recorded in [`docs/baseline.md`](docs/baseline.md). The current design and decisions are in [`docs/architecture.md`](docs/architecture.md) and [`docs/adr/0001-on-demand-ocr.md`](docs/adr/0001-on-demand-ocr.md).
 
-## Sprint 0 任务
+## Sprint 0
 
-- [环境基线](https://github.com/lyongjian762-ops/edgedoc-cam/issues/1)
-- [IMX415 媒体链路](https://github.com/lyongjian762-ops/edgedoc-cam/issues/2)
-- [Xiaomi-OCR-0 CPU 基线](https://github.com/lyongjian762-ops/edgedoc-cam/issues/3)
-- [架构与数据流](https://github.com/lyongjian762-ops/edgedoc-cam/issues/4)
-- [验收报告](https://github.com/lyongjian762-ops/edgedoc-cam/issues/5)
+Sprint 0 establishes a truthful environment baseline, confirms the IMX415 media path, defines a repeatable CPU OCR benchmark, records the architecture, and produces an acceptance report. The five tasks and their links are in [`docs/sprint-0-issues.md`](docs/sprint-0-issues.md).
 
-## 当前状态
+## Repository layout
 
-只读审查已确认传感器驱动与媒体拓扑、NPU DRM 节点及 RKNN 运行库、CPU 推理程序与 GGUF 文件。尚未在本轮采集新图像或运行推理。旧日志的单次 33.67 秒不是正式性能基线。板卡时钟与本次审查日期不一致，后续实验需记录时间来源。
+- `src/` — application code (interfaces to be added after Sprint 0)
+- `tests/` — automated checks and fixtures (no application tests exist yet)
+- `benchmarks/` — benchmark protocol and result schemas
+- `scripts/` — reproducible setup and diagnostic helpers
+- `docs/adr/` — architecture decisions
+- `docs/experiments/` — experiment records and raw Sprint 0 command output
+- `.github/ISSUE_TEMPLATE/` — task templates
+- `.github/PULL_REQUEST_TEMPLATE/` — review template
 
-完整项目骨架和原始命令输出已在本地准备，待提交到本分支。未经批准不刷机、不修改设备树、内核、网络或安装依赖；模型权重和私人文档不提交到仓库。
+## Development rules
+
+- Do not commit model weights, personal documents, captured pages, access tokens, or local environment files.
+- Keep a CPU inference route as the reference. Treat NPU inference as an experiment until the complete model/runtime/driver path is verified.
+- Record input identity, model/runtime versions, warm-up policy, timing boundaries, memory use, and output quality for every benchmark.
+- Do not modify the target board's boot image, device tree, kernel, network settings, or installed packages without an approved change plan.
+
+## Current evidence
+
+The first SSH review found the sensor driver bound, a V4L2 ISP node, an RKNN runtime library, and local Xiaomi-OCR-0 GGUF files. It did **not** capture a fresh camera frame or run inference. An older smoke log reports a single 33,670 ms request and is not a formal benchmark. See [`docs/baseline.md`](docs/baseline.md) for scope and caveats.
+
+## Next step
+
+Complete the Sprint 0 issues, then review the acceptance report before starting implementation. In particular, establish a fresh camera frame and a repeatable CPU baseline before making performance claims.
