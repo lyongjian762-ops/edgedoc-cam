@@ -1,0 +1,25 @@
+name: Xiaomi-OCR-0 CPU benchmark
+description: Establish a repeatable CPU-only inference baseline.
+title: "Sprint 0: establish Xiaomi-OCR-0 CPU benchmark"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The existing 33.67 s smoke result is historical context, not the accepted baseline.
+  - type: textarea
+    id: method
+    attributes:
+      label: Model, build, inputs, and timing method
+      description: Separate cold start from warm request latency and include resource data.
+    validations:
+      required: true
+  - type: checkboxes
+    id: acceptance
+    attributes:
+      label: Acceptance
+      options:
+        - label: Fixed public/synthetic input set and exact model/build are recorded.
+        - label: CPU-only configuration is explicit.
+        - label: Repeated timings, peak RSS, and temperature context are recorded.
+        - label: Output quality is reviewed.
+        - label: No private documents or model weights are committed.
