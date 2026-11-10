@@ -1,0 +1,188 @@
+Lesson 02 R1: read-only BSP inspection and controlled offline tests. No camera stream was started in R1. Paths to temporary build directories are redacted.
+
+### l02r1-driver-readonly.txt
+### running kernel
+Linux lubancat 6.1.99-rk3588 #10 SMP Thu Sep  3 16:33:19 CST 2026 aarch64 GNU/Linux
+### candidate source commit and sha256
+1bc19c520831b6d0ca7d7afb4639189a2064e9bc
+27a0a79f9cdce31f15e1ef5b0793b499d3008bc4a8af497885c74cb04c76b556  /home/cat/kernel/drivers/media/i2c/imx415.c
+### build config
+/home/cat/kernel/.config:CONFIG_LOCALVERSION="-rk3588"
+/home/cat/kernel/.config:CONFIG_LOCALVERSION_AUTO=y
+/home/cat/kernel/.config:CONFIG_VIDEO_IMX415=y
+/usr/src/linux-headers-6.1.99-rk3588/.config:CONFIG_LOCALVERSION="-rk3588"
+/usr/src/linux-headers-6.1.99-rk3588/.config:CONFIG_LOCALVERSION_AUTO=y
+/usr/src/linux-headers-6.1.99-rk3588/.config:CONFIG_VIDEO_IMX415=y
+### build image size and checksum
+43690496 /boot/Image-6.1.99-rk3588
+43889152 /home/cat/kernel/arch/arm64/boot/Image
+9a74d2bad123b359401bffda7bd63b2484a560b9b2e2c48f12ca329d99d1e7fa  /boot/Image-6.1.99-rk3588
+853f4dbfe7df54ca4c997f7ccbaaa5edc664037c341960b61148e0adbbc31c22  /home/cat/kernel/arch/arm64/boot/Image
+### source mode
+  1694		{
+  1695			/* 1H period = (1100 clock) = (1100 * 1 / 74.25MHz) */
+  1696			.bus_fmt = MEDIA_BUS_FMT_SGBRG10_1X10,
+  1697			.width = 1944,
+  1698			.height = 1096,
+  1699			.max_fps = {
+  1700				.numerator = 10000,
+  1701				.denominator = 600000,
+  1702			},
+  1703			.exp_def = 0x08ca - 0x08,
+  1704			.hts_def = 0x044c * IMX415_4LANES * 2,
+  1705			.vts_def = 0x08ca,
+  1706			.global_reg_list = NULL,
+  1707			.reg_list = imx415_linear_10bit_1920x1080_891M_regs_4lane,
+  1708			.hdr_mode = NO_HDR,
+  1709			.mipi_freq_idx = 1,
+  1710			.bpp = 10,
+  1711			.vc[PAD0] = 0,
+  1712			.xvclk = IMX415_XVCLK_FREQ_37M,
+### write helper
+  1982	/* Write registers up to 4 at a time */
+  1983	static int imx415_write_reg(struct i2c_client *client, u16 reg,
+  1984				    u32 len, u32 val)
+  1985	{
+  1986		u32 buf_i, val_i;
+  1987		u8 buf[6];
+  1988		u8 *val_p;
+  1989		__be32 val_be;
+  1990
+  1991		if (len > 4)
+  1992			return -EINVAL;
+  1993
+  1994		buf[0] = reg >> 8;
+  1995		buf[1] = reg & 0xff;
+  1996
+  1997		val_be = cpu_to_be32(val);
+  1998		val_p = (u8 *)&val_be;
+  1999		buf_i = 2;
+  2000		val_i = 4 - len;
+  2001
+  2002		while (val_i < 4)
+  2003			buf[buf_i++] = val_p[val_i++];
+  2004
+  2005		if (i2c_master_send(client, buf, len + 2) != len + 2)
+  2006			return -EIO;
+  2007
+  2008		return 0;
+  2009	}
+  2010
+  2011	static int imx415_write_array(struct i2c_client *client,
+  2012				      const struct regval *regs)
+  2013	{
+  2014		u32 i;
+  2015		int ret = 0;
+  2016		if (!regs) {
+  2017			dev_err(&client->dev, "write reg array error\n");
+  2018			return ret;
+  2019		}
+  2020		for (i = 0; ret == 0 && regs[i].addr != REG_NULL; i++) {
+  2021			if (regs[i].addr == REG_DELAY) {
+  2022				usleep_range(regs[i].val * 1000, regs[i].val * 1000 + 500);
+  2023				dev_info(&client->dev, "write reg array, sleep %dms\n", regs[i].val);
+  2024			} else {
+  2025				ret = imx415_write_reg(client, regs[i].addr,
+  2026					IMX415_REG_VALUE_08BIT, regs[i].val);
+  2027			}
+  2028		}
+  2029		return ret;
+  2030	}
+### stream start call site
+  3123	static int __imx415_start_stream(struct imx415 *imx415)
+  3124	{
+  3125		int ret;
+  3126
+  3127		if (!imx415->is_thunderboot) {
+  3128			ret = imx415_write_array(imx415->client, imx415->cur_mode->global_reg_list);
+  3129			if (ret)
+  3130				return ret;
+  3131			ret = imx415_write_array(imx415->client, imx415->cur_mode->reg_list);
+  3132			if (ret)
+  3133				return ret;
+  3134		}
+### driver version this boot
+[    8.635929] imx415 6-001a: driver version: 00.01.08
+
+### l02r1-build-test-final.txt
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: <private-build-root>/build
+gmake[2]: Warning: File '/usr/include/aarch64-linux-gnu/asm/bitsperlong.h' has modification time 11489815 s in the future
+gmake[2]: Warning: File '/usr/include/aarch64-linux-gnu/asm/bitsperlong.h' has modification time 11489815 s in the future
+[ 50%] Building CXX object CMakeFiles/edgedoc-v4l2-capture.dir/src/v4l2_capture.cpp.o
+[ 50%] Building CXX object CMakeFiles/capture-tests.dir/tests/capture_tests.cpp.o
+[ 75%] Linking CXX executable capture-tests
+[100%] Linking CXX executable edgedoc-v4l2-capture
+gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[100%] Built target capture-tests
+gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[100%] Built target edgedoc-v4l2-capture
+UpdateCTestConfiguration  from :<private-build-root>/build/DartConfiguration.tcl
+Parse Config file:<private-build-root>/build/DartConfiguration.tcl
+Test project <private-build-root>/build
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: capture-tests
+
+1: Test command: <private-build-root>/build/capture-tests
+1: Working Directory: <private-build-root>/build
+1: Test timeout computed to be: 1500
+1: PASS: arguments, poll flags, EINTR/timeout, EAGAIN, payloads, timestamps, atomic output failures
+1/1 Test #1: capture-tests ....................   Passed    0.05 sec
+
+100% tests passed out of 1
+
+Total Test time (real) =   0.05 sec
+
+### l02r1-fresh-test.txt
+### fresh build and test
+-- The CXX compiler identification is GNU 12.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (0.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: <private-build-root>/build-fresh
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: <private-build-root>/build-fresh
+[ 50%] Building CXX object CMakeFiles/edgedoc-v4l2-capture.dir/src/v4l2_capture.cpp.o
+[ 50%] Building CXX object CMakeFiles/capture-tests.dir/tests/capture_tests.cpp.o
+[ 75%] Linking CXX executable capture-tests
+[100%] Linking CXX executable edgedoc-v4l2-capture
+[100%] Built target capture-tests
+[100%] Built target edgedoc-v4l2-capture
+UpdateCTestConfiguration  from :<private-build-root>/build-fresh/DartConfiguration.tcl
+Parse Config file:<private-build-root>/build-fresh/DartConfiguration.tcl
+Test project <private-build-root>/build-fresh
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: capture-tests
+
+1: Test command: <private-build-root>/build-fresh/capture-tests
+1: Working Directory: <private-build-root>/build-fresh
+1: Test timeout computed to be: 1500
+1: PASS: arguments, poll flags, EINTR/timeout, EAGAIN, payloads, timestamps, atomic output failures
+1/1 Test #1: capture-tests ....................   Passed    0.05 sec
+
+100% tests passed out of 1
+
+Total Test time (real) =   0.05 sec
+fresh_build_test_exit=0
+
+### Analysis of original 300-frame timestamp log
+frames=300 flags=0x2001 intervals=299 min_us=16505 max_us=16819 mean_us=16666.562 median_us=16667 nonpositive=0
+first=3180.866459 last=3185.849761 elapsed_us=4983302
