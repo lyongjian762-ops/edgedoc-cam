@@ -1,7 +1,9 @@
 #include <linux/videodev2.h>
+#include <linux/fs.h>
 #include <sys/ioctl.h>
 #include <sys/mman.h>
 #include <sys/stat.h>
+#include <sys/syscall.h>
 #include <fcntl.h>
 #include <poll.h>
 #include <unistd.h>
@@ -18,6 +20,8 @@
 #include <iomanip>
 #include <iostream>
 #include <limits>
+#include <memory>
+#include <optional>
 #include <sstream>
 #include <stdexcept>
 #include <string>
@@ -53,6 +57,123 @@ std::string json_string(const std::string& s) {
     }
     return out;
 }
+
+const char* timestamp_clock(uint32_t flags) {
+    switch (flags & V4L2_BUF_FLAG_TIMESTAMP_MASK) {
+    case V4L2_BUF_FLAG_TIMESTAMP_MONOTONIC: return "monotonic";
+    case V4L2_BUF_FLAG_TIMESTAMP_COPY: return "copy";
+    default: return "unknown";
+    }
+}
+
+const char* timestamp_source(uint32_t flags) {
+    switch (flags & V4L2_BUF_FLAG_TSTAMP_SRC_MASK) {
+    case V4L2_BUF_FLAG_TSTAMP_SRC_EOF: return "end_of_frame";
+    case V4L2_BUF_FLAG_TSTAMP_SRC_SOE: return "start_of_exposure";
+    default: return "unknown";
+    }
+}
+
+std::optional<int64_t> timestamp_microseconds(const timeval& t) {
+    if (t.tv_sec < 0 || t.tv_usec < 0 || t.tv_usec >= 1000000 ||
+        static_cast<uint64_t>(t.tv_sec) > static_cast<uint64_t>((INT64_MAX - t.tv_usec) / 1000000))
+        return std::nullopt;
+    return static_cast<int64_t>(t.tv_sec) * 1000000 + t.tv_usec;
+}
+
+std::optional<int64_t> frame_interval_us(std::optional<int64_t> current, uint32_t flags,
+                                         std::optional<int64_t> previous, uint32_t previous_flags) {
+    const uint32_t mask = V4L2_BUF_FLAG_TIMESTAMP_MASK | V4L2_BUF_FLAG_TSTAMP_SRC_MASK;
+    if (!current || !previous || (flags & mask) != (previous_flags & mask) ||
+        (flags & V4L2_BUF_FLAG_TIMESTAMP_MASK) != V4L2_BUF_FLAG_TIMESTAMP_MONOTONIC || *current < *previous)
+        return std::nullopt;
+    return *current - *previous;
+}
+
+bool dequeue_buffer(int fd, v4l2_buffer& b, int (*call)(int, unsigned long, void*) = xioctl) {
+    if (call(fd, VIDIOC_DQBUF, &b) == 0) return true;
+    if (errno == EAGAIN) return false;
+    fail_errno("VIDIOC_DQBUF");
+}
+
+bool frame_payload_valid(uint32_t flags, const std::vector<uint32_t>& used,
+                         const std::vector<uint32_t>& offsets, const std::vector<size_t>& lengths) {
+    if ((flags & V4L2_BUF_FLAG_ERROR) || used.empty() || used.size() != offsets.size() || used.size() != lengths.size())
+        return false;
+    for (size_t i = 0; i < used.size(); ++i)
+        if (offsets[i] >= used[i] || used[i] > lengths[i]) return false;
+    return true;
+}
+
+// POLLPRI reports V4L2 events, not a captured video buffer. We do not subscribe
+// to events here. Fatal flags take precedence even if POLLIN is also set.
+bool frame_ready(short revents) {
+    if (revents & (POLLERR | POLLNVAL | POLLHUP)) throw std::runtime_error("poll device error");
+    if (revents & POLLIN) return true;
+    if (revents & POLLPRI) throw std::runtime_error("unexpected priority event; not a video frame");
+    return false;
+}
+
+void wait_for_frame(int fd, std::chrono::steady_clock::time_point end) {
+    for (;;) {
+        auto now = std::chrono::steady_clock::now();
+        if (now >= end) throw std::runtime_error("poll timeout");
+        auto remaining = std::chrono::duration_cast<std::chrono::milliseconds>(end - now).count() + 1;
+        pollfd pfd{fd, POLLIN, 0};
+        int r = poll(&pfd, 1, static_cast<int>(remaining > INT_MAX ? INT_MAX : remaining));
+        if (r < 0 && errno == EINTR) continue;
+        if (r < 0) fail_errno("poll");
+        if (r == 0) throw std::runtime_error("poll timeout");
+        if (frame_ready(pfd.revents)) return;
+    }
+}
+
+class TemporaryOutput {
+public:
+    explicit TemporaryOutput(const std::string& target) {
+        std::string pattern = target + ".tmp.XXXXXX";
+        std::vector<char> name(pattern.begin(), pattern.end());
+        name.push_back('\0');
+        int fd = mkstemp(name.data());
+        if (fd < 0) fail_errno("create temporary output");
+        try { path_ = name.data(); } catch (...) { close(fd); unlink(name.data()); throw; }
+        fd_ = fd;
+        if (fcntl(fd_, F_SETFD, FD_CLOEXEC) < 0) {
+            int e = errno; close(fd_); fd_ = -1;
+            if (unlink(path_.c_str()) < 0 && errno != ENOENT)
+                std::cerr << "cleanup: temporary file remains: " << path_ << ": " << std::strerror(errno) << '\n';
+            path_.clear(); errno = e;
+            fail_errno("set temporary output close-on-exec");
+        }
+    }
+    TemporaryOutput(const TemporaryOutput&) = delete;
+    TemporaryOutput& operator=(const TemporaryOutput&) = delete;
+    ~TemporaryOutput() {
+        if (fd_ >= 0 && close(fd_) < 0) std::cerr << "cleanup: temporary close: " << std::strerror(errno) << '\n';
+        if (!path_.empty() && unlink(path_.c_str()) < 0 && errno != ENOENT)
+            std::cerr << "cleanup: temporary file remains: " << path_ << ": " << std::strerror(errno) << '\n';
+    }
+    void write_and_close(const void* data, size_t length) {
+        const auto* p = static_cast<const uint8_t*>(data);
+        while (length) {
+            ssize_t n = write(fd_, p, length);
+            if (n < 0 && errno == EINTR) continue;
+            if (n <= 0) { if (n == 0) errno = EIO; fail_errno("write temporary output"); }
+            p += n; length -= static_cast<size_t>(n);
+        }
+        int rc = close(fd_); fd_ = -1;
+        if (rc < 0) fail_errno("close temporary output");
+    }
+    void publish(const std::string& target) {
+        if (fd_ >= 0) throw std::runtime_error("temporary output must be closed before publication");
+        if (syscall(SYS_renameat2, AT_FDCWD, path_.c_str(), AT_FDCWD, target.c_str(), RENAME_NOREPLACE) < 0)
+            fail_errno("publish " + target);
+        path_.clear();
+    }
+private:
+    int fd_ = -1;
+    std::string path_;
+};
 
 unsigned parse_number(const char* text, const char* name, unsigned max) {
     if (!text || !*text || *text == '-') throw std::runtime_error(std::string("invalid ") + name);
@@ -132,34 +253,33 @@ public:
         streaming_ = true;
         unsigned valid = 0, rejected = 0;
         Snapshot snapshot;
+        std::optional<int64_t> previous_timestamp;
+        uint32_t previous_timestamp_flags = 0;
         while (valid < o_.count) {
             v4l2_buffer b{};
             std::array<v4l2_plane, VIDEO_MAX_PLANES> planes{};
             const auto deadline = std::chrono::steady_clock::now() + std::chrono::milliseconds(o_.timeout_ms);
             for (;;) {
-                wait_ready(deadline);
+                wait_for_frame(fd_, deadline);
                 b = {}; planes = {};
                 prepare(b, planes);
-                if (xioctl(fd_, VIDIOC_DQBUF, &b) == 0) break;
-                if (errno != EAGAIN) fail_errno("VIDIOC_DQBUF");
+                if (dequeue_buffer(fd_, b)) break;
             }
             if (b.index >= buffers_.size()) throw std::runtime_error("DQBUF returned invalid index");
             const unsigned n = multi_ ? b.length : 1;
             if (n != format_.planes.size() || n != buffers_[b.index].planes.size())
                 throw std::runtime_error("DQBUF plane count mismatch");
             std::vector<uint32_t> used, offsets;
-            bool valid_sizes = true;
+            std::vector<size_t> lengths;
             for (unsigned p = 0; p < n; ++p) {
                 const uint32_t bytes = multi_ ? planes[p].bytesused : b.bytesused;
                 const uint32_t offset = multi_ ? planes[p].data_offset : 0;
                 used.push_back(bytes); offsets.push_back(offset);
-                if (offset > bytes || bytes > buffers_[b.index].planes[p].length || bytes == offset) valid_sizes = false;
+                lengths.push_back(buffers_[b.index].planes[p].length);
             }
-            const bool error = (b.flags & V4L2_BUF_FLAG_ERROR) != 0 || !valid_sizes;
-            if (error) {
+            if (!frame_payload_valid(b.flags, used, offsets, lengths)) {
                 std::cerr << "rejected index=" << b.index << " sequence=" << b.sequence
-                          << " flags=0x" << std::hex << b.flags << std::dec
-                          << " valid_sizes=" << valid_sizes << '\n';
+                          << " flags=0x" << std::hex << b.flags << std::dec << " invalid_payload_or_error_flag\n";
                 queue(b.index);
                 if (++rejected > 100) throw std::runtime_error("too many invalid frames");
                 continue;
@@ -176,9 +296,18 @@ public:
             // The buffer returns to the driver before the iteration is counted successful.
             queue(b.index);
             ++valid;
+            auto current_timestamp = timestamp_microseconds(b.timestamp);
+            const uint32_t timestamp_flags = b.flags & (V4L2_BUF_FLAG_TIMESTAMP_MASK | V4L2_BUF_FLAG_TSTAMP_SRC_MASK);
             std::cout << "frame=" << valid << " index=" << b.index << " sequence=" << b.sequence
                       << " timestamp=" << b.timestamp.tv_sec << '.' << std::setw(6) << std::setfill('0')
-                      << b.timestamp.tv_usec << std::setfill(' ') << " flags=0x" << std::hex << b.flags << std::dec;
+                      << b.timestamp.tv_usec << std::setfill(' ') << " flags=0x" << std::hex << b.flags << std::dec
+                      << " timestamp_clock=" << timestamp_clock(b.flags) << " timestamp_source=" << timestamp_source(b.flags);
+            auto interval = frame_interval_us(current_timestamp, timestamp_flags, previous_timestamp, previous_timestamp_flags);
+            if (interval)
+                std::cout << " interval_us=" << *interval;
+            else std::cout << " interval_us=unavailable";
+            previous_timestamp = current_timestamp;
+            previous_timestamp_flags = timestamp_flags;
             for (unsigned p = 0; p < n; ++p) std::cout << " plane" << p << "_bytesused=" << used[p] << " plane" << p << "_offset=" << offsets[p];
             std::cout << '\n';
         }
@@ -254,35 +383,10 @@ private:
         prepare(b, planes); b.index=index;
         if (xioctl(fd_, VIDIOC_QBUF, &b) < 0) fail_errno("VIDIOC_QBUF");
     }
-    void wait_ready(std::chrono::steady_clock::time_point end) {
-        for (;;) {
-            auto now=std::chrono::steady_clock::now();
-            if (now >= end) throw std::runtime_error("poll timeout");
-            auto remaining=std::chrono::duration_cast<std::chrono::milliseconds>(end-now).count()+1;
-            pollfd pfd{fd_, POLLIN | POLLPRI, 0};
-            int r=poll(&pfd, 1, static_cast<int>(remaining > INT_MAX ? INT_MAX : remaining));
-            if (r < 0 && errno == EINTR) continue;
-            if (r < 0) fail_errno("poll");
-            if (r == 0) throw std::runtime_error("poll timeout");
-            if (pfd.revents & (POLLNVAL | POLLHUP)) throw std::runtime_error("poll device unavailable");
-            if (pfd.revents & (POLLIN | POLLPRI)) return;
-            if (pfd.revents & POLLERR) throw std::runtime_error("poll error");
-        }
-    }
-    static void write_new(const std::string& path, const void* data, size_t length) {
-        int out=open(path.c_str(), O_WRONLY | O_CREAT | O_EXCL | O_CLOEXEC, 0600);
-        if (out < 0) fail_errno("create " + path);
-        const auto* p=static_cast<const uint8_t*>(data);
-        while (length) {
-            ssize_t n=write(out,p,length);
-            if (n < 0 && errno == EINTR) continue;
-            if (n <= 0) { int e=n < 0 ? errno : EIO; close(out); errno=e; fail_errno("write " + path); }
-            p+=n; length-=static_cast<size_t>(n);
-        }
-        if (close(out) < 0) fail_errno("close " + path);
-    }
     void save(const Snapshot& s) {
         if (s.planes.empty()) throw std::runtime_error("snapshot was not copied");
+        std::vector<std::unique_ptr<TemporaryOutput>> files;
+        std::vector<std::string> targets;
         std::ostringstream json;
         json << "{\n  \"api\": \"" << (multi_ ? "multi" : "single") << "\",\n"
              << "  \"width\": " << format_.width << ", \"height\": " << format_.height << ",\n"
@@ -290,9 +394,12 @@ private:
              << "  \"field\": " << format_.field << ", \"colorspace\": " << format_.colorspace << ", \"ycbcr_enc\": " << format_.ycbcr_enc
              << ", \"quantization\": " << format_.quantization << ", \"xfer_func\": " << format_.xfer_func << ",\n"
              << "  \"sequence\": " << s.sequence << ", \"timestamp_sec\": " << s.sec << ", \"timestamp_usec\": " << s.usec
-             << ", \"flags\": " << s.flags << ",\n  \"planes\": [\n";
+             << ", \"flags\": " << s.flags << ", \"timestamp_clock\": \"" << timestamp_clock(s.flags)
+             << "\", \"timestamp_source\": \"" << timestamp_source(s.flags) << "\",\n  \"planes\": [\n";
         for (size_t i=0; i<s.planes.size(); ++i) {
-            write_new(o_.output + ".plane" + std::to_string(i) + ".bin", s.planes[i].data(), s.planes[i].size());
+            targets.push_back(o_.output + ".plane" + std::to_string(i) + ".bin");
+            files.push_back(std::make_unique<TemporaryOutput>(targets.back()));
+            files.back()->write_and_close(s.planes[i].data(), s.planes[i].size());
             json << "    {\"index\": " << i << ", \"bytesperline\": " << format_.planes[i].bytesperline
                  << ", \"sizeimage\": " << format_.planes[i].sizeimage << ", \"bytesused\": " << s.bytesused[i]
                  << ", \"data_offset\": " << s.data_offset[i] << ", \"saved_bytes\": " << s.planes[i].size() << "}"
@@ -300,7 +407,11 @@ private:
         }
         json << "  ]\n}\n";
         const auto text=json.str();
-        write_new(o_.output + ".json", text.data(), text.size());
+        targets.push_back(o_.output + ".json");
+        files.push_back(std::make_unique<TemporaryOutput>(targets.back()));
+        files.back()->write_and_close(text.data(), text.size());
+        // Publish metadata last: an absent JSON indicates an incomplete set.
+        for (size_t i = 0; i < files.size(); ++i) files[i]->publish(targets[i]);
     }
     Options o_;
     int fd_=-1;
@@ -311,7 +422,9 @@ private:
 };
 } // namespace
 
+#ifndef EDGEDOC_V4L2_NO_MAIN
 int main(int argc, char** argv) {
     try { auto options=parse_args(argc, argv); Capture capture(options); capture.run(); return 0; }
     catch (const std::exception& e) { std::cerr << "error: " << e.what() << '\n'; return 1; }
 }
+#endif
