@@ -1,0 +1,92 @@
+Lesson 01 approved one-frame experiment. Workstation date: 2026-11-10 Asia/Shanghai; board time differs. Temporary paths and frame checksum withheld.
+
+### l01-pre-capture.txt
+### time
+2026-04-28T04:15:12+08:00
+### camera alias
+/dev/video11
+### capture format
+Format Video Capture Multiplanar:
+	Width/Height      : 1920/1080
+	Pixel Format      : 'NV12' (Y/UV 4:2:0)
+	Field             : None
+	Number of planes  : 1
+	Flags             : 
+	Colorspace        : Default
+	Transfer Function : Default
+	YCbCr/HSV Encoding: Default
+	Quantization      : Full Range
+	Plane 0           :
+	   Bytes per Line : 1920
+	   Size Image     : 3110400
+### privileged occupancy
+                     USER        PID ACCESS COMMAND
+/dev/video0:         root        404 F.... rkaiq_3A_server
+/dev/video1:         root        404 F.... rkaiq_3A_server
+/dev/video15:        root        404 F.... rkaiq_3A_server
+/dev/video16:        root        404 F.... rkaiq_3A_server
+/dev/video17:        root        404 F.... rkaiq_3A_server
+/dev/video18:        root        404 F...m rkaiq_3A_server
+/dev/video19:        root        404 F...m rkaiq_3A_server
+/dev/video2:         root        404 F.... rkaiq_3A_server
+/dev/v4l-subdev0:    root        404 F.... rkaiq_3A_server
+/dev/v4l-subdev2:    root        404 F.... rkaiq_3A_server
+/dev/v4l-subdev3:    root        404 F.... rkaiq_3A_server
+fuser_exit=0
+### temp space
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           2.0G   12K  2.0G   1% /tmp
+### tools
+/usr/bin/timeout
+/usr/bin/mktemp
+/usr/bin/v4l2-ctl
+/usr/bin/ffmpeg
+/usr/bin/sha256sum
+
+### l01-capture.txt
+<
+capture_exit=0
+frame=[private temporary file]
+bytes=3110400
+
+### l01-post-capture.txt
+convert_exit=0
+preview=[private temporary file]
+preview_bytes=1688124
+1d1a031bde2e58a233f4cb5beb44339bd271211998673f9f2b5f6bc609c6dde5  [private temporary file]
+### recent camera messages
+[    8.633059] imx415 6-001a: Looking up dvdd-supply from device tree
+[    8.636774] imx415 6-001a: Looking up dovdd-supply from device tree
+[    8.641707] imx415 6-001a: Looking up avdd-supply from device tree
+[    8.711624] imx415 6-001a: Detected imx415 id 0000e0
+[    8.760785] imx415 6-001a: Consider updating driver imx415 to match on endpoints
+[    8.760841] rockchip-csi2-dphy csi2-dphy0: dphy0 matches m02_b_imx415 6-001a:bus type 5
+[    8.761450] rkcif-mipi-lvds2: Async subdev notifier completed
+[    8.761481] rockchip-csi2-dphy csi2-dphy0: csi2 dphy0 probe successfully!
+[    8.761951] rkisp1-vir0: Async subdev notifier completed
+[    8.827351] rkcif rkcif-mipi-lvds2: clear unready subdev num: 0
+[    8.911866] rkisp rkisp1-vir0: clear unready subdev num: 0
+[   16.504715] imx415 6-001a: set fmt: cur_mode: 1944x1096, hdr: 0, bpp: 10
+[   16.504734] imx415 6-001a: capture_mode is 1920x1080
+[   16.515120] imx415 6-001a: set exposure(shr0) 1845 = cur_vts(2250) - val(405)
+[   16.516176] rkisp rkisp1-vir0: first params buf queue
+[ 1602.232456] rkisp_hw fdcc0000.rkisp: set isp clk = 594000000Hz
+[ 1602.238055] rkcif-mipi-lvds2: stream[0] start streaming
+[ 1602.238138] rockchip-mipi-csi2 mipi2-csi2: stream on, src_sd: [redacted kernel identifier], sd_name:rockchip-csi2-dphy0
+[ 1602.238144] rockchip-mipi-csi2 mipi2-csi2: stream ON
+[ 1602.238165] rockchip-csi2-dphy0: dphy0, data_rate_mbps 892
+[ 1602.238190] rockchip-csi2-dphy csi2-dphy0: csi2_dphy_s_stream stream on:1, dphy3, ret 0
+[ 1602.238198] imx415 6-001a: s_stream: 1. 1944x1096, hdr: 0, bpp: 10
+[ 1602.304626] imx415 6-001a: write reg array error
+[ 1602.416066] imx415 6-001a: write reg array, sleep 30ms
+[ 1602.417801] imx415 6-001a: set vblank 0x482 vts 2250
+[ 1602.421935] imx415 6-001a: set exposure(shr0) 1845 = cur_vts(2250) - val(405)
+[ 1602.424781] imx415 6-001a: set analog gain 0x0
+[ 1602.492086] rkcif-mipi-lvds2: stream[0] start stopping, total mode 0x2, cur 0x2
+[ 1602.496175] imx415 6-001a: set exposure(shr0) 1694 = cur_vts(2250) - val(556)
+[ 1602.508319] rockchip-mipi-csi2 mipi2-csi2: stream off, src_sd: [redacted kernel identifier], sd_name:rockchip-csi2-dphy0
+[ 1602.508353] rockchip-mipi-csi2 mipi2-csi2: stream OFF
+[ 1602.508377] rockchip-csi2-dphy csi2-dphy0: csi2_dphy_s_stream_stop stream stop, dphy3
+[ 1602.508395] rockchip-csi2-dphy csi2-dphy0: csi2_dphy_s_stream stream on:0, dphy3, ret 0
+[ 1602.508425] imx415 6-001a: s_stream: 0. 1944x1096, hdr: 0, bpp: 10
+[ 1602.509068] rkcif-mipi-lvds2: stream[0] stopping finished, dma_en 0x0
