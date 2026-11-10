@@ -1,0 +1,20 @@
+name: Architecture and data-flow review
+description: Review module boundaries, buffer lifetime, jobs, and backend strategy.
+title: "Sprint 0: agree on architecture and camera-to-result data flow"
+body:
+  - type: textarea
+    id: decisions
+    attributes:
+      label: Owner decisions and open questions
+      description: Record decisions about modules, concurrency, errors, and data retention.
+    validations:
+      required: true
+  - type: checkboxes
+    id: acceptance
+    attributes:
+      label: Acceptance
+      options:
+        - label: Preview and OCR lifecycles are separate.
+        - label: Snapshot ownership and bounded queue behavior are explicit.
+        - label: CPU reference and NPU experiment boundaries are explicit.
+        - label: Project owner has reviewed the ADR.

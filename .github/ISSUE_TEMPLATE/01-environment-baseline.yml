@@ -1,0 +1,25 @@
+name: RK3588S environment baseline
+description: Record the board's Linux, memory, media, NPU, and model environment.
+title: "Sprint 0: establish RK3588S environment baseline"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Keep this issue read-only. Do not install packages or change board configuration.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and command output
+      description: Link the raw log and summarize verified facts; mark unknowns.
+    validations:
+      required: true
+  - type: checkboxes
+    id: acceptance
+    attributes:
+      label: Acceptance
+      options:
+        - label: OS, kernel, memory, and storage are recorded.
+        - label: IMX415/V4L2 and NPU/runtime presence are recorded.
+        - label: Model and runtime assets are recorded without copying weights.
+        - label: Unknowns and device-clock caveats are explicit.
+        - label: No system configuration was changed.

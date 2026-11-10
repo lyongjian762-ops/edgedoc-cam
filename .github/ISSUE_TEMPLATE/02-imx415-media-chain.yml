@@ -1,0 +1,24 @@
+name: IMX415 media-chain verification
+description: Verify a real frame through the board's Media Controller/V4L2 path.
+title: "Sprint 0: verify IMX415 media chain and capture one frame"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The existing review only enumerated the graph and formats. A frame has not yet been captured.
+  - type: textarea
+    id: capture
+    attributes:
+      label: Capture command and observed image
+      description: Record node, mode, format, dimensions, result, and errors.
+    validations:
+      required: true
+  - type: checkboxes
+    id: acceptance
+    attributes:
+      label: Acceptance
+      options:
+        - label: Active sensor-to-ISP links are documented.
+        - label: One frame was captured and visually inspected.
+        - label: V4L2 node selection and format are explained.
+        - label: No device-tree or kernel changes were made.

@@ -1,0 +1,46 @@
+__RUN_MODEL_SCRIPT__
+#!/bin/sh
+# 在板卡本机启动 CPU 推理服务；按 Ctrl+C 停止。
+set -eu
+BASE="$HOME/ai/xiaomi-ocr-0"
+exec "$BASE/llama.cpp/build/bin/llama-server" \
+    --host 127.0.0.1 --port 8000 --alias xiaomi-ocr-0 \
+    --model "$BASE/models/Xiaomi-OCR-0.Q4_K_M.gguf" \
+    --mmproj "$BASE/models/Xiaomi-OCR-0.mmproj-bf16.gguf" \
+    --threads 4 --ctx-size 2048 --batch-size 256 --ubatch-size 128 \
+    --parallel 1 --n-gpu-layers 0 --jinja
+
+__RUN_DEMO_SCRIPT__
+#!/bin/sh
+# 先在另一个终端启动 run-model.sh，再启动官方网页；按 Ctrl+C 停止。
+set -eu
+BASE="$HOME/ai/xiaomi-ocr-0"
+cd "$BASE/Xiaomi-OCR-0"
+export XIAOMI_OCR_LOCAL_URL=http://127.0.0.1:8000/v1
+export XIAOMI_OCR_MODEL=xiaomi-ocr-0
+exec "$BASE/.venv/bin/python" demo/server.py --host 127.0.0.1 --port 8787
+
+__MODEL_SMOKE_METRICS_ONLY__
+7:0.00.006.385 I srv    load_model: loading model '/home/cat/ai/xiaomi-ocr-0/models/Xiaomi-OCR-0.Q4_K_M.gguf'
+9:0.01.947.017 W load_hparams: Qwen-VL models require at minimum 1024 image tokens to function correctly on grounding tasks
+13:0.02.094.606 I srv    load_model: loaded multimodal model, '/home/cat/ai/xiaomi-ocr-0/models/Xiaomi-OCR-0.mmproj-bf16.gguf'
+14:0.02.173.996 I srv    load_model: initializing, n_slots = 1, n_ctx_slot = 2048, kv_unified = 'false'
+15:0.02.180.717 I srv  server_run_i: model loaded
+25:1.05.138.527 I slot print_timing: id  0 | task 0 | prompt processing, n_tokens =    171, progress = 0.98, t =  32.80 s / 5.21 tokens per second
+26:1.05.986.522 I slot print_timing: id  0 | task 0 | prompt eval time =   32946.12 ms /   175 tokens (  188.26 ms per token,     5.31 tokens per second)
+27:1.05.986.528 I slot print_timing: id  0 | task 0 |        eval time =     698.46 ms /    16 tokens (   46.56 ms per token,    21.48 tokens per second)
+
+__DEMO_SMOKE_LOG__
+[demo] 127.0.0.1 - "GET /api/health HTTP/1.1" 200 -
+[demo] 127.0.0.1 - "POST /api/ocr HTTP/1.1" 200 -
+
+__OCR_SMOKE_RESULT_KEYS__
+top-level keys: ['content', 'latency_ms', 'model', 'raw', 'usage']
+model: xiaomi-ocr-0
+usage: <dict>
+latency_ms: 33670
+raw: <dict>
+
+__SMOKE_PIDS__
+demo-smoke.pid=10496
+model-smoke.pid=10361
