@@ -1,0 +1,4 @@
+{"event": "started", "pid": 9182, "available_kib": 3781308}
+{"event": "ready", "pid": 9182, "startup_ms": 3017.507562999981, "available_kib": 3429896}
+{"event": "stop_requested"}
+{"event": "server_stopped", "pid": 9182, "returncode": 1}

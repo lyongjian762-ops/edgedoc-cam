@@ -1,0 +1,4016 @@
+[
+  {
+    "monotonic_s": 2450.592811187,
+    "VmHWM_kib": 921560,
+    "VmRSS_kib": 870952,
+    "process_cpu_ticks": 269,
+    "mem_available_kib": 3413644,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 54538,
+      "soc-thermal": 53615,
+      "gpu-thermal": 52692,
+      "littlecore-thermal": 54538,
+      "bigcore0-thermal": 54538,
+      "npu-thermal": 53615,
+      "center-thermal": 53615
+    }
+  },
+  {
+    "monotonic_s": 2451.605331198,
+    "VmHWM_kib": 936804,
+    "VmRSS_kib": 936804,
+    "process_cpu_ticks": 641,
+    "mem_available_kib": 3349776,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 62846,
+      "soc-thermal": 59153,
+      "gpu-thermal": 55461,
+      "littlecore-thermal": 60076,
+      "bigcore0-thermal": 62846,
+      "npu-thermal": 57307,
+      "center-thermal": 56384
+    }
+  },
+  {
+    "monotonic_s": 2452.609231097,
+    "VmHWM_kib": 943200,
+    "VmRSS_kib": 943200,
+    "process_cpu_ticks": 1042,
+    "mem_available_kib": 3343672,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 63769,
+      "soc-thermal": 60076,
+      "gpu-thermal": 56384,
+      "littlecore-thermal": 61000,
+      "bigcore0-thermal": 63769,
+      "npu-thermal": 58230,
+      "center-thermal": 57307
+    }
+  },
+  {
+    "monotonic_s": 2453.613137997,
+    "VmHWM_kib": 951892,
+    "VmRSS_kib": 951892,
+    "process_cpu_ticks": 1443,
+    "mem_available_kib": 3334572,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 64692,
+      "soc-thermal": 61000,
+      "gpu-thermal": 57307,
+      "littlecore-thermal": 61923,
+      "bigcore0-thermal": 64692,
+      "npu-thermal": 59153,
+      "center-thermal": 58230
+    }
+  },
+  {
+    "monotonic_s": 2454.617337141,
+    "VmHWM_kib": 951892,
+    "VmRSS_kib": 951892,
+    "process_cpu_ticks": 1845,
+    "mem_available_kib": 3334572,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 64692,
+      "soc-thermal": 61000,
+      "gpu-thermal": 57307,
+      "littlecore-thermal": 61923,
+      "bigcore0-thermal": 64692,
+      "npu-thermal": 59153,
+      "center-thermal": 58230
+    }
+  },
+  {
+    "monotonic_s": 2455.621474745,
+    "VmHWM_kib": 953064,
+    "VmRSS_kib": 953064,
+    "process_cpu_ticks": 2246,
+    "mem_available_kib": 3333060,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 64692,
+      "soc-thermal": 61000,
+      "gpu-thermal": 57307,
+      "littlecore-thermal": 61923,
+      "bigcore0-thermal": 64692,
+      "npu-thermal": 59153,
+      "center-thermal": 58230
+    }
+  },
+  {
+    "monotonic_s": 2456.625673307,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 2648,
+    "mem_available_kib": 3323484,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 65615,
+      "soc-thermal": 61000,
+      "gpu-thermal": 57307,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 59153,
+      "center-thermal": 58230
+    }
+  },
+  {
+    "monotonic_s": 2457.629828994,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 3049,
+    "mem_available_kib": 3323484,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 65615,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 59153,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2458.633944431,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 3451,
+    "mem_available_kib": 3323484,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 65615,
+      "soc-thermal": 61000,
+      "gpu-thermal": 57307,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 59153,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2459.637948162,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 3852,
+    "mem_available_kib": 3323484,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 65615,
+      "soc-thermal": 61000,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 61923,
+      "bigcore0-thermal": 64692,
+      "npu-thermal": 59153,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2460.641952768,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 4253,
+    "mem_available_kib": 3323484,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2461.645915667,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 4655,
+    "mem_available_kib": 3323484,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 65615,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 59153,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2462.650034021,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 5056,
+    "mem_available_kib": 3323484,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 65615,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 59153,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2463.654146834,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 5458,
+    "mem_available_kib": 3323484,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 65615,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 60076,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2464.658282396,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 5859,
+    "mem_available_kib": 3323484,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 65615,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 60076,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2465.662528207,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 6261,
+    "mem_available_kib": 3323484,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 65615,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 59153,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2466.666718893,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 6662,
+    "mem_available_kib": 3323484,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 65615,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 60076,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2467.670706291,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 7063,
+    "mem_available_kib": 3323484,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 65615,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 59153,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2468.675259805,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 7466,
+    "mem_available_kib": 3323484,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 60076,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2469.687407322,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 7871,
+    "mem_available_kib": 3323484,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 65615,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 59153,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2470.691404345,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 8272,
+    "mem_available_kib": 3323484,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 65615,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 59153,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2471.695542532,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 8674,
+    "mem_available_kib": 3323484,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 60076,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2472.699688886,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 9075,
+    "mem_available_kib": 3323484,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 60076,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2473.70382299,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 9476,
+    "mem_available_kib": 3323484,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 65615,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 60076,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2474.707817388,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 9878,
+    "mem_available_kib": 3323484,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 59153,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2475.711748787,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 10279,
+    "mem_available_kib": 3323484,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 64692,
+      "bigcore0-thermal": 67461,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2476.715679019,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 10680,
+    "mem_available_kib": 3323484,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 65615,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 60076,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2477.719804956,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 11082,
+    "mem_available_kib": 3323484,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 65615,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 60076,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2478.723927102,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 11483,
+    "mem_available_kib": 3323484,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 60076,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2479.728115164,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 11885,
+    "mem_available_kib": 3323484,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 60076,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2480.732226227,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 12286,
+    "mem_available_kib": 3323484,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 60076,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2481.736225583,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 12688,
+    "mem_available_kib": 3323484,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 65615,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 60076,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2482.740224356,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 13089,
+    "mem_available_kib": 3323500,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 65615,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 60076,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2483.744166254,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 13490,
+    "mem_available_kib": 3323500,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 65615,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 60076,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2484.748169402,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 13892,
+    "mem_available_kib": 3323500,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 65615,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 60076,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2485.752158842,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 14293,
+    "mem_available_kib": 3323500,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 65615,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 60076,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2486.756255905,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 14695,
+    "mem_available_kib": 3323500,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 60076,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2487.760303094,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 15096,
+    "mem_available_kib": 3323500,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 60076,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2488.764488238,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 15497,
+    "mem_available_kib": 3323500,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 65615,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 60076,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2489.768526969,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 15899,
+    "mem_available_kib": 3323500,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 60076,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2490.772517575,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 16300,
+    "mem_available_kib": 3323500,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 68384,
+      "soc-thermal": 63769,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 64692,
+      "bigcore0-thermal": 68384,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2491.776462099,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 16702,
+    "mem_available_kib": 3323500,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 60076,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2492.780594745,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 17103,
+    "mem_available_kib": 3323500,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 65615,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 60076,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2493.784567851,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 17505,
+    "mem_available_kib": 3323508,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 65615,
+      "soc-thermal": 62846,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 60076,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2494.788549708,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 17906,
+    "mem_available_kib": 3323508,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 60076,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2495.792741269,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 18308,
+    "mem_available_kib": 3323508,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 60076,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2496.796752,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 18709,
+    "mem_available_kib": 3323508,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 65615,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 60076,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2497.800765648,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 19111,
+    "mem_available_kib": 3323508,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 60076,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2498.804737005,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 19512,
+    "mem_available_kib": 3323508,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 60076,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2499.808766985,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 19913,
+    "mem_available_kib": 3323508,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 60076,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2500.812889715,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 20315,
+    "mem_available_kib": 3323508,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 60076,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2501.81704686,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 20716,
+    "mem_available_kib": 3323508,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 61923,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 60076,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2502.821259421,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 21118,
+    "mem_available_kib": 3323508,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 60076,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2503.825343942,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 21519,
+    "mem_available_kib": 3323508,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 65615,
+      "soc-thermal": 62846,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 60076,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2504.829392298,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 21920,
+    "mem_available_kib": 3323508,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 60076,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2505.833444153,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 22322,
+    "mem_available_kib": 3323508,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 68384,
+      "soc-thermal": 63769,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 64692,
+      "bigcore0-thermal": 68384,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2506.837360969,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 22723,
+    "mem_available_kib": 3323508,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 60076,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2507.841479907,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 23125,
+    "mem_available_kib": 3323508,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 65615,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 60076,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2508.84564901,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 23526,
+    "mem_available_kib": 3323508,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 65615,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 60076,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2509.849793614,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 23928,
+    "mem_available_kib": 3323508,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 60076,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2510.853806678,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 24329,
+    "mem_available_kib": 3323508,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 61923,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 60076,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2511.857939324,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 24730,
+    "mem_available_kib": 3323508,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 60076,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2512.862132927,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 25132,
+    "mem_available_kib": 3323480,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 65615,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 59153,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2513.866163783,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 25533,
+    "mem_available_kib": 3323480,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 61923,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 60076,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2514.870238971,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 25935,
+    "mem_available_kib": 3323480,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 61923,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 60076,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2515.874511906,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 26336,
+    "mem_available_kib": 3323480,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 60076,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2516.878716301,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 26738,
+    "mem_available_kib": 3323480,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 60076,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2517.882991277,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 27141,
+    "mem_available_kib": 3323480,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 60076,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2518.887086882,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 27542,
+    "mem_available_kib": 3323480,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 61923,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 60076,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2519.891204945,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 27944,
+    "mem_available_kib": 3323480,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 60076,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2520.895892623,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 28345,
+    "mem_available_kib": 3323480,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 71153,
+      "soc-thermal": 64692,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 65615,
+      "bigcore0-thermal": 70230,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2521.89994127,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 28747,
+    "mem_available_kib": 3324596,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 61923,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 60076,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2522.903643714,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 29148,
+    "mem_available_kib": 3324696,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 60076,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2523.907360742,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 29550,
+    "mem_available_kib": 3324696,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 60076,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2524.911169351,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 29951,
+    "mem_available_kib": 3324696,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 65615,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 60076,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2525.915446078,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 30353,
+    "mem_available_kib": 3324696,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 60076,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2526.919935426,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 30754,
+    "mem_available_kib": 3324568,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 65615,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 60076,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2527.924079155,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 31156,
+    "mem_available_kib": 3324568,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 60076,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2528.927964763,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 31557,
+    "mem_available_kib": 3324568,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 60076,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2529.931960911,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 31958,
+    "mem_available_kib": 3324568,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 60076,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2530.936143431,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 32359,
+    "mem_available_kib": 3324568,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 65615,
+      "soc-thermal": 61923,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 60076,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2531.940236994,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 32761,
+    "mem_available_kib": 3324568,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 60076,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2532.944316849,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 33162,
+    "mem_available_kib": 3324568,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 60076,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2533.948383287,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 33564,
+    "mem_available_kib": 3324568,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 60076,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2534.952689472,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 33965,
+    "mem_available_kib": 3324568,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 60076,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2535.956876367,
+    "VmHWM_kib": 963316,
+    "VmRSS_kib": 963316,
+    "process_cpu_ticks": 34366,
+    "mem_available_kib": 3324568,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 70230,
+      "soc-thermal": 63769,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 65615,
+      "bigcore0-thermal": 70230,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2536.960960596,
+    "VmHWM_kib": 963544,
+    "VmRSS_kib": 963544,
+    "process_cpu_ticks": 34768,
+    "mem_available_kib": 3324316,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 61923,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 60076,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2537.965055618,
+    "VmHWM_kib": 963544,
+    "VmRSS_kib": 963544,
+    "process_cpu_ticks": 35169,
+    "mem_available_kib": 3324316,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 65615,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 60076,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2538.96921743,
+    "VmHWM_kib": 963544,
+    "VmRSS_kib": 963544,
+    "process_cpu_ticks": 35571,
+    "mem_available_kib": 3324316,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 65615,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 60076,
+      "center-thermal": 59153
+    }
+  },
+  {
+    "monotonic_s": 2539.97328416,
+    "VmHWM_kib": 963544,
+    "VmRSS_kib": 963544,
+    "process_cpu_ticks": 35972,
+    "mem_available_kib": 3324316,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 60076,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2540.977442763,
+    "VmHWM_kib": 963544,
+    "VmRSS_kib": 963544,
+    "process_cpu_ticks": 36374,
+    "mem_available_kib": 3324320,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 65615,
+      "soc-thermal": 61923,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 60076,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2541.981624992,
+    "VmHWM_kib": 963544,
+    "VmRSS_kib": 963544,
+    "process_cpu_ticks": 36775,
+    "mem_available_kib": 3324320,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 61923,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 60076,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2542.985767846,
+    "VmHWM_kib": 963544,
+    "VmRSS_kib": 963544,
+    "process_cpu_ticks": 37176,
+    "mem_available_kib": 3324320,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 62846,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 60076,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2543.989832242,
+    "VmHWM_kib": 963544,
+    "VmRSS_kib": 963544,
+    "process_cpu_ticks": 37578,
+    "mem_available_kib": 3324320,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2544.994197051,
+    "VmHWM_kib": 971944,
+    "VmRSS_kib": 971944,
+    "process_cpu_ticks": 37977,
+    "mem_available_kib": 3316032,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 68384,
+      "soc-thermal": 62846,
+      "gpu-thermal": 58230,
+      "littlecore-thermal": 64692,
+      "bigcore0-thermal": 68384,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2545.998773898,
+    "VmHWM_kib": 971944,
+    "VmRSS_kib": 971944,
+    "process_cpu_ticks": 38379,
+    "mem_available_kib": 3316032,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 70230,
+      "soc-thermal": 64692,
+      "gpu-thermal": 60076,
+      "littlecore-thermal": 65615,
+      "bigcore0-thermal": 69307,
+      "npu-thermal": 61923,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2547.00416769,
+    "VmHWM_kib": 971944,
+    "VmRSS_kib": 971944,
+    "process_cpu_ticks": 38781,
+    "mem_available_kib": 3316032,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 69307,
+      "soc-thermal": 64692,
+      "gpu-thermal": 60076,
+      "littlecore-thermal": 65615,
+      "bigcore0-thermal": 69307,
+      "npu-thermal": 61923,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2548.008282253,
+    "VmHWM_kib": 971944,
+    "VmRSS_kib": 971944,
+    "process_cpu_ticks": 39182,
+    "mem_available_kib": 3316032,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 69307,
+      "soc-thermal": 64692,
+      "gpu-thermal": 60076,
+      "littlecore-thermal": 65615,
+      "bigcore0-thermal": 69307,
+      "npu-thermal": 61923,
+      "center-thermal": 61923
+    }
+  },
+  {
+    "monotonic_s": 2549.012683519,
+    "VmHWM_kib": 971944,
+    "VmRSS_kib": 971944,
+    "process_cpu_ticks": 39582,
+    "mem_available_kib": 3316032,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 70230,
+      "soc-thermal": 64692,
+      "gpu-thermal": 60076,
+      "littlecore-thermal": 66538,
+      "bigcore0-thermal": 70230,
+      "npu-thermal": 62846,
+      "center-thermal": 61923
+    }
+  },
+  {
+    "monotonic_s": 2550.017045411,
+    "VmHWM_kib": 971944,
+    "VmRSS_kib": 971944,
+    "process_cpu_ticks": 39984,
+    "mem_available_kib": 3316032,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 70230,
+      "soc-thermal": 64692,
+      "gpu-thermal": 60076,
+      "littlecore-thermal": 66538,
+      "bigcore0-thermal": 70230,
+      "npu-thermal": 62846,
+      "center-thermal": 61923
+    }
+  },
+  {
+    "monotonic_s": 2551.021412845,
+    "VmHWM_kib": 971944,
+    "VmRSS_kib": 971944,
+    "process_cpu_ticks": 40384,
+    "mem_available_kib": 3316032,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 70230,
+      "soc-thermal": 64692,
+      "gpu-thermal": 60076,
+      "littlecore-thermal": 65615,
+      "bigcore0-thermal": 69307,
+      "npu-thermal": 62846,
+      "center-thermal": 61923
+    }
+  },
+  {
+    "monotonic_s": 2552.025834236,
+    "VmHWM_kib": 971944,
+    "VmRSS_kib": 971944,
+    "process_cpu_ticks": 40785,
+    "mem_available_kib": 3316032,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 70230,
+      "soc-thermal": 64692,
+      "gpu-thermal": 60076,
+      "littlecore-thermal": 66538,
+      "bigcore0-thermal": 70230,
+      "npu-thermal": 62846,
+      "center-thermal": 61923
+    }
+  },
+  {
+    "monotonic_s": 2553.030169586,
+    "VmHWM_kib": 971944,
+    "VmRSS_kib": 971944,
+    "process_cpu_ticks": 41186,
+    "mem_available_kib": 3316032,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 70230,
+      "soc-thermal": 65615,
+      "gpu-thermal": 60076,
+      "littlecore-thermal": 66538,
+      "bigcore0-thermal": 70230,
+      "npu-thermal": 62846,
+      "center-thermal": 61923
+    }
+  },
+  {
+    "monotonic_s": 2554.03453352,
+    "VmHWM_kib": 971944,
+    "VmRSS_kib": 971944,
+    "process_cpu_ticks": 41586,
+    "mem_available_kib": 3316032,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 70230,
+      "soc-thermal": 64692,
+      "gpu-thermal": 60076,
+      "littlecore-thermal": 66538,
+      "bigcore0-thermal": 70230,
+      "npu-thermal": 61923,
+      "center-thermal": 61923
+    }
+  },
+  {
+    "monotonic_s": 2555.038814913,
+    "VmHWM_kib": 971944,
+    "VmRSS_kib": 971944,
+    "process_cpu_ticks": 41987,
+    "mem_available_kib": 3316032,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 71153,
+      "soc-thermal": 65615,
+      "gpu-thermal": 60076,
+      "littlecore-thermal": 66538,
+      "bigcore0-thermal": 70230,
+      "npu-thermal": 62846,
+      "center-thermal": 61923
+    }
+  },
+  {
+    "monotonic_s": 2556.042876102,
+    "VmHWM_kib": 971944,
+    "VmRSS_kib": 971944,
+    "process_cpu_ticks": 42388,
+    "mem_available_kib": 3316032,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 70230,
+      "soc-thermal": 65615,
+      "gpu-thermal": 61000,
+      "littlecore-thermal": 66538,
+      "bigcore0-thermal": 70230,
+      "npu-thermal": 62846,
+      "center-thermal": 61923
+    }
+  },
+  {
+    "monotonic_s": 2557.047953441,
+    "VmHWM_kib": 991656,
+    "VmRSS_kib": 991656,
+    "process_cpu_ticks": 42781,
+    "mem_available_kib": 3296348,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 70230,
+      "soc-thermal": 65615,
+      "gpu-thermal": 61000,
+      "littlecore-thermal": 66538,
+      "bigcore0-thermal": 70230,
+      "npu-thermal": 62846,
+      "center-thermal": 61923
+    }
+  },
+  {
+    "monotonic_s": 2558.064918046,
+    "VmHWM_kib": 991656,
+    "VmRSS_kib": 991656,
+    "process_cpu_ticks": 43178,
+    "mem_available_kib": 3296348,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 74846,
+      "soc-thermal": 68384,
+      "gpu-thermal": 62846,
+      "littlecore-thermal": 70230,
+      "bigcore0-thermal": 73923,
+      "npu-thermal": 64692,
+      "center-thermal": 65615
+    }
+  },
+  {
+    "monotonic_s": 2559.070513377,
+    "VmHWM_kib": 991656,
+    "VmRSS_kib": 991656,
+    "process_cpu_ticks": 43571,
+    "mem_available_kib": 3296348,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 74846,
+      "soc-thermal": 68384,
+      "gpu-thermal": 62846,
+      "littlecore-thermal": 70230,
+      "bigcore0-thermal": 74846,
+      "npu-thermal": 64692,
+      "center-thermal": 65615
+    }
+  },
+  {
+    "monotonic_s": 2560.075518383,
+    "VmHWM_kib": 991656,
+    "VmRSS_kib": 991656,
+    "process_cpu_ticks": 43966,
+    "mem_available_kib": 3296348,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 74846,
+      "soc-thermal": 69307,
+      "gpu-thermal": 63769,
+      "littlecore-thermal": 70230,
+      "bigcore0-thermal": 74846,
+      "npu-thermal": 64692,
+      "center-thermal": 66538
+    }
+  },
+  {
+    "monotonic_s": 2561.080532265,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 44339,
+    "mem_available_kib": 3278960,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 68384,
+      "soc-thermal": 64692,
+      "gpu-thermal": 61000,
+      "littlecore-thermal": 65615,
+      "bigcore0-thermal": 68384,
+      "npu-thermal": 61923,
+      "center-thermal": 61923
+    }
+  },
+  {
+    "monotonic_s": 2562.084564579,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 44740,
+    "mem_available_kib": 3278896,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 68384,
+      "soc-thermal": 63769,
+      "gpu-thermal": 60076,
+      "littlecore-thermal": 64692,
+      "bigcore0-thermal": 67461,
+      "npu-thermal": 61923,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2563.088582601,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 45141,
+    "mem_available_kib": 3278896,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 63769,
+      "gpu-thermal": 60076,
+      "littlecore-thermal": 64692,
+      "bigcore0-thermal": 67461,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2564.092446627,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 45543,
+    "mem_available_kib": 3278896,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 63769,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 64692,
+      "bigcore0-thermal": 67461,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2565.09618582,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 45944,
+    "mem_available_kib": 3278896,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 67461,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2566.099880681,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 46346,
+    "mem_available_kib": 3278896,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 64692,
+      "bigcore0-thermal": 67461,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2567.103625708,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 46747,
+    "mem_available_kib": 3278896,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 64692,
+      "bigcore0-thermal": 67461,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2568.107375985,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 47148,
+    "mem_available_kib": 3278896,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 64692,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2569.11113297,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 47550,
+    "mem_available_kib": 3278896,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2570.114848539,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 47950,
+    "mem_available_kib": 3278868,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 71153,
+      "soc-thermal": 64692,
+      "gpu-thermal": 60076,
+      "littlecore-thermal": 66538,
+      "bigcore0-thermal": 71153,
+      "npu-thermal": 61923,
+      "center-thermal": 61923
+    }
+  },
+  {
+    "monotonic_s": 2571.118613399,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 48351,
+    "mem_available_kib": 3278868,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2572.122390217,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 48752,
+    "mem_available_kib": 3278868,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2573.126120953,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 49154,
+    "mem_available_kib": 3278900,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2574.129903604,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 49556,
+    "mem_available_kib": 3278900,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2575.133706964,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 49957,
+    "mem_available_kib": 3278900,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2576.137528114,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 50359,
+    "mem_available_kib": 3278900,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2577.14145368,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 50760,
+    "mem_available_kib": 3278900,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2578.145095459,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 51161,
+    "mem_available_kib": 3278900,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2579.148711571,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 51563,
+    "mem_available_kib": 3278900,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2580.152368516,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 51964,
+    "mem_available_kib": 3278900,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2581.156144168,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 52366,
+    "mem_available_kib": 3278900,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2582.159865862,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 52767,
+    "mem_available_kib": 3278900,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 67461,
+      "npu-thermal": 60076,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2583.164605748,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 53170,
+    "mem_available_kib": 3278900,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 68384,
+      "soc-thermal": 63769,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 64692,
+      "bigcore0-thermal": 67461,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2584.176185982,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 53573,
+    "mem_available_kib": 3278900,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2585.179980299,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 53975,
+    "mem_available_kib": 3278900,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 71153,
+      "soc-thermal": 64692,
+      "gpu-thermal": 60076,
+      "littlecore-thermal": 65615,
+      "bigcore0-thermal": 70230,
+      "npu-thermal": 61923,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2586.183741659,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 54376,
+    "mem_available_kib": 3278900,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2587.187563977,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 54777,
+    "mem_available_kib": 3278900,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2588.191305795,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 55179,
+    "mem_available_kib": 3278900,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2589.195132196,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 55580,
+    "mem_available_kib": 3278900,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2590.198896181,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 55980,
+    "mem_available_kib": 3278900,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2591.202659291,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 56381,
+    "mem_available_kib": 3278900,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2592.20641686,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 56783,
+    "mem_available_kib": 3278900,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2593.210143803,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 57184,
+    "mem_available_kib": 3278916,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2594.213924122,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 57585,
+    "mem_available_kib": 3278916,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2595.217713773,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 57987,
+    "mem_available_kib": 3278916,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2596.221413884,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 58388,
+    "mem_available_kib": 3278916,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2597.22522016,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 58790,
+    "mem_available_kib": 3278916,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2598.229105768,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 59191,
+    "mem_available_kib": 3278916,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2599.232890461,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 59593,
+    "mem_available_kib": 3278916,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2600.236744861,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 59994,
+    "mem_available_kib": 3278916,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 70230,
+      "soc-thermal": 63769,
+      "gpu-thermal": 60076,
+      "littlecore-thermal": 65615,
+      "bigcore0-thermal": 70230,
+      "npu-thermal": 61923,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2601.240580886,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 60395,
+    "mem_available_kib": 3278916,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2602.244137208,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 60797,
+    "mem_available_kib": 3278916,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2603.247816903,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 61198,
+    "mem_available_kib": 3278948,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2604.251532764,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 61600,
+    "mem_available_kib": 3278948,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2605.255267874,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 62001,
+    "mem_available_kib": 3278948,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 67461,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2606.2590654,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 62402,
+    "mem_available_kib": 3278948,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2607.262919509,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 62802,
+    "mem_available_kib": 3278948,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2608.266607953,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 63203,
+    "mem_available_kib": 3278948,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 62846,
+      "gpu-thermal": 60076,
+      "littlecore-thermal": 64692,
+      "bigcore0-thermal": 67461,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2609.270376605,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 63604,
+    "mem_available_kib": 3278948,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2610.274053675,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 64006,
+    "mem_available_kib": 3278948,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2611.277978365,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 64407,
+    "mem_available_kib": 3278948,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2612.281880306,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 64809,
+    "mem_available_kib": 3278968,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2613.285696207,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 65210,
+    "mem_available_kib": 3278968,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 64692,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2614.289512691,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 65612,
+    "mem_available_kib": 3278968,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2615.29314572,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 66013,
+    "mem_available_kib": 3278968,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 69307,
+      "soc-thermal": 63769,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 64692,
+      "bigcore0-thermal": 69307,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2616.296860998,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 66414,
+    "mem_available_kib": 3278968,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2617.300731731,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 66816,
+    "mem_available_kib": 3278968,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2618.304492799,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 67217,
+    "mem_available_kib": 3278968,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2619.308190285,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 67619,
+    "mem_available_kib": 3278968,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 64692,
+      "bigcore0-thermal": 67461,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2620.311813689,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 68020,
+    "mem_available_kib": 3278968,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 67461,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2621.315476759,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 68421,
+    "mem_available_kib": 3278968,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2622.319329993,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 68823,
+    "mem_available_kib": 3278968,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2623.323040604,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 69222,
+    "mem_available_kib": 3278968,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 67461,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2624.326769881,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 69624,
+    "mem_available_kib": 3278968,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2625.330507616,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 70025,
+    "mem_available_kib": 3278968,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2626.334257601,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 70427,
+    "mem_available_kib": 3278968,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2627.338051044,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 70828,
+    "mem_available_kib": 3278968,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2628.341857029,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 71230,
+    "mem_available_kib": 3278968,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2629.345586597,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 71631,
+    "mem_available_kib": 3278968,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2630.349236834,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 72032,
+    "mem_available_kib": 3278968,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 63769,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 68384,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2631.353014819,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 72433,
+    "mem_available_kib": 3278968,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2632.356762763,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 72835,
+    "mem_available_kib": 3278968,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2633.360568455,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 73236,
+    "mem_available_kib": 3278968,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2634.364302691,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 73638,
+    "mem_available_kib": 3278968,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 64692,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2635.367985885,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 74039,
+    "mem_available_kib": 3278968,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2636.371740537,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 74440,
+    "mem_available_kib": 3278968,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2637.375550313,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 74842,
+    "mem_available_kib": 3278968,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2638.379206091,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 75243,
+    "mem_available_kib": 3278968,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 63769,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 64692,
+      "bigcore0-thermal": 67461,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2639.382914369,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 75643,
+    "mem_available_kib": 3278968,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2640.386750978,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 76044,
+    "mem_available_kib": 3278968,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2641.390502713,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 76446,
+    "mem_available_kib": 3278968,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2642.394313072,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 76847,
+    "mem_available_kib": 3278968,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2643.398149973,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 77249,
+    "mem_available_kib": 3278968,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2644.401855042,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 77650,
+    "mem_available_kib": 3278968,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2645.40564586,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 78052,
+    "mem_available_kib": 3278968,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2646.409427053,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 78452,
+    "mem_available_kib": 3278968,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2647.413185205,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 78854,
+    "mem_available_kib": 3278968,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2648.416974564,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 79255,
+    "mem_available_kib": 3278968,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2649.420806798,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 79657,
+    "mem_available_kib": 3278968,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 66538,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 67461,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2650.424554158,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 80058,
+    "mem_available_kib": 3278976,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 60076
+    }
+  },
+  {
+    "monotonic_s": 2651.428285769,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 80460,
+    "mem_available_kib": 3278976,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 63769,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 64692,
+      "bigcore0-thermal": 66538,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2652.431919673,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 80861,
+    "mem_available_kib": 3278976,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 67461,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2653.435621242,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 81263,
+    "mem_available_kib": 3278976,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 62846,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 67461,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2654.43939281,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 81663,
+    "mem_available_kib": 3278976,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 68384,
+      "soc-thermal": 63769,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 64692,
+      "bigcore0-thermal": 68384,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2655.443349,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 82064,
+    "mem_available_kib": 3278976,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 70230,
+      "soc-thermal": 65615,
+      "gpu-thermal": 60076,
+      "littlecore-thermal": 66538,
+      "bigcore0-thermal": 70230,
+      "npu-thermal": 62846,
+      "center-thermal": 61923
+    }
+  },
+  {
+    "monotonic_s": 2656.447178318,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 82466,
+    "mem_available_kib": 3278976,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 71153,
+      "soc-thermal": 65615,
+      "gpu-thermal": 61000,
+      "littlecore-thermal": 66538,
+      "bigcore0-thermal": 71153,
+      "npu-thermal": 62846,
+      "center-thermal": 62846
+    }
+  },
+  {
+    "monotonic_s": 2657.45102076,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 82865,
+    "mem_available_kib": 3278976,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 70230,
+      "soc-thermal": 65615,
+      "gpu-thermal": 61000,
+      "littlecore-thermal": 66538,
+      "bigcore0-thermal": 70230,
+      "npu-thermal": 62846,
+      "center-thermal": 61923
+    }
+  },
+  {
+    "monotonic_s": 2658.454853285,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 83267,
+    "mem_available_kib": 3278976,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 71153,
+      "soc-thermal": 65615,
+      "gpu-thermal": 61000,
+      "littlecore-thermal": 67461,
+      "bigcore0-thermal": 71153,
+      "npu-thermal": 62846,
+      "center-thermal": 62846
+    }
+  },
+  {
+    "monotonic_s": 2659.459351175,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 83666,
+    "mem_available_kib": 3278976,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 71153,
+      "soc-thermal": 65615,
+      "gpu-thermal": 61000,
+      "littlecore-thermal": 66538,
+      "bigcore0-thermal": 71153,
+      "npu-thermal": 62846,
+      "center-thermal": 62846
+    }
+  },
+  {
+    "monotonic_s": 2660.463650068,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 84066,
+    "mem_available_kib": 3278976,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 71153,
+      "soc-thermal": 65615,
+      "gpu-thermal": 61000,
+      "littlecore-thermal": 66538,
+      "bigcore0-thermal": 70230,
+      "npu-thermal": 62846,
+      "center-thermal": 62846
+    }
+  },
+  {
+    "monotonic_s": 2661.46778913,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 84466,
+    "mem_available_kib": 3278976,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 72076,
+      "soc-thermal": 66538,
+      "gpu-thermal": 61000,
+      "littlecore-thermal": 67461,
+      "bigcore0-thermal": 72076,
+      "npu-thermal": 63769,
+      "center-thermal": 62846
+    }
+  },
+  {
+    "monotonic_s": 2662.47355975,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 84867,
+    "mem_available_kib": 3278976,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 72076,
+      "soc-thermal": 66538,
+      "gpu-thermal": 61000,
+      "littlecore-thermal": 67461,
+      "bigcore0-thermal": 71153,
+      "npu-thermal": 63769,
+      "center-thermal": 62846
+    }
+  },
+  {
+    "monotonic_s": 2663.477258111,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 85268,
+    "mem_available_kib": 3278976,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 71153,
+      "soc-thermal": 66538,
+      "gpu-thermal": 61000,
+      "littlecore-thermal": 66538,
+      "bigcore0-thermal": 70230,
+      "npu-thermal": 62846,
+      "center-thermal": 62846
+    }
+  },
+  {
+    "monotonic_s": 2664.480919431,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 85668,
+    "mem_available_kib": 3278976,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 71153,
+      "soc-thermal": 66538,
+      "gpu-thermal": 61000,
+      "littlecore-thermal": 67461,
+      "bigcore0-thermal": 71153,
+      "npu-thermal": 63769,
+      "center-thermal": 62846
+    }
+  },
+  {
+    "monotonic_s": 2665.484975953,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 86069,
+    "mem_available_kib": 3278976,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 71153,
+      "soc-thermal": 66538,
+      "gpu-thermal": 61000,
+      "littlecore-thermal": 67461,
+      "bigcore0-thermal": 71153,
+      "npu-thermal": 63769,
+      "center-thermal": 62846
+    }
+  },
+  {
+    "monotonic_s": 2666.488490567,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 86465,
+    "mem_available_kib": 3278976,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 71153,
+      "soc-thermal": 66538,
+      "gpu-thermal": 61000,
+      "littlecore-thermal": 67461,
+      "bigcore0-thermal": 71153,
+      "npu-thermal": 62846,
+      "center-thermal": 62846
+    }
+  },
+  {
+    "monotonic_s": 2667.491742685,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 86859,
+    "mem_available_kib": 3278976,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 75769,
+      "soc-thermal": 69307,
+      "gpu-thermal": 62846,
+      "littlecore-thermal": 71153,
+      "bigcore0-thermal": 75769,
+      "npu-thermal": 65615,
+      "center-thermal": 66538
+    }
+  },
+  {
+    "monotonic_s": 2668.495230758,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 87252,
+    "mem_available_kib": 3273680,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 75769,
+      "soc-thermal": 70230,
+      "gpu-thermal": 63769,
+      "littlecore-thermal": 72076,
+      "bigcore0-thermal": 75769,
+      "npu-thermal": 66538,
+      "center-thermal": 66538
+    }
+  },
+  {
+    "monotonic_s": 2669.498876911,
+    "VmHWM_kib": 1008548,
+    "VmRSS_kib": 1008548,
+    "process_cpu_ticks": 87644,
+    "mem_available_kib": 3278044,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 75769,
+      "soc-thermal": 69307,
+      "gpu-thermal": 64692,
+      "littlecore-thermal": 71153,
+      "bigcore0-thermal": 75769,
+      "npu-thermal": 65615,
+      "center-thermal": 66538
+    }
+  },
+  {
+    "monotonic_s": 2670.50221532,
+    "VmHWM_kib": 1025440,
+    "VmRSS_kib": 1025440,
+    "process_cpu_ticks": 88018,
+    "mem_available_kib": 3261068,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 69307,
+      "soc-thermal": 65615,
+      "gpu-thermal": 61923,
+      "littlecore-thermal": 66538,
+      "bigcore0-thermal": 70230,
+      "npu-thermal": 63769,
+      "center-thermal": 63769
+    }
+  },
+  {
+    "monotonic_s": 2671.505276399,
+    "VmHWM_kib": 1025440,
+    "VmRSS_kib": 1025440,
+    "process_cpu_ticks": 88419,
+    "mem_available_kib": 3261068,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 69307,
+      "soc-thermal": 64692,
+      "gpu-thermal": 61000,
+      "littlecore-thermal": 65615,
+      "bigcore0-thermal": 68384,
+      "npu-thermal": 62846,
+      "center-thermal": 61923
+    }
+  },
+  {
+    "monotonic_s": 2672.508717515,
+    "VmHWM_kib": 1025440,
+    "VmRSS_kib": 1025440,
+    "process_cpu_ticks": 88821,
+    "mem_available_kib": 3261068,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 68384,
+      "soc-thermal": 64692,
+      "gpu-thermal": 61000,
+      "littlecore-thermal": 65615,
+      "bigcore0-thermal": 68384,
+      "npu-thermal": 62846,
+      "center-thermal": 61923
+    }
+  },
+  {
+    "monotonic_s": 2673.512064131,
+    "VmHWM_kib": 1025440,
+    "VmRSS_kib": 1025440,
+    "process_cpu_ticks": 89222,
+    "mem_available_kib": 3261068,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 68384,
+      "soc-thermal": 63769,
+      "gpu-thermal": 61000,
+      "littlecore-thermal": 64692,
+      "bigcore0-thermal": 67461,
+      "npu-thermal": 61923,
+      "center-thermal": 61923
+    }
+  },
+  {
+    "monotonic_s": 2674.515519538,
+    "VmHWM_kib": 1025440,
+    "VmRSS_kib": 1025440,
+    "process_cpu_ticks": 89624,
+    "mem_available_kib": 3261036,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 63769,
+      "gpu-thermal": 60076,
+      "littlecore-thermal": 64692,
+      "bigcore0-thermal": 67461,
+      "npu-thermal": 61923,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2675.519077026,
+    "VmHWM_kib": 1025440,
+    "VmRSS_kib": 1025440,
+    "process_cpu_ticks": 90024,
+    "mem_available_kib": 3261036,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 68384,
+      "soc-thermal": 63769,
+      "gpu-thermal": 60076,
+      "littlecore-thermal": 64692,
+      "bigcore0-thermal": 67461,
+      "npu-thermal": 61923,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2676.522726388,
+    "VmHWM_kib": 1025440,
+    "VmRSS_kib": 1025440,
+    "process_cpu_ticks": 90425,
+    "mem_available_kib": 3261036,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 68384,
+      "soc-thermal": 63769,
+      "gpu-thermal": 60076,
+      "littlecore-thermal": 64692,
+      "bigcore0-thermal": 68384,
+      "npu-thermal": 61923,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2677.526365833,
+    "VmHWM_kib": 1025440,
+    "VmRSS_kib": 1025440,
+    "process_cpu_ticks": 90827,
+    "mem_available_kib": 3261036,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 68384,
+      "soc-thermal": 63769,
+      "gpu-thermal": 60076,
+      "littlecore-thermal": 64692,
+      "bigcore0-thermal": 67461,
+      "npu-thermal": 61923,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2678.529925363,
+    "VmHWM_kib": 1025440,
+    "VmRSS_kib": 1025440,
+    "process_cpu_ticks": 91228,
+    "mem_available_kib": 3261036,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 63769,
+      "gpu-thermal": 60076,
+      "littlecore-thermal": 64692,
+      "bigcore0-thermal": 67461,
+      "npu-thermal": 61923,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2679.533541767,
+    "VmHWM_kib": 1025440,
+    "VmRSS_kib": 1025440,
+    "process_cpu_ticks": 91629,
+    "mem_available_kib": 3261036,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 71153,
+      "soc-thermal": 65615,
+      "gpu-thermal": 60076,
+      "littlecore-thermal": 66538,
+      "bigcore0-thermal": 71153,
+      "npu-thermal": 61923,
+      "center-thermal": 61923
+    }
+  },
+  {
+    "monotonic_s": 2680.537157005,
+    "VmHWM_kib": 1025440,
+    "VmRSS_kib": 1025440,
+    "process_cpu_ticks": 92031,
+    "mem_available_kib": 3261036,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 68384,
+      "soc-thermal": 63769,
+      "gpu-thermal": 60076,
+      "littlecore-thermal": 64692,
+      "bigcore0-thermal": 67461,
+      "npu-thermal": 61923,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2681.540739284,
+    "VmHWM_kib": 1025440,
+    "VmRSS_kib": 1025440,
+    "process_cpu_ticks": 92432,
+    "mem_available_kib": 3261036,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 63769,
+      "gpu-thermal": 60076,
+      "littlecore-thermal": 64692,
+      "bigcore0-thermal": 67461,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2682.544395354,
+    "VmHWM_kib": 1025440,
+    "VmRSS_kib": 1025440,
+    "process_cpu_ticks": 92834,
+    "mem_available_kib": 3261036,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 63769,
+      "gpu-thermal": 60076,
+      "littlecore-thermal": 64692,
+      "bigcore0-thermal": 67461,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2683.547979384,
+    "VmHWM_kib": 1025440,
+    "VmRSS_kib": 1025440,
+    "process_cpu_ticks": 93235,
+    "mem_available_kib": 3261036,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 63769,
+      "gpu-thermal": 60076,
+      "littlecore-thermal": 64692,
+      "bigcore0-thermal": 67461,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2684.551681537,
+    "VmHWM_kib": 1025440,
+    "VmRSS_kib": 1025440,
+    "process_cpu_ticks": 93637,
+    "mem_available_kib": 3261036,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 68384,
+      "soc-thermal": 63769,
+      "gpu-thermal": 60076,
+      "littlecore-thermal": 64692,
+      "bigcore0-thermal": 67461,
+      "npu-thermal": 61923,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2685.55749503,
+    "VmHWM_kib": 1025440,
+    "VmRSS_kib": 1025440,
+    "process_cpu_ticks": 94038,
+    "mem_available_kib": 3261036,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 63769,
+      "gpu-thermal": 60076,
+      "littlecore-thermal": 64692,
+      "bigcore0-thermal": 67461,
+      "npu-thermal": 61923,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2686.561138267,
+    "VmHWM_kib": 1025440,
+    "VmRSS_kib": 1025440,
+    "process_cpu_ticks": 94440,
+    "mem_available_kib": 3261016,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 63769,
+      "gpu-thermal": 60076,
+      "littlecore-thermal": 64692,
+      "bigcore0-thermal": 67461,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2687.564756713,
+    "VmHWM_kib": 1025440,
+    "VmRSS_kib": 1025440,
+    "process_cpu_ticks": 94841,
+    "mem_available_kib": 3261016,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 68384,
+      "soc-thermal": 63769,
+      "gpu-thermal": 60076,
+      "littlecore-thermal": 64692,
+      "bigcore0-thermal": 67461,
+      "npu-thermal": 61923,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2688.56847374,
+    "VmHWM_kib": 1025440,
+    "VmRSS_kib": 1025440,
+    "process_cpu_ticks": 95242,
+    "mem_available_kib": 3261016,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 63769,
+      "gpu-thermal": 60076,
+      "littlecore-thermal": 64692,
+      "bigcore0-thermal": 67461,
+      "npu-thermal": 61923,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2689.572182601,
+    "VmHWM_kib": 1025440,
+    "VmRSS_kib": 1025440,
+    "process_cpu_ticks": 95644,
+    "mem_available_kib": 3261016,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 63769,
+      "gpu-thermal": 60076,
+      "littlecore-thermal": 64692,
+      "bigcore0-thermal": 67461,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2690.575858504,
+    "VmHWM_kib": 1025440,
+    "VmRSS_kib": 1025440,
+    "process_cpu_ticks": 96045,
+    "mem_available_kib": 3261016,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 68384,
+      "soc-thermal": 63769,
+      "gpu-thermal": 60076,
+      "littlecore-thermal": 64692,
+      "bigcore0-thermal": 67461,
+      "npu-thermal": 61923,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2691.579563574,
+    "VmHWM_kib": 1025440,
+    "VmRSS_kib": 1025440,
+    "process_cpu_ticks": 96447,
+    "mem_available_kib": 3260988,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 68384,
+      "soc-thermal": 63769,
+      "gpu-thermal": 60076,
+      "littlecore-thermal": 64692,
+      "bigcore0-thermal": 67461,
+      "npu-thermal": 61923,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2692.583251726,
+    "VmHWM_kib": 1025440,
+    "VmRSS_kib": 1025440,
+    "process_cpu_ticks": 96848,
+    "mem_available_kib": 3261016,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 63769,
+      "gpu-thermal": 60076,
+      "littlecore-thermal": 64692,
+      "bigcore0-thermal": 67461,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2693.586894963,
+    "VmHWM_kib": 1025440,
+    "VmRSS_kib": 1025440,
+    "process_cpu_ticks": 97248,
+    "mem_available_kib": 3261016,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 63769,
+      "gpu-thermal": 60076,
+      "littlecore-thermal": 64692,
+      "bigcore0-thermal": 67461,
+      "npu-thermal": 61923,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2694.59058195,
+    "VmHWM_kib": 1025440,
+    "VmRSS_kib": 1025440,
+    "process_cpu_ticks": 97649,
+    "mem_available_kib": 3261016,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 70230,
+      "soc-thermal": 64692,
+      "gpu-thermal": 60076,
+      "littlecore-thermal": 65615,
+      "bigcore0-thermal": 70230,
+      "npu-thermal": 61923,
+      "center-thermal": 61923
+    }
+  },
+  {
+    "monotonic_s": 2695.594298977,
+    "VmHWM_kib": 1025440,
+    "VmRSS_kib": 1025440,
+    "process_cpu_ticks": 98050,
+    "mem_available_kib": 3261016,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 63769,
+      "gpu-thermal": 60076,
+      "littlecore-thermal": 64692,
+      "bigcore0-thermal": 67461,
+      "npu-thermal": 61923,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2696.598022421,
+    "VmHWM_kib": 1025440,
+    "VmRSS_kib": 1025440,
+    "process_cpu_ticks": 98451,
+    "mem_available_kib": 3261016,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 63769,
+      "gpu-thermal": 60076,
+      "littlecore-thermal": 64692,
+      "bigcore0-thermal": 67461,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2697.601735948,
+    "VmHWM_kib": 1025440,
+    "VmRSS_kib": 1025440,
+    "process_cpu_ticks": 98853,
+    "mem_available_kib": 3261016,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 63769,
+      "gpu-thermal": 60076,
+      "littlecore-thermal": 64692,
+      "bigcore0-thermal": 67461,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2698.605457351,
+    "VmHWM_kib": 1025440,
+    "VmRSS_kib": 1025440,
+    "process_cpu_ticks": 99254,
+    "mem_available_kib": 3261016,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 68384,
+      "soc-thermal": 63769,
+      "gpu-thermal": 60076,
+      "littlecore-thermal": 64692,
+      "bigcore0-thermal": 67461,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2699.609302126,
+    "VmHWM_kib": 1025440,
+    "VmRSS_kib": 1025440,
+    "process_cpu_ticks": 99656,
+    "mem_available_kib": 3261016,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 67461,
+      "soc-thermal": 63769,
+      "gpu-thermal": 59153,
+      "littlecore-thermal": 64692,
+      "bigcore0-thermal": 67461,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2700.613118027,
+    "VmHWM_kib": 1025440,
+    "VmRSS_kib": 1025440,
+    "process_cpu_ticks": 100057,
+    "mem_available_kib": 3261016,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 68384,
+      "soc-thermal": 63769,
+      "gpu-thermal": 60076,
+      "littlecore-thermal": 64692,
+      "bigcore0-thermal": 67461,
+      "npu-thermal": 61923,
+      "center-thermal": 61000
+    }
+  },
+  {
+    "monotonic_s": 2701.564123571,
+    "process_cpu_ticks": 100424,
+    "mem_available_kib": 3764700,
+    "thermal_millidegrees_c": {
+      "bigcore1-thermal": 65615,
+      "soc-thermal": 62846,
+      "gpu-thermal": 60076,
+      "littlecore-thermal": 63769,
+      "bigcore0-thermal": 65615,
+      "npu-thermal": 61000,
+      "center-thermal": 61000
+    }
+  }
+]
