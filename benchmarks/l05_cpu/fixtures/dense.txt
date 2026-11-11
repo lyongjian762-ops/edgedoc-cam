@@ -1,0 +1,8 @@
+EDGE DOCUMENT TEST
+A small system captures a printed page.
+The camera records an image in memory.
+The worker reads one task at a time.
+A full queue returns a busy message.
+Each result has a task number.
+The service uses the local CPU only.
+The final output is checked for errors.
