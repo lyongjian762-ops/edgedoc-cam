@@ -9,6 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'benchmarks' / 'l05_cpu'))
 import client
 import metrics
+import audit_results
 
 IMAGE = ROOT / 'benchmarks' / 'l05_cpu' / 'fixtures' / 'sparse.png'
 
@@ -61,5 +62,15 @@ class MetricsTest(unittest.TestCase):
         self.assertAlmostEqual(metrics.cer('ABCD', 'ABXD'), 0.25)
         self.assertEqual(metrics.summarize([1, 2, 3])['median_ms'], 2)
         with self.assertRaises(ValueError): metrics.cer('  ', 'text')
+
+    def test_audit_rejects_cache_or_missing_cache_evidence(self):
+        base = {'phase': 'first', 'status': 'completed_needs_quality_review',
+                'http_status': 200, 'finish_reason': 'stop', 'content': 'A',
+                'usage': {'prompt_tokens_details': {'cached_tokens': 0}}}
+        self.assertEqual(audit_results.audit([base], 'A', 0), [])
+        for cached in (1, None):
+            changed = dict(base, usage={'prompt_tokens_details': {'cached_tokens': cached}})
+            self.assertTrue(audit_results.audit([changed], 'A', 0))
+        self.assertTrue(audit_results.audit([base], 'different', 0))
 
 if __name__ == '__main__': unittest.main()
