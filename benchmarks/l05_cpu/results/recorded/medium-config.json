@@ -1,0 +1,19 @@
+{
+  "case": {
+    "id": "medium",
+    "image": "medium.png",
+    "reference": "medium.txt",
+    "image_sha256": "7eaed460cf3cef2d3d478f7744eb4cf60f587eb4a96f2877d43162673cf378c3",
+    "width": 1000,
+    "height": 520,
+    "pixel_format": "RGB"
+  },
+  "prompt": "Extract the text in the image.",
+  "max_tokens": 512,
+  "timeout_seconds": 180.0,
+  "warmups": 1,
+  "hot_requests": 5,
+  "service_pid": 7035,
+  "cache_prompt": false,
+  "server_startup": "record separately; first means first request for this image, not necessarily process cold start"
+}

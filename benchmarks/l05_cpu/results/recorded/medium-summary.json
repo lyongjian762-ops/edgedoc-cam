@@ -1,0 +1,21 @@
+{
+  "hot_latency": {
+    "count": 5,
+    "mean_ms": 107799.6765033999,
+    "median_ms": 107799.75549399978,
+    "min_ms": 107707.45148200012,
+    "max_ms": 107923.96703299982
+  },
+  "hot_cer": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "peak_process_hwm_kib": 1091116,
+  "minimum_available_kib": 3193316,
+  "peak_sampled_process_cpu_percent_one_core": 402.28855666657984,
+  "completed_all": true,
+  "quality_review": "pending human review; CER alone does not prove completeness"
+}
