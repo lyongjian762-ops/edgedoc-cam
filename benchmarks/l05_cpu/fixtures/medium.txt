@@ -1,0 +1,4 @@
+EDGE DOCUMENT TEST
+The camera records one printed page.
+The local model reads the text.
+Task number 1042 is complete.

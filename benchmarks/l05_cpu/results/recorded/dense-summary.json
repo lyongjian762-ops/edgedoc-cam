@@ -1,0 +1,9 @@
+{
+  "hot_latency": null,
+  "hot_cer": [],
+  "peak_process_hwm_kib": 1025440,
+  "minimum_available_kib": 3260988,
+  "peak_sampled_process_cpu_percent_one_core": 401.2845183150183,
+  "completed_all": false,
+  "quality_review": "pending human review; CER alone does not prove completeness"
+}

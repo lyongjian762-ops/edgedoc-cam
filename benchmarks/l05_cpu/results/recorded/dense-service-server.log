@@ -1,0 +1,57 @@
+warning: no usable GPU found, --gpu-layers option will be ignored
+warning: one possible reason is that llama.cpp was compiled without GPU support
+warning: consult docs/build.md for compilation instructions
+0.00.004.189 I srv  llama_server: initializing ...
+0.00.004.214 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+0.00.004.496 W srv  server_setup: security: no API key is set and CORS allows all origins (see https://github.com/ggml-org/llama.cpp/pull/25655)
+0.00.006.572 I srv    load_model: loading model '<HOME>/ai/xiaomi-ocr-0/models/Xiaomi-OCR-0.Q4_K_M.gguf'
+0.01.822.600 I cmn          init: llama threadpool init, n_threads = 4
+0.01.931.199 W load_hparams: Qwen-VL models require at minimum 1024 image tokens to function correctly on grounding tasks
+0.01.931.206 W load_hparams: if you encounter problems with accuracy, try adding --image-min-tokens 1024
+0.01.931.206 W load_hparams: more info: https://github.com/ggml-org/llama.cpp/issues/16842
+
+0.02.069.389 I srv    load_model: loaded multimodal model, '<HOME>/ai/xiaomi-ocr-0/models/Xiaomi-OCR-0.mmproj-bf16.gguf'
+0.02.149.552 I srv    load_model: initializing, n_slots = 1, n_ctx_slot = 2048, kv_unified = 'false'
+0.02.156.241 I srv  server_run_i: model loaded
+0.02.156.250 I srv  server_on_li: listening on http://127.0.0.1:8000
+0.14.405.735 I slot get_availabl: id  0 | task -1 | selected slot by LRU, n_tokens = 0, t_last = -1
+0.14.406.110 I slot launch_slot_: id  0 | task 0 | processing task, is_child = 0
+1.48.462.806 W find_slot: non-consecutive token position 4 after 3 for sequence 0 with 128 new tokens
+1.48.462.818 W find_slot: non-consecutive token position 4 after 4 for sequence 0 with 128 new tokens
+1.48.463.105 W find_slot: non-consecutive token position 4 after 3 for sequence 0 with 128 new tokens
+1.51.444.857 W find_slot: non-consecutive token position 4 after 4 for sequence 0 with 128 new tokens
+1.54.444.452 W find_slot: non-consecutive token position 4 after 4 for sequence 0 with 128 new tokens
+1.54.444.466 W find_slot: non-consecutive token position 4 after 4 for sequence 0 with 112 new tokens
+1.54.444.775 W find_slot: non-consecutive token position 4 after 4 for sequence 0 with 128 new tokens
+1.57.455.685 W find_slot: non-consecutive token position 4 after 4 for sequence 0 with 112 new tokens
+2.00.108.370 W find_slot: non-consecutive token position 47 after 4 for sequence 0 with 13 new tokens
+2.00.108.436 W find_slot: non-consecutive token position 47 after 4 for sequence 0 with 13 new tokens
+2.00.446.218 I slot print_timing: id  0 | task 0 | prompt processing, n_tokens =    513, progress = 0.99, t = 106.04 s / 4.84 tokens per second
+2.03.956.658 I slot print_timing: id  0 | task 0 | prompt eval time =  106213.81 ms /   517 tokens (  205.44 ms per token,     4.87 tokens per second)
+2.03.956.664 I slot print_timing: id  0 | task 0 |        eval time =    3336.67 ms /    67 tokens (   50.56 ms per token,    19.78 tokens per second)
+2.03.956.665 I slot print_timing: id  0 | task 0 |       total time =  109550.48 ms /   584 tokens
+2.03.956.671 I slot print_timing: id  0 | task 0 |    graphs reused =         67
+2.03.956.672 I slot print_timing: id  0 | task 0 |   graph reallocs =          0    /     0        (same size) / (changed size)
+2.03.956.712 I slot      release: id  0 | task 0 | stop processing: n_tokens = 583, truncated = 0
+2.04.034.718 I slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 1.000 (> 0.100 thold), f_keep = 0.887
+2.04.034.857 I slot launch_slot_: id  0 | task 70 | processing task, is_child = 0
+3.38.120.258 W find_slot: non-consecutive token position 4 after 3 for sequence 0 with 128 new tokens
+3.38.120.274 W find_slot: non-consecutive token position 4 after 4 for sequence 0 with 128 new tokens
+3.38.120.573 W find_slot: non-consecutive token position 4 after 3 for sequence 0 with 128 new tokens
+3.41.102.081 W find_slot: non-consecutive token position 4 after 4 for sequence 0 with 128 new tokens
+3.44.120.472 W find_slot: non-consecutive token position 4 after 4 for sequence 0 with 128 new tokens
+3.44.120.486 W find_slot: non-consecutive token position 4 after 4 for sequence 0 with 112 new tokens
+3.44.120.795 W find_slot: non-consecutive token position 4 after 4 for sequence 0 with 128 new tokens
+3.47.132.655 W find_slot: non-consecutive token position 4 after 4 for sequence 0 with 112 new tokens
+3.49.784.759 W find_slot: non-consecutive token position 47 after 4 for sequence 0 with 13 new tokens
+3.49.784.821 W find_slot: non-consecutive token position 47 after 4 for sequence 0 with 13 new tokens
+3.50.123.067 I slot print_timing: id  0 | task 70 | prompt processing, n_tokens =    513, progress = 0.99, t = 106.09 s / 4.84 tokens per second
+3.53.468.744 I slot print_timing: id  0 | task 70 | prompt eval time =  106231.96 ms /   517 tokens (  205.48 ms per token,     4.87 tokens per second)
+3.53.468.750 I slot print_timing: id  0 | task 70 |        eval time =    3201.89 ms /    67 tokens (   48.51 ms per token,    20.61 tokens per second)
+3.53.468.752 I slot print_timing: id  0 | task 70 |       total time =  109433.85 ms /   584 tokens
+3.53.468.753 I slot print_timing: id  0 | task 70 |    graphs reused =        133
+3.53.468.754 I slot print_timing: id  0 | task 70 |   graph reallocs =          0    /     0        (same size) / (changed size)
+3.53.468.779 I slot      release: id  0 | task 70 | stop processing: n_tokens = 583, truncated = 0
+3.53.535.861 I slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 1.000 (> 0.100 thold), f_keep = 0.887
+3.53.536.127 I slot launch_slot_: id  0 | task 140 | processing task, is_child = 0
+Received second interrupt, terminating immediately.

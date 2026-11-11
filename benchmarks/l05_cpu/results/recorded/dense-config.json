@@ -1,0 +1,19 @@
+{
+  "case": {
+    "id": "dense",
+    "image": "dense.png",
+    "reference": "dense.txt",
+    "image_sha256": "24ab17c8695947f018f9795818732e211fd2215716cef9e59f1a113ce503630d",
+    "width": 1000,
+    "height": 520,
+    "pixel_format": "RGB"
+  },
+  "prompt": "Extract the text in the image.",
+  "max_tokens": 512,
+  "timeout_seconds": 180.0,
+  "warmups": 1,
+  "hot_requests": 5,
+  "service_pid": 9182,
+  "cache_prompt": false,
+  "server_startup": "record separately; first means first request for this image, not necessarily process cold start"
+}

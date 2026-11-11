@@ -1,0 +1,29 @@
+[
+  {
+    "id": "sparse",
+    "image": "sparse.png",
+    "reference": "sparse.txt",
+    "image_sha256": "9eb1d213051dc5c5cc496ebf579e8a385979f0562b27cdd9ed6a243f039a1b5d",
+    "width": 1000,
+    "height": 520,
+    "pixel_format": "RGB"
+  },
+  {
+    "id": "medium",
+    "image": "medium.png",
+    "reference": "medium.txt",
+    "image_sha256": "7eaed460cf3cef2d3d478f7744eb4cf60f587eb4a96f2877d43162673cf378c3",
+    "width": 1000,
+    "height": 520,
+    "pixel_format": "RGB"
+  },
+  {
+    "id": "dense",
+    "image": "dense.png",
+    "reference": "dense.txt",
+    "image_sha256": "24ab17c8695947f018f9795818732e211fd2215716cef9e59f1a113ce503630d",
+    "width": 1000,
+    "height": 520,
+    "pixel_format": "RGB"
+  }
+]
