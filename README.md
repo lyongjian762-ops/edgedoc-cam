@@ -53,3 +53,10 @@ The first SSH review found the sensor driver bound, a V4L2 ISP node, an RKNN run
 ## Next step
 
 Complete the Sprint 0 issues, then review the acceptance report before starting implementation. In particular, establish a fresh camera frame and a repeatable CPU baseline before making performance claims.
+
+
+## Project roadmap and learning
+
+- [Overall roadmap](docs/PROJECT_ROADMAP.md) — scope, architecture, milestones and current engineering evidence.
+- [Learning progress](docs/LEARNING_PROGRESS.md) — lesson-by-lesson knowledge checks and remaining engineering validation.
+- [Project handoff](docs/PROJECT_HANDOFF.md) — roles, decision boundaries, current PR status and how to resume.
