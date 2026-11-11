@@ -55,8 +55,8 @@ The first SSH review found the sensor driver bound, a V4L2 ISP node, an RKNN run
 Complete the Sprint 0 issues, then review the acceptance report before starting implementation. In particular, establish a fresh camera frame and a repeatable CPU baseline before making performance claims.
 
 
-## Project roadmap and learning
+## 项目路线与学习记录
 
-- [Overall roadmap](docs/PROJECT_ROADMAP.md) — scope, architecture, milestones and current engineering evidence.
-- [Learning progress](docs/LEARNING_PROGRESS.md) — lesson-by-lesson knowledge checks and remaining engineering validation.
-- [Project handoff](docs/PROJECT_HANDOFF.md) — roles, decision boundaries, current PR status and how to resume.
+- [项目总体计划](docs/PROJECT_ROADMAP.md)：项目范围、架构、阶段计划和当前工程证据。
+- [学习进度](docs/LEARNING_PROGRESS.md)：逐讲知识检查和待完成的工程验证。
+- [项目交接说明](docs/PROJECT_HANDOFF.md)：角色分工、决策边界、PR 当前状态和恢复上下文的方法。
