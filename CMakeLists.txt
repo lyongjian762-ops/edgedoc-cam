@@ -1,0 +1,25 @@
+cmake_minimum_required(VERSION 3.16)
+project(edgedoc_l04a LANGUAGES CXX)
+
+find_package(Threads REQUIRED)
+
+add_library(edgedoc_async_queue src/l04_async_queue.cpp)
+target_include_directories(edgedoc_async_queue PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src)
+target_compile_features(edgedoc_async_queue PUBLIC cxx_std_17)
+target_link_libraries(edgedoc_async_queue PUBLIC Threads::Threads)
+if(MSVC)
+  target_compile_options(edgedoc_async_queue PRIVATE /W4)
+else()
+  target_compile_options(edgedoc_async_queue PRIVATE -Wall -Wextra -Wpedantic)
+endif()
+
+add_executable(l04_async_demo src/l04_async_demo.cpp)
+target_link_libraries(l04_async_demo PRIVATE edgedoc_async_queue)
+
+include(CTest)
+if(BUILD_TESTING)
+  add_executable(l04_async_tests tests/l04_async_tests.cpp)
+  target_link_libraries(l04_async_tests PRIVATE edgedoc_async_queue)
+  add_test(NAME l04_async_tests COMMAND l04_async_tests)
+  set_tests_properties(l04_async_tests PROPERTIES TIMEOUT 30)
+endif()
