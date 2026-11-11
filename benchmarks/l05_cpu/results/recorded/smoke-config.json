@@ -1,0 +1,18 @@
+{
+  "case": {
+    "id": "sparse",
+    "image": "sparse.png",
+    "reference": "sparse.txt",
+    "image_sha256": "9eb1d213051dc5c5cc496ebf579e8a385979f0562b27cdd9ed6a243f039a1b5d",
+    "width": 1000,
+    "height": 520,
+    "pixel_format": "RGB"
+  },
+  "prompt": "Extract the text in the image.",
+  "max_tokens": 512,
+  "timeout_seconds": 180.0,
+  "warmups": 0,
+  "hot_requests": 0,
+  "service_pid": 2814,
+  "server_startup": "record separately; first means first request for this image, not necessarily process cold start"
+}

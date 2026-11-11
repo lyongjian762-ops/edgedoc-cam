@@ -1,0 +1,17 @@
+warning: no usable GPU found, --gpu-layers option will be ignored
+warning: one possible reason is that llama.cpp was compiled without GPU support
+warning: consult docs/build.md for compilation instructions
+0.00.004.270 I srv  llama_server: initializing ...
+0.00.004.295 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+0.00.004.566 W srv  server_setup: security: no API key is set and CORS allows all origins (see https://github.com/ggml-org/llama.cpp/pull/25655)
+0.00.006.589 I srv    load_model: loading model '<HOME>/ai/xiaomi-ocr-0/models/Xiaomi-OCR-0.Q4_K_M.gguf'
+0.01.789.741 I cmn          init: llama threadpool init, n_threads = 4
+0.01.912.273 W load_hparams: Qwen-VL models require at minimum 1024 image tokens to function correctly on grounding tasks
+0.01.912.281 W load_hparams: if you encounter problems with accuracy, try adding --image-min-tokens 1024
+0.01.912.282 W load_hparams: more info: https://github.com/ggml-org/llama.cpp/issues/16842
+
+0.02.142.276 I srv    load_model: loaded multimodal model, '<HOME>/ai/xiaomi-ocr-0/models/Xiaomi-OCR-0.mmproj-bf16.gguf'
+0.02.257.693 I srv    load_model: initializing, n_slots = 1, n_ctx_slot = 2048, kv_unified = 'false'
+0.02.264.919 I srv  server_run_i: model loaded
+0.02.264.934 I srv  server_on_li: listening on http://127.0.0.1:8000
+0.12.347.679 I srv    operator(): operator(): cleaning up before exit...

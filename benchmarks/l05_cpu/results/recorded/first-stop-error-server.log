@@ -1,0 +1,92 @@
+warning: no usable GPU found, --gpu-layers option will be ignored
+warning: one possible reason is that llama.cpp was compiled without GPU support
+warning: consult docs/build.md for compilation instructions
+0.00.011.171 I srv  llama_server: initializing ...
+0.00.011.195 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+0.00.020.407 W srv  server_setup: security: no API key is set and CORS allows all origins (see https://github.com/ggml-org/llama.cpp/pull/25655)
+0.00.032.134 I srv    load_model: loading model '<HOME>/ai/xiaomi-ocr-0/models/Xiaomi-OCR-0.Q4_K_M.gguf'
+0.01.923.299 I cmn          init: llama threadpool init, n_threads = 4
+0.02.030.295 W load_hparams: Qwen-VL models require at minimum 1024 image tokens to function correctly on grounding tasks
+0.02.030.301 W load_hparams: if you encounter problems with accuracy, try adding --image-min-tokens 1024
+0.02.030.302 W load_hparams: more info: https://github.com/ggml-org/llama.cpp/issues/16842
+
+0.02.175.785 I srv    load_model: loaded multimodal model, '<HOME>/ai/xiaomi-ocr-0/models/Xiaomi-OCR-0.mmproj-bf16.gguf'
+0.02.256.267 I srv    load_model: initializing, n_slots = 1, n_ctx_slot = 2048, kv_unified = 'false'
+0.02.272.745 I srv  server_run_i: model loaded
+0.02.272.754 I srv  server_on_li: listening on http://127.0.0.1:8000
+0.16.629.126 I slot get_availabl: id  0 | task -1 | selected slot by LRU, n_tokens = 0, t_last = -1
+0.16.629.470 I slot launch_slot_: id  0 | task 0 | processing task, is_child = 0
+1.49.434.310 W find_slot: non-consecutive token position 4 after 3 for sequence 0 with 128 new tokens
+1.49.434.329 W find_slot: non-consecutive token position 4 after 4 for sequence 0 with 128 new tokens
+1.49.434.614 W find_slot: non-consecutive token position 4 after 3 for sequence 0 with 128 new tokens
+1.52.385.273 W find_slot: non-consecutive token position 4 after 4 for sequence 0 with 128 new tokens
+1.55.350.131 W find_slot: non-consecutive token position 4 after 4 for sequence 0 with 128 new tokens
+1.55.350.146 W find_slot: non-consecutive token position 4 after 4 for sequence 0 with 112 new tokens
+1.55.350.437 W find_slot: non-consecutive token position 4 after 4 for sequence 0 with 128 new tokens
+1.58.326.280 W find_slot: non-consecutive token position 4 after 4 for sequence 0 with 112 new tokens
+2.00.950.225 W find_slot: non-consecutive token position 47 after 4 for sequence 0 with 13 new tokens
+2.00.950.290 W find_slot: non-consecutive token position 47 after 4 for sequence 0 with 13 new tokens
+2.01.283.768 I slot print_timing: id  0 | task 0 | prompt processing, n_tokens =    513, progress = 0.99, t = 104.65 s / 4.90 tokens per second
+2.02.113.922 I slot print_timing: id  0 | task 0 | prompt eval time =  104821.35 ms /   517 tokens (  202.75 ms per token,     4.93 tokens per second)
+2.02.113.928 I slot print_timing: id  0 | task 0 |        eval time =     663.03 ms /    13 tokens (   55.25 ms per token,    18.10 tokens per second)
+2.02.113.929 I slot print_timing: id  0 | task 0 |       total time =  105484.38 ms /   530 tokens
+2.02.113.935 I slot print_timing: id  0 | task 0 |    graphs reused =         13
+2.02.113.936 I slot print_timing: id  0 | task 0 |   graph reallocs =          0    /     0        (same size) / (changed size)
+2.02.113.978 I slot      release: id  0 | task 0 | stop processing: n_tokens = 529, truncated = 0
+2.24.348.509 I srv    operator(): operator(): cleaning up before exit...
+Received second interrupt, terminating immediately.
+[New LWP 2816]
+[New LWP 2818]
+[New LWP 2819]
+[New LWP 2820]
+[New LWP 2821]
+[New LWP 2822]
+[New LWP 2823]
+[New LWP 2824]
+[New LWP 2825]
+[New LWP 2826]
+[New LWP 2827]
+[New LWP 2828]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/aarch64-linux-gnu/libthread_db.so.1".
+0x0000007f9263b924 in __GI___wait4 (pid=3494, stat_loc=0x0, options=0, usage=0x0) at ../sysdeps/unix/sysv/linux/wait4.c:30
+30	../sysdeps/unix/sysv/linux/wait4.c: No such file or directory.
+#0  0x0000007f9263b924 in __GI___wait4 (pid=3494, stat_loc=0x0, options=0, usage=0x0) at ../sysdeps/unix/sysv/linux/wait4.c:30
+30	in ../sysdeps/unix/sysv/linux/wait4.c
+#1  0x0000007f91a23124 in ggml_print_backtrace () from <HOME>/ai/xiaomi-ocr-0/llama.cpp/build/bin/libggml-base.so.0
+#2  0x0000007f91a3623c in ggml_uncaught_exception() () from <HOME>/ai/xiaomi-ocr-0/llama.cpp/build/bin/libggml-base.so.0
+#3  0x0000007f928123bc in ?? () from /lib/aarch64-linux-gnu/libstdc++.so.6
+#4  0x0000007f92812420 in std::terminate() () from /lib/aarch64-linux-gnu/libstdc++.so.6
+#5  0x0000007f92b3081c in stream_session_manager::~stream_session_manager() () from <HOME>/ai/xiaomi-ocr-0/llama.cpp/build/bin/libllama-server-impl.so
+#6  0x0000007f925bcb3c in __cxa_finalize (d=0x7f92cf4d70) at ./stdlib/cxa_finalize.c:83
+83	./stdlib/cxa_finalize.c: No such file or directory.
+#7  0x0000007f92a2d710 in __do_global_dtors_aux () from <HOME>/ai/xiaomi-ocr-0/llama.cpp/build/bin/libllama-server-impl.so
+#8  0x0000007f92cfef40 in _dl_call_fini (closure_map=closure_map@entry=0x7f92d373b0) at ./elf/dl-call_fini.c:43
+43	./elf/dl-call_fini.c: No such file or directory.
+#9  0x0000007f92d022dc in _dl_fini () at ./elf/dl-fini.c:114
+114	./elf/dl-fini.c: No such file or directory.
+#10 0x0000007f925bd09c in __run_exit_handlers (status=1, listp=0x7f92720710 <__exit_funcs>, run_list_atexit=run_list_atexit@entry=true, run_dtors=run_dtors@entry=true) at ./stdlib/exit.c:116
+116	./stdlib/exit.c: No such file or directory.
+#11 0x0000007f925bd170 in __GI_exit (status=<optimized out>) at ./stdlib/exit.c:146
+146	in ./stdlib/exit.c
+#12 0x0000007f92a2db80 in signal_handler(int) () from <HOME>/ai/xiaomi-ocr-0/llama.cpp/build/bin/libllama-server-impl.so
+#13 <signal handler called>
+#14 __futex_abstimed_wait_common64 (private=128, cancel=true, abstime=0x0, op=265, expected=2817, futex_word=0x7f90a3b5f0) at ./nptl/futex-internal.c:57
+57	./nptl/futex-internal.c: No such file or directory.
+#15 __futex_abstimed_wait_common (cancel=true, private=128, abstime=0x0, clockid=0, expected=2817, futex_word=0x7f90a3b5f0) at ./nptl/futex-internal.c:87
+87	in ./nptl/futex-internal.c
+#16 __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0x7f90a3b5f0, expected=2817, clockid=clockid@entry=0, abstime=abstime@entry=0x0, private=private@entry=128) at ./nptl/futex-internal.c:139
+139	in ./nptl/futex-internal.c
+#17 0x0000007f92603950 in __pthread_clockjoin_ex (threadid=547887494432, thread_return=0x0, clockid=0, abstime=0x0, block=<optimized out>) at ./nptl/pthread_join_common.c:102
+102	./nptl/pthread_join_common.c: No such file or directory.
+#18 0x0000007f9283ea80 in std::thread::join() () from /lib/aarch64-linux-gnu/libstdc++.so.6
+#19 0x0000007f92b30668 in stream_session_manager::stop_gc() () from <HOME>/ai/xiaomi-ocr-0/llama.cpp/build/bin/libllama-server-impl.so
+#20 0x0000007f92a39304 in server_run(common_params&, int, char**, server_role&, server_run_opts const&) () from <HOME>/ai/xiaomi-ocr-0/llama.cpp/build/bin/libllama-server-impl.so
+#21 0x0000007f92a39ad4 in llama_server(int, char**) () from <HOME>/ai/xiaomi-ocr-0/llama.cpp/build/bin/libllama-server-impl.so
+#22 0x0000007f925a7744 in __libc_start_call_main (main=main@entry=0x5566f41040 <main>, argc=argc@entry=24, argv=argv@entry=0x7fdff76328) at ../sysdeps/nptl/libc_start_call_main.h:58
+58	../sysdeps/nptl/libc_start_call_main.h: No such file or directory.
+#23 0x0000007f925a7818 in __libc_start_main_impl (main=0x5566f41040 <main>, argc=24, argv=0x7fdff76328, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=<optimized out>) at ../csu/libc-start.c:360
+360	../csu/libc-start.c: No such file or directory.
+#24 0x0000005566f410b0 in _start ()
+[Inferior 1 (process 2814) detached]
+terminate called without an active exception
