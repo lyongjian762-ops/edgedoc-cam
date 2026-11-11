@@ -1,0 +1,12 @@
+> python -m unittest discover -s tests -p test_l05_cpu.py -v
+test_non_loopback_refused (test_l05_cpu.ClientTest.test_non_loopback_refused) ... ok
+test_protocol_and_success (test_l05_cpu.ClientTest.test_protocol_and_success) ... ok
+test_transport_failure_retained (test_l05_cpu.ClientTest.test_transport_failure_retained) ... ok
+test_truncated_empty_and_missing_finish_are_failures (test_l05_cpu.ClientTest.test_truncated_empty_and_missing_finish_are_failures) ... ok
+test_cer_and_normalization (test_l05_cpu.MetricsTest.test_cer_and_normalization) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.004s
+
+OK
+exit_code=0
