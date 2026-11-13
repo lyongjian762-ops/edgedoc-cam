@@ -1,1 +1,19 @@
-{}
+{
+  "overall": "PASS",
+  "stages": {
+    "environment": "PASS",
+    "tiny_export": "PASS",
+    "alignment": "PASS",
+    "controlled": "PASS",
+    "benchmark": "PASS",
+    "profiling": "PASS",
+    "tests": "PASS"
+  },
+  "tests": {
+    "run": 12,
+    "pass": 12,
+    "fail": 0,
+    "skipped": 0
+  },
+  "fusion_observed": true
+}

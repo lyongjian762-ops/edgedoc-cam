@@ -1,0 +1,3109 @@
+{
+  "tiny_original": {
+    "sha256": "7e80155721f15bf2614f7c48b6abffc9752a7a51a276d698bb38d2ece3815479",
+    "ir_version": 10,
+    "opsets": [
+      {
+        "domain": "",
+        "version": 18
+      }
+    ],
+    "inputs": [
+      {
+        "name": "x",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          1,
+          32,
+          32
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "output",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          3
+        ]
+      }
+    ],
+    "inferred_values": [
+      {
+        "name": "conv1.weight",
+        "dtype": "FLOAT",
+        "shape": [
+          8,
+          1,
+          3,
+          3
+        ]
+      },
+      {
+        "name": "conv1.bias",
+        "dtype": "FLOAT",
+        "shape": [
+          8
+        ]
+      },
+      {
+        "name": "bn1.weight",
+        "dtype": "FLOAT",
+        "shape": [
+          8
+        ]
+      },
+      {
+        "name": "bn1.bias",
+        "dtype": "FLOAT",
+        "shape": [
+          8
+        ]
+      },
+      {
+        "name": "conv2.weight",
+        "dtype": "FLOAT",
+        "shape": [
+          16,
+          8,
+          3,
+          3
+        ]
+      },
+      {
+        "name": "conv2.bias",
+        "dtype": "FLOAT",
+        "shape": [
+          16
+        ]
+      },
+      {
+        "name": "fc.weight",
+        "dtype": "FLOAT",
+        "shape": [
+          3,
+          16
+        ]
+      },
+      {
+        "name": "fc.bias",
+        "dtype": "FLOAT",
+        "shape": [
+          3
+        ]
+      },
+      {
+        "name": "bn1.running_mean",
+        "dtype": "FLOAT",
+        "shape": [
+          8
+        ]
+      },
+      {
+        "name": "bn1.running_var",
+        "dtype": "FLOAT",
+        "shape": [
+          8
+        ]
+      },
+      {
+        "name": "conv2d",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          8,
+          32,
+          32
+        ]
+      },
+      {
+        "name": "getitem",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          8,
+          32,
+          32
+        ]
+      },
+      {
+        "name": "relu",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          8,
+          32,
+          32
+        ]
+      },
+      {
+        "name": "avg_pool2d",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          8,
+          16,
+          16
+        ]
+      },
+      {
+        "name": "conv2d_1",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          16,
+          16,
+          16
+        ]
+      },
+      {
+        "name": "relu_1",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          16,
+          16,
+          16
+        ]
+      },
+      {
+        "name": "mean",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          16,
+          1,
+          1
+        ]
+      },
+      {
+        "name": "val_12",
+        "dtype": "INT64",
+        "shape": [
+          1
+        ]
+      },
+      {
+        "name": "val_13",
+        "dtype": "INT64",
+        "shape": [
+          1
+        ]
+      },
+      {
+        "name": "view",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          16
+        ]
+      },
+      {
+        "name": "val_8",
+        "dtype": "INT64",
+        "shape": [
+          1
+        ]
+      },
+      {
+        "name": "val_9",
+        "dtype": "INT64",
+        "shape": [
+          2
+        ]
+      },
+      {
+        "name": "val_10",
+        "dtype": "INT64",
+        "shape": [
+          2
+        ]
+      },
+      {
+        "name": "val_14",
+        "dtype": "INT64",
+        "shape": [
+          2
+        ]
+      }
+    ],
+    "nodes": [
+      {
+        "name": "node_conv2d",
+        "op_type": "Conv",
+        "inputs": [
+          "x",
+          "conv1.weight",
+          "conv1.bias"
+        ],
+        "outputs": [
+          "conv2d"
+        ],
+        "attributes": {
+          "kernel_shape": [
+            3,
+            3
+          ],
+          "group": 1,
+          "auto_pad": "NOTSET",
+          "dilations": [
+            1,
+            1
+          ],
+          "strides": [
+            1,
+            1
+          ],
+          "pads": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "name": "node__native_batch_norm_legit_no_training__0",
+        "op_type": "BatchNormalization",
+        "inputs": [
+          "conv2d",
+          "bn1.weight",
+          "bn1.bias",
+          "bn1.running_mean",
+          "bn1.running_var"
+        ],
+        "outputs": [
+          "getitem"
+        ],
+        "attributes": {
+          "epsilon": 9.999999747378752e-06,
+          "momentum": 0.8999999761581421
+        }
+      },
+      {
+        "name": "node_relu",
+        "op_type": "Relu",
+        "inputs": [
+          "getitem"
+        ],
+        "outputs": [
+          "relu"
+        ],
+        "attributes": {}
+      },
+      {
+        "name": "node_avg_pool2d",
+        "op_type": "AveragePool",
+        "inputs": [
+          "relu"
+        ],
+        "outputs": [
+          "avg_pool2d"
+        ],
+        "attributes": {
+          "kernel_shape": [
+            2,
+            2
+          ],
+          "count_include_pad": 1,
+          "strides": [
+            2,
+            2
+          ],
+          "auto_pad": "NOTSET",
+          "pads": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ceil_mode": 0
+        }
+      },
+      {
+        "name": "node_conv2d_1",
+        "op_type": "Conv",
+        "inputs": [
+          "avg_pool2d",
+          "conv2.weight",
+          "conv2.bias"
+        ],
+        "outputs": [
+          "conv2d_1"
+        ],
+        "attributes": {
+          "kernel_shape": [
+            3,
+            3
+          ],
+          "group": 1,
+          "auto_pad": "NOTSET",
+          "dilations": [
+            1,
+            1
+          ],
+          "strides": [
+            1,
+            1
+          ],
+          "pads": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "name": "node_relu_1",
+        "op_type": "Relu",
+        "inputs": [
+          "conv2d_1"
+        ],
+        "outputs": [
+          "relu_1"
+        ],
+        "attributes": {}
+      },
+      {
+        "name": "node_Constant_8",
+        "op_type": "Constant",
+        "inputs": [],
+        "outputs": [
+          "val_8"
+        ],
+        "attributes": {
+          "value_ints": [
+            -1
+          ]
+        }
+      },
+      {
+        "name": "node_Constant_9",
+        "op_type": "Constant",
+        "inputs": [],
+        "outputs": [
+          "val_9"
+        ],
+        "attributes": {
+          "value": "dims: 2\ndata_type: 7\nraw_data: \"\\377\\377\\377\\377\\377\\377\\377\\377\\376\\377\\377\\377\\377\\377\\377\\377\"\n"
+        }
+      },
+      {
+        "name": "node_Reshape_10",
+        "op_type": "Reshape",
+        "inputs": [
+          "val_9",
+          "val_8"
+        ],
+        "outputs": [
+          "val_10"
+        ],
+        "attributes": {
+          "allowzero": 0
+        }
+      },
+      {
+        "name": "node_mean",
+        "op_type": "ReduceMean",
+        "inputs": [
+          "relu_1",
+          "val_10"
+        ],
+        "outputs": [
+          "mean"
+        ],
+        "attributes": {
+          "keepdims": 1,
+          "noop_with_empty_axes": 0
+        }
+      },
+      {
+        "name": "node_Constant_12",
+        "op_type": "Constant",
+        "inputs": [],
+        "outputs": [
+          "val_12"
+        ],
+        "attributes": {
+          "value_ints": [
+            1
+          ]
+        }
+      },
+      {
+        "name": "node_Constant_13",
+        "op_type": "Constant",
+        "inputs": [],
+        "outputs": [
+          "val_13"
+        ],
+        "attributes": {
+          "value_ints": [
+            16
+          ]
+        }
+      },
+      {
+        "name": "node_Concat_14",
+        "op_type": "Concat",
+        "inputs": [
+          "val_12",
+          "val_13"
+        ],
+        "outputs": [
+          "val_14"
+        ],
+        "attributes": {
+          "axis": 0
+        }
+      },
+      {
+        "name": "node_view",
+        "op_type": "Reshape",
+        "inputs": [
+          "mean",
+          "val_14"
+        ],
+        "outputs": [
+          "view"
+        ],
+        "attributes": {
+          "allowzero": 1
+        }
+      },
+      {
+        "name": "node_linear",
+        "op_type": "Gemm",
+        "inputs": [
+          "view",
+          "fc.weight",
+          "fc.bias"
+        ],
+        "outputs": [
+          "output"
+        ],
+        "attributes": {
+          "transA": 0,
+          "transB": 1,
+          "alpha": 1.0,
+          "beta": 1.0
+        }
+      }
+    ],
+    "operator_counts": {
+      "Conv": 2,
+      "BatchNormalization": 1,
+      "Relu": 2,
+      "AveragePool": 1,
+      "Constant": 4,
+      "Reshape": 2,
+      "ReduceMean": 1,
+      "Concat": 1,
+      "Gemm": 1
+    },
+    "initializers": [
+      {
+        "name": "conv1.weight",
+        "shape": [
+          8,
+          1,
+          3,
+          3
+        ],
+        "dtype": "float32",
+        "sha256": "8cf107619b418d13d1111228864f9252f4e0883e17353582501938fdd99eaeec"
+      },
+      {
+        "name": "conv1.bias",
+        "shape": [
+          8
+        ],
+        "dtype": "float32",
+        "sha256": "91a0f46e15321ad3458f7d3f03263c02b35278de36775ad971cb7cbead38ad56"
+      },
+      {
+        "name": "bn1.weight",
+        "shape": [
+          8
+        ],
+        "dtype": "float32",
+        "sha256": "6526c316f33de25331671d143648b0a9eff00c41150895c99ef2a16754c63778"
+      },
+      {
+        "name": "bn1.bias",
+        "shape": [
+          8
+        ],
+        "dtype": "float32",
+        "sha256": "513c2ebec06d0f79bfb97615d077b2f8023a3865e61e5338a4ea393a1053327e"
+      },
+      {
+        "name": "conv2.weight",
+        "shape": [
+          16,
+          8,
+          3,
+          3
+        ],
+        "dtype": "float32",
+        "sha256": "47a0a883d4797d6c84f0f7ec5167f651b883b17dbe0885607af27844e5ed8f3f"
+      },
+      {
+        "name": "conv2.bias",
+        "shape": [
+          16
+        ],
+        "dtype": "float32",
+        "sha256": "25204a1a57cececb1322dc48fd5f4c8307a6cd6df70e552f812d2e6ccc2af5a4"
+      },
+      {
+        "name": "fc.weight",
+        "shape": [
+          3,
+          16
+        ],
+        "dtype": "float32",
+        "sha256": "12701acb8025bd1423dc104a0b71327e3ca876afa0c3f8b8a1e6e7470b5dec09"
+      },
+      {
+        "name": "fc.bias",
+        "shape": [
+          3
+        ],
+        "dtype": "float32",
+        "sha256": "a3f15c50749f11772a94e989fa0670a88b8a0f46f0b103bd0ca3be0ab7810199"
+      },
+      {
+        "name": "bn1.running_mean",
+        "shape": [
+          8
+        ],
+        "dtype": "float32",
+        "sha256": "ac3cf52e629d399ba4edc3534669fb71dbc8fc842d0485bf5cb72cee99302474"
+      },
+      {
+        "name": "bn1.running_var",
+        "shape": [
+          8
+        ],
+        "dtype": "float32",
+        "sha256": "9cd656247a1943c0ec90ac26902b36b283bbd95a8f4c78b43c1b4f0f9225c200"
+      }
+    ]
+  },
+  "tiny_disabled": {
+    "sha256": "815d0209732a90947d2ef4a934ec7d6af8b3c75933fa017c6a31024f2f2f4dd3",
+    "ir_version": 10,
+    "opsets": [
+      {
+        "domain": "",
+        "version": 18
+      },
+      {
+        "domain": "com.microsoft.nchwc",
+        "version": 1
+      },
+      {
+        "domain": "ai.onnx.ml",
+        "version": 5
+      },
+      {
+        "domain": "ai.onnx.training",
+        "version": 1
+      },
+      {
+        "domain": "ai.onnx.preview.training",
+        "version": 1
+      },
+      {
+        "domain": "com.microsoft",
+        "version": 1
+      },
+      {
+        "domain": "com.microsoft.experimental",
+        "version": 1
+      },
+      {
+        "domain": "org.pytorch.aten",
+        "version": 1
+      }
+    ],
+    "inputs": [
+      {
+        "name": "x",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          1,
+          32,
+          32
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "output",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          3
+        ]
+      }
+    ],
+    "inferred_values": [
+      {
+        "name": "conv1.weight",
+        "dtype": "FLOAT",
+        "shape": [
+          8,
+          1,
+          3,
+          3
+        ]
+      },
+      {
+        "name": "conv1.bias",
+        "dtype": "FLOAT",
+        "shape": [
+          8
+        ]
+      },
+      {
+        "name": "bn1.weight",
+        "dtype": "FLOAT",
+        "shape": [
+          8
+        ]
+      },
+      {
+        "name": "bn1.bias",
+        "dtype": "FLOAT",
+        "shape": [
+          8
+        ]
+      },
+      {
+        "name": "conv2.weight",
+        "dtype": "FLOAT",
+        "shape": [
+          16,
+          8,
+          3,
+          3
+        ]
+      },
+      {
+        "name": "conv2.bias",
+        "dtype": "FLOAT",
+        "shape": [
+          16
+        ]
+      },
+      {
+        "name": "fc.weight",
+        "dtype": "FLOAT",
+        "shape": [
+          3,
+          16
+        ]
+      },
+      {
+        "name": "fc.bias",
+        "dtype": "FLOAT",
+        "shape": [
+          3
+        ]
+      },
+      {
+        "name": "bn1.running_mean",
+        "dtype": "FLOAT",
+        "shape": [
+          8
+        ]
+      },
+      {
+        "name": "bn1.running_var",
+        "dtype": "FLOAT",
+        "shape": [
+          8
+        ]
+      },
+      {
+        "name": "conv2d",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          8,
+          32,
+          32
+        ]
+      },
+      {
+        "name": "getitem",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          8,
+          32,
+          32
+        ]
+      },
+      {
+        "name": "relu",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          8,
+          32,
+          32
+        ]
+      },
+      {
+        "name": "avg_pool2d",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          8,
+          16,
+          16
+        ]
+      },
+      {
+        "name": "conv2d_1",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          16,
+          16,
+          16
+        ]
+      },
+      {
+        "name": "relu_1",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          16,
+          16,
+          16
+        ]
+      },
+      {
+        "name": "mean",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          16,
+          1,
+          1
+        ]
+      },
+      {
+        "name": "val_12",
+        "dtype": "INT64",
+        "shape": []
+      },
+      {
+        "name": "val_13",
+        "dtype": "INT64",
+        "shape": []
+      },
+      {
+        "name": "view",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          16
+        ]
+      },
+      {
+        "name": "val_10",
+        "dtype": "INT64",
+        "shape": [
+          2
+        ]
+      },
+      {
+        "name": "val_14",
+        "dtype": "INT64",
+        "shape": []
+      }
+    ],
+    "nodes": [
+      {
+        "name": "node_conv2d",
+        "op_type": "Conv",
+        "inputs": [
+          "x",
+          "conv1.weight",
+          "conv1.bias"
+        ],
+        "outputs": [
+          "conv2d"
+        ],
+        "attributes": {
+          "kernel_shape": [
+            3,
+            3
+          ],
+          "group": 1,
+          "auto_pad": "NOTSET",
+          "dilations": [
+            1,
+            1
+          ],
+          "strides": [
+            1,
+            1
+          ],
+          "pads": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "name": "node__native_batch_norm_legit_no_training__0",
+        "op_type": "BatchNormalization",
+        "inputs": [
+          "conv2d",
+          "bn1.weight",
+          "bn1.bias",
+          "bn1.running_mean",
+          "bn1.running_var"
+        ],
+        "outputs": [
+          "getitem"
+        ],
+        "attributes": {
+          "epsilon": 9.999999747378752e-06,
+          "momentum": 0.8999999761581421
+        }
+      },
+      {
+        "name": "node_relu",
+        "op_type": "Relu",
+        "inputs": [
+          "getitem"
+        ],
+        "outputs": [
+          "relu"
+        ],
+        "attributes": {}
+      },
+      {
+        "name": "node_avg_pool2d",
+        "op_type": "AveragePool",
+        "inputs": [
+          "relu"
+        ],
+        "outputs": [
+          "avg_pool2d"
+        ],
+        "attributes": {
+          "kernel_shape": [
+            2,
+            2
+          ],
+          "count_include_pad": 1,
+          "strides": [
+            2,
+            2
+          ],
+          "auto_pad": "NOTSET",
+          "pads": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ceil_mode": 0
+        }
+      },
+      {
+        "name": "node_conv2d_1",
+        "op_type": "Conv",
+        "inputs": [
+          "avg_pool2d",
+          "conv2.weight",
+          "conv2.bias"
+        ],
+        "outputs": [
+          "conv2d_1"
+        ],
+        "attributes": {
+          "kernel_shape": [
+            3,
+            3
+          ],
+          "group": 1,
+          "auto_pad": "NOTSET",
+          "dilations": [
+            1,
+            1
+          ],
+          "strides": [
+            1,
+            1
+          ],
+          "pads": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "name": "node_relu_1",
+        "op_type": "Relu",
+        "inputs": [
+          "conv2d_1"
+        ],
+        "outputs": [
+          "relu_1"
+        ],
+        "attributes": {}
+      },
+      {
+        "name": "node_Reshape_10",
+        "op_type": "Reshape",
+        "inputs": [
+          "val_9",
+          "val_8"
+        ],
+        "outputs": [
+          "val_10"
+        ],
+        "attributes": {
+          "allowzero": 0
+        }
+      },
+      {
+        "name": "node_mean",
+        "op_type": "ReduceMean",
+        "inputs": [
+          "relu_1",
+          "val_10"
+        ],
+        "outputs": [
+          "mean"
+        ],
+        "attributes": {
+          "keepdims": 1,
+          "noop_with_empty_axes": 0
+        }
+      },
+      {
+        "name": "node_Concat_14",
+        "op_type": "Concat",
+        "inputs": [
+          "val_12",
+          "val_13"
+        ],
+        "outputs": [
+          "val_14"
+        ],
+        "attributes": {
+          "axis": 0
+        }
+      },
+      {
+        "name": "node_view",
+        "op_type": "Reshape",
+        "inputs": [
+          "mean",
+          "val_14"
+        ],
+        "outputs": [
+          "view"
+        ],
+        "attributes": {
+          "allowzero": 1
+        }
+      },
+      {
+        "name": "node_linear",
+        "op_type": "Gemm",
+        "inputs": [
+          "view",
+          "fc.weight",
+          "fc.bias"
+        ],
+        "outputs": [
+          "output"
+        ],
+        "attributes": {
+          "transA": 0,
+          "transB": 1,
+          "alpha": 1.0,
+          "beta": 1.0
+        }
+      }
+    ],
+    "operator_counts": {
+      "Conv": 2,
+      "BatchNormalization": 1,
+      "Relu": 2,
+      "AveragePool": 1,
+      "Reshape": 2,
+      "ReduceMean": 1,
+      "Concat": 1,
+      "Gemm": 1
+    },
+    "initializers": [
+      {
+        "name": "conv1.weight",
+        "shape": [
+          8,
+          1,
+          3,
+          3
+        ],
+        "dtype": "float32",
+        "sha256": "8cf107619b418d13d1111228864f9252f4e0883e17353582501938fdd99eaeec"
+      },
+      {
+        "name": "conv1.bias",
+        "shape": [
+          8
+        ],
+        "dtype": "float32",
+        "sha256": "91a0f46e15321ad3458f7d3f03263c02b35278de36775ad971cb7cbead38ad56"
+      },
+      {
+        "name": "bn1.weight",
+        "shape": [
+          8
+        ],
+        "dtype": "float32",
+        "sha256": "6526c316f33de25331671d143648b0a9eff00c41150895c99ef2a16754c63778"
+      },
+      {
+        "name": "bn1.bias",
+        "shape": [
+          8
+        ],
+        "dtype": "float32",
+        "sha256": "513c2ebec06d0f79bfb97615d077b2f8023a3865e61e5338a4ea393a1053327e"
+      },
+      {
+        "name": "conv2.weight",
+        "shape": [
+          16,
+          8,
+          3,
+          3
+        ],
+        "dtype": "float32",
+        "sha256": "47a0a883d4797d6c84f0f7ec5167f651b883b17dbe0885607af27844e5ed8f3f"
+      },
+      {
+        "name": "conv2.bias",
+        "shape": [
+          16
+        ],
+        "dtype": "float32",
+        "sha256": "25204a1a57cececb1322dc48fd5f4c8307a6cd6df70e552f812d2e6ccc2af5a4"
+      },
+      {
+        "name": "fc.weight",
+        "shape": [
+          3,
+          16
+        ],
+        "dtype": "float32",
+        "sha256": "12701acb8025bd1423dc104a0b71327e3ca876afa0c3f8b8a1e6e7470b5dec09"
+      },
+      {
+        "name": "fc.bias",
+        "shape": [
+          3
+        ],
+        "dtype": "float32",
+        "sha256": "a3f15c50749f11772a94e989fa0670a88b8a0f46f0b103bd0ca3be0ab7810199"
+      },
+      {
+        "name": "bn1.running_mean",
+        "shape": [
+          8
+        ],
+        "dtype": "float32",
+        "sha256": "ac3cf52e629d399ba4edc3534669fb71dbc8fc842d0485bf5cb72cee99302474"
+      },
+      {
+        "name": "bn1.running_var",
+        "shape": [
+          8
+        ],
+        "dtype": "float32",
+        "sha256": "9cd656247a1943c0ec90ac26902b36b283bbd95a8f4c78b43c1b4f0f9225c200"
+      },
+      {
+        "name": "val_8",
+        "shape": [
+          1
+        ],
+        "dtype": "int64",
+        "sha256": "12a3ae445661ce5dee78d0650d33362dec29c4f82af05e7e57fb595bbbacf0ca"
+      },
+      {
+        "name": "val_9",
+        "shape": [
+          2
+        ],
+        "dtype": "int64",
+        "sha256": "0bcf2473aa7869d0978ecc8c87e67d8e57a1d778d1eb1cd33ff9e2ba1fee1a4a"
+      },
+      {
+        "name": "val_12",
+        "shape": [
+          1
+        ],
+        "dtype": "int64",
+        "sha256": "7c9fa136d4413fa6173637e883b6998d32e1d675f88cddff9dcbcf331820f4b8"
+      },
+      {
+        "name": "val_13",
+        "shape": [
+          1
+        ],
+        "dtype": "int64",
+        "sha256": "5eb6da0e0e522104c6d50b0748e6893762f7f2c00a7163a46ccbb535bfd61a0d"
+      }
+    ]
+  },
+  "tiny_basic": {
+    "sha256": "7a1fc0bdc81097cdebbf845b9041f608c02fbd4f8f46eb21b001eb75c1b34a1e",
+    "ir_version": 10,
+    "opsets": [
+      {
+        "domain": "",
+        "version": 18
+      },
+      {
+        "domain": "com.microsoft.nchwc",
+        "version": 1
+      },
+      {
+        "domain": "ai.onnx.ml",
+        "version": 5
+      },
+      {
+        "domain": "ai.onnx.training",
+        "version": 1
+      },
+      {
+        "domain": "ai.onnx.preview.training",
+        "version": 1
+      },
+      {
+        "domain": "com.microsoft",
+        "version": 1
+      },
+      {
+        "domain": "com.microsoft.experimental",
+        "version": 1
+      },
+      {
+        "domain": "org.pytorch.aten",
+        "version": 1
+      }
+    ],
+    "inputs": [
+      {
+        "name": "x",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          1,
+          32,
+          32
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "output",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          3
+        ]
+      }
+    ],
+    "inferred_values": [
+      {
+        "name": "avg_pool2d",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          8,
+          16,
+          16
+        ]
+      },
+      {
+        "name": "bn1.bias",
+        "dtype": "FLOAT",
+        "shape": [
+          8
+        ]
+      },
+      {
+        "name": "bn1.running_mean",
+        "dtype": "FLOAT",
+        "shape": [
+          8
+        ]
+      },
+      {
+        "name": "bn1.running_var",
+        "dtype": "FLOAT",
+        "shape": [
+          8
+        ]
+      },
+      {
+        "name": "bn1.weight",
+        "dtype": "FLOAT",
+        "shape": [
+          8
+        ]
+      },
+      {
+        "name": "conv1.bias",
+        "dtype": "FLOAT",
+        "shape": [
+          8
+        ]
+      },
+      {
+        "name": "conv1.weight",
+        "dtype": "FLOAT",
+        "shape": [
+          8,
+          1,
+          3,
+          3
+        ]
+      },
+      {
+        "name": "conv2.bias",
+        "dtype": "FLOAT",
+        "shape": [
+          16
+        ]
+      },
+      {
+        "name": "conv2.weight",
+        "dtype": "FLOAT",
+        "shape": [
+          16,
+          8,
+          3,
+          3
+        ]
+      },
+      {
+        "name": "conv2d",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          8,
+          32,
+          32
+        ]
+      },
+      {
+        "name": "conv2d_1",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          16,
+          16,
+          16
+        ]
+      },
+      {
+        "name": "fc.bias",
+        "dtype": "FLOAT",
+        "shape": [
+          3
+        ]
+      },
+      {
+        "name": "fc.weight",
+        "dtype": "FLOAT",
+        "shape": [
+          3,
+          16
+        ]
+      },
+      {
+        "name": "getitem",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          8,
+          32,
+          32
+        ]
+      },
+      {
+        "name": "mean",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          16,
+          1,
+          1
+        ]
+      },
+      {
+        "name": "relu",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          8,
+          32,
+          32
+        ]
+      },
+      {
+        "name": "relu_1",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          16,
+          16,
+          16
+        ]
+      },
+      {
+        "name": "val_12",
+        "dtype": "INT64",
+        "shape": [
+          1
+        ]
+      },
+      {
+        "name": "val_13",
+        "dtype": "INT64",
+        "shape": [
+          1
+        ]
+      },
+      {
+        "name": "view",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          16
+        ]
+      }
+    ],
+    "nodes": [
+      {
+        "name": "node_conv2d",
+        "op_type": "Conv",
+        "inputs": [
+          "x",
+          "ConvBnFusion_W_conv1.weight",
+          "ConvBnFusion_BN_B_bn1.bias"
+        ],
+        "outputs": [
+          "getitem"
+        ],
+        "attributes": {
+          "kernel_shape": [
+            3,
+            3
+          ],
+          "group": 1,
+          "auto_pad": "NOTSET",
+          "dilations": [
+            1,
+            1
+          ],
+          "strides": [
+            1,
+            1
+          ],
+          "pads": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "name": "node_relu",
+        "op_type": "Relu",
+        "inputs": [
+          "getitem"
+        ],
+        "outputs": [
+          "relu"
+        ],
+        "attributes": {}
+      },
+      {
+        "name": "node_avg_pool2d",
+        "op_type": "AveragePool",
+        "inputs": [
+          "relu"
+        ],
+        "outputs": [
+          "avg_pool2d"
+        ],
+        "attributes": {
+          "kernel_shape": [
+            2,
+            2
+          ],
+          "count_include_pad": 1,
+          "strides": [
+            2,
+            2
+          ],
+          "auto_pad": "NOTSET",
+          "pads": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ceil_mode": 0
+        }
+      },
+      {
+        "name": "node_conv2d_1",
+        "op_type": "Conv",
+        "inputs": [
+          "avg_pool2d",
+          "conv2.weight",
+          "conv2.bias"
+        ],
+        "outputs": [
+          "conv2d_1"
+        ],
+        "attributes": {
+          "kernel_shape": [
+            3,
+            3
+          ],
+          "group": 1,
+          "auto_pad": "NOTSET",
+          "dilations": [
+            1,
+            1
+          ],
+          "strides": [
+            1,
+            1
+          ],
+          "pads": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "name": "node_relu_1",
+        "op_type": "Relu",
+        "inputs": [
+          "conv2d_1"
+        ],
+        "outputs": [
+          "relu_1"
+        ],
+        "attributes": {}
+      },
+      {
+        "name": "node_mean",
+        "op_type": "ReduceMean",
+        "inputs": [
+          "relu_1",
+          "val_10"
+        ],
+        "outputs": [
+          "mean"
+        ],
+        "attributes": {
+          "keepdims": 1,
+          "noop_with_empty_axes": 0
+        }
+      },
+      {
+        "name": "node_view",
+        "op_type": "Reshape",
+        "inputs": [
+          "mean",
+          "val_14"
+        ],
+        "outputs": [
+          "view"
+        ],
+        "attributes": {
+          "allowzero": 1
+        }
+      },
+      {
+        "name": "node_linear",
+        "op_type": "Gemm",
+        "inputs": [
+          "view",
+          "fc.weight",
+          "fc.bias"
+        ],
+        "outputs": [
+          "output"
+        ],
+        "attributes": {
+          "transA": 0,
+          "transB": 1,
+          "alpha": 1.0,
+          "beta": 1.0
+        }
+      }
+    ],
+    "operator_counts": {
+      "Conv": 2,
+      "Relu": 2,
+      "AveragePool": 1,
+      "ReduceMean": 1,
+      "Reshape": 1,
+      "Gemm": 1
+    },
+    "initializers": [
+      {
+        "name": "ConvBnFusion_BN_B_bn1.bias",
+        "shape": [
+          8
+        ],
+        "dtype": "float32",
+        "sha256": "41e31694e2eb806f1e430449aaf161c5188e28b3387f1247edd31aa3fc176b86"
+      },
+      {
+        "name": "ConvBnFusion_W_conv1.weight",
+        "shape": [
+          8,
+          1,
+          3,
+          3
+        ],
+        "dtype": "float32",
+        "sha256": "0c917ed7975cacc738e50cdfb8c9dbb14547a54d619b1d43912b7eed049c8c89"
+      },
+      {
+        "name": "val_14",
+        "shape": [
+          2
+        ],
+        "dtype": "int64",
+        "sha256": "8b33dfdba87458dfcdc0a691d6c8991b70dc5b41ed411a37953a6af101df5c6c"
+      },
+      {
+        "name": "val_10",
+        "shape": [
+          2
+        ],
+        "dtype": "int64",
+        "sha256": "0bcf2473aa7869d0978ecc8c87e67d8e57a1d778d1eb1cd33ff9e2ba1fee1a4a"
+      },
+      {
+        "name": "conv2.weight",
+        "shape": [
+          16,
+          8,
+          3,
+          3
+        ],
+        "dtype": "float32",
+        "sha256": "47a0a883d4797d6c84f0f7ec5167f651b883b17dbe0885607af27844e5ed8f3f"
+      },
+      {
+        "name": "conv2.bias",
+        "shape": [
+          16
+        ],
+        "dtype": "float32",
+        "sha256": "25204a1a57cececb1322dc48fd5f4c8307a6cd6df70e552f812d2e6ccc2af5a4"
+      },
+      {
+        "name": "fc.weight",
+        "shape": [
+          3,
+          16
+        ],
+        "dtype": "float32",
+        "sha256": "12701acb8025bd1423dc104a0b71327e3ca876afa0c3f8b8a1e6e7470b5dec09"
+      },
+      {
+        "name": "fc.bias",
+        "shape": [
+          3
+        ],
+        "dtype": "float32",
+        "sha256": "a3f15c50749f11772a94e989fa0670a88b8a0f46f0b103bd0ca3be0ab7810199"
+      }
+    ]
+  },
+  "tiny_all": {
+    "sha256": "650c29d4507cf032277e0ce1aaf709f95d12d0cb2786adce8ebd73cae0a6d7ed",
+    "ir_version": 10,
+    "opsets": [
+      {
+        "domain": "",
+        "version": 18
+      },
+      {
+        "domain": "com.microsoft.nchwc",
+        "version": 1
+      },
+      {
+        "domain": "ai.onnx.ml",
+        "version": 5
+      },
+      {
+        "domain": "ai.onnx.training",
+        "version": 1
+      },
+      {
+        "domain": "ai.onnx.preview.training",
+        "version": 1
+      },
+      {
+        "domain": "com.microsoft",
+        "version": 1
+      },
+      {
+        "domain": "com.microsoft.experimental",
+        "version": 1
+      },
+      {
+        "domain": "org.pytorch.aten",
+        "version": 1
+      }
+    ],
+    "inputs": [
+      {
+        "name": "x",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          1,
+          32,
+          32
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "output",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          3
+        ]
+      }
+    ],
+    "inferred_values": [
+      {
+        "name": "avg_pool2d",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          8,
+          16,
+          16
+        ]
+      },
+      {
+        "name": "bn1.bias",
+        "dtype": "FLOAT",
+        "shape": [
+          8
+        ]
+      },
+      {
+        "name": "bn1.running_mean",
+        "dtype": "FLOAT",
+        "shape": [
+          8
+        ]
+      },
+      {
+        "name": "bn1.running_var",
+        "dtype": "FLOAT",
+        "shape": [
+          8
+        ]
+      },
+      {
+        "name": "bn1.weight",
+        "dtype": "FLOAT",
+        "shape": [
+          8
+        ]
+      },
+      {
+        "name": "conv1.bias",
+        "dtype": "FLOAT",
+        "shape": [
+          8
+        ]
+      },
+      {
+        "name": "conv1.weight",
+        "dtype": "FLOAT",
+        "shape": [
+          8,
+          1,
+          3,
+          3
+        ]
+      },
+      {
+        "name": "conv2.bias",
+        "dtype": "FLOAT",
+        "shape": [
+          16
+        ]
+      },
+      {
+        "name": "conv2.weight",
+        "dtype": "FLOAT",
+        "shape": [
+          16,
+          8,
+          3,
+          3
+        ]
+      },
+      {
+        "name": "conv2d",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          8,
+          32,
+          32
+        ]
+      },
+      {
+        "name": "conv2d_1",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          16,
+          16,
+          16
+        ]
+      },
+      {
+        "name": "fc.bias",
+        "dtype": "FLOAT",
+        "shape": [
+          3
+        ]
+      },
+      {
+        "name": "fc.weight",
+        "dtype": "FLOAT",
+        "shape": [
+          3,
+          16
+        ]
+      },
+      {
+        "name": "getitem",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          8,
+          32,
+          32
+        ]
+      },
+      {
+        "name": "mean",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          16,
+          1,
+          1
+        ]
+      },
+      {
+        "name": "relu",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          8,
+          32,
+          32
+        ]
+      },
+      {
+        "name": "relu_1",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          16,
+          16,
+          16
+        ]
+      },
+      {
+        "name": "val_12",
+        "dtype": "INT64",
+        "shape": [
+          1
+        ]
+      },
+      {
+        "name": "val_13",
+        "dtype": "INT64",
+        "shape": [
+          1
+        ]
+      },
+      {
+        "name": "view",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          16
+        ]
+      }
+    ],
+    "nodes": [
+      {
+        "name": "relu_nchwc",
+        "op_type": "Conv",
+        "inputs": [
+          "x",
+          "reorder",
+          "ConvBnFusion_BN_B_bn1.bias"
+        ],
+        "outputs": [
+          "reorder_token_0"
+        ],
+        "attributes": {
+          "kernel_shape": [
+            3,
+            3
+          ],
+          "dilations": [
+            1,
+            1
+          ],
+          "auto_pad": "NOTSET",
+          "group": 1,
+          "strides": [
+            1,
+            1
+          ],
+          "pads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "activation": "Relu"
+        }
+      },
+      {
+        "name": "avg_pool2d_nchwc",
+        "op_type": "AveragePool",
+        "inputs": [
+          "reorder_token_0"
+        ],
+        "outputs": [
+          "reorder_token_1"
+        ],
+        "attributes": {
+          "kernel_shape": [
+            2,
+            2
+          ],
+          "strides": [
+            2,
+            2
+          ],
+          "count_include_pad": 1,
+          "auto_pad": "NOTSET",
+          "pads": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ceil_mode": 0
+        }
+      },
+      {
+        "name": "relu_1_nchwc",
+        "op_type": "Conv",
+        "inputs": [
+          "reorder_token_1",
+          "reorder_token_2",
+          "conv2.bias"
+        ],
+        "outputs": [
+          "reorder_token_3"
+        ],
+        "attributes": {
+          "kernel_shape": [
+            3,
+            3
+          ],
+          "dilations": [
+            1,
+            1
+          ],
+          "auto_pad": "NOTSET",
+          "group": 1,
+          "strides": [
+            1,
+            1
+          ],
+          "pads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "activation": "Relu"
+        }
+      },
+      {
+        "name": "ReorderOutput",
+        "op_type": "ReorderOutput",
+        "inputs": [
+          "reorder_token_3"
+        ],
+        "outputs": [
+          "relu_1"
+        ],
+        "attributes": {
+          "channels": 16,
+          "channels_last": 0
+        }
+      },
+      {
+        "name": "node_mean",
+        "op_type": "ReduceMean",
+        "inputs": [
+          "relu_1",
+          "val_10"
+        ],
+        "outputs": [
+          "mean"
+        ],
+        "attributes": {
+          "keepdims": 1,
+          "noop_with_empty_axes": 0
+        }
+      },
+      {
+        "name": "node_view",
+        "op_type": "Reshape",
+        "inputs": [
+          "mean",
+          "val_14"
+        ],
+        "outputs": [
+          "view"
+        ],
+        "attributes": {
+          "allowzero": 1
+        }
+      },
+      {
+        "name": "node_linear",
+        "op_type": "Gemm",
+        "inputs": [
+          "view",
+          "fc.weight",
+          "fc.bias"
+        ],
+        "outputs": [
+          "output"
+        ],
+        "attributes": {
+          "transA": 0,
+          "transB": 1,
+          "alpha": 1.0,
+          "beta": 1.0
+        }
+      }
+    ],
+    "operator_counts": {
+      "Conv": 2,
+      "AveragePool": 1,
+      "ReorderOutput": 1,
+      "ReduceMean": 1,
+      "Reshape": 1,
+      "Gemm": 1
+    },
+    "initializers": [
+      {
+        "name": "ConvBnFusion_BN_B_bn1.bias",
+        "shape": [
+          8
+        ],
+        "dtype": "float32",
+        "sha256": "41e31694e2eb806f1e430449aaf161c5188e28b3387f1247edd31aa3fc176b86"
+      },
+      {
+        "name": "reorder",
+        "shape": [
+          8,
+          1,
+          3,
+          3
+        ],
+        "dtype": "float32",
+        "sha256": "47ca522a830e07fcab54f975369cf437225db73838aef56f41024b06fa6cfaa2"
+      },
+      {
+        "name": "val_14",
+        "shape": [
+          2
+        ],
+        "dtype": "int64",
+        "sha256": "8b33dfdba87458dfcdc0a691d6c8991b70dc5b41ed411a37953a6af101df5c6c"
+      },
+      {
+        "name": "val_10",
+        "shape": [
+          2
+        ],
+        "dtype": "int64",
+        "sha256": "0bcf2473aa7869d0978ecc8c87e67d8e57a1d778d1eb1cd33ff9e2ba1fee1a4a"
+      },
+      {
+        "name": "reorder_token_2",
+        "shape": [
+          16,
+          8,
+          3,
+          3
+        ],
+        "dtype": "float32",
+        "sha256": "a0cbd070b2b05319a55f66fb9833a11954bc6d9f8c85495beca1823ac8e1d21a"
+      },
+      {
+        "name": "conv2.bias",
+        "shape": [
+          16
+        ],
+        "dtype": "float32",
+        "sha256": "25204a1a57cececb1322dc48fd5f4c8307a6cd6df70e552f812d2e6ccc2af5a4"
+      },
+      {
+        "name": "fc.weight",
+        "shape": [
+          3,
+          16
+        ],
+        "dtype": "float32",
+        "sha256": "12701acb8025bd1423dc104a0b71327e3ca876afa0c3f8b8a1e6e7470b5dec09"
+      },
+      {
+        "name": "fc.bias",
+        "shape": [
+          3
+        ],
+        "dtype": "float32",
+        "sha256": "a3f15c50749f11772a94e989fa0670a88b8a0f46f0b103bd0ca3be0ab7810199"
+      }
+    ]
+  },
+  "conv_bn_original": {
+    "sha256": "dabdd4b5443a4d0cc0933f2729c8f976fe35a5a246de50dd0b6383d0985e8d77",
+    "ir_version": 10,
+    "opsets": [
+      {
+        "domain": "",
+        "version": 18
+      }
+    ],
+    "inputs": [
+      {
+        "name": "x",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          1,
+          8,
+          8
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          2,
+          8,
+          8
+        ]
+      }
+    ],
+    "inferred_values": [
+      {
+        "name": "raw",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          2,
+          8,
+          8
+        ]
+      },
+      {
+        "name": "norm",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          2,
+          8,
+          8
+        ]
+      }
+    ],
+    "nodes": [
+      {
+        "name": "conv",
+        "op_type": "Conv",
+        "inputs": [
+          "x",
+          "W",
+          "B"
+        ],
+        "outputs": [
+          "raw"
+        ],
+        "attributes": {
+          "pads": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "name": "bn",
+        "op_type": "BatchNormalization",
+        "inputs": [
+          "raw",
+          "scale",
+          "bias",
+          "mean",
+          "var"
+        ],
+        "outputs": [
+          "norm"
+        ],
+        "attributes": {
+          "epsilon": 9.999999747378752e-06,
+          "training_mode": 0
+        }
+      },
+      {
+        "name": "relu",
+        "op_type": "Relu",
+        "inputs": [
+          "norm"
+        ],
+        "outputs": [
+          "out"
+        ],
+        "attributes": {}
+      }
+    ],
+    "operator_counts": {
+      "Conv": 1,
+      "BatchNormalization": 1,
+      "Relu": 1
+    },
+    "initializers": [
+      {
+        "name": "W",
+        "shape": [
+          2,
+          1,
+          3,
+          3
+        ],
+        "dtype": "float32",
+        "sha256": "c5c4ee1b24cc30ecb95acf120cf186073697a0a587ad3b7949e1237d384fcae9"
+      },
+      {
+        "name": "B",
+        "shape": [
+          2
+        ],
+        "dtype": "float32",
+        "sha256": "ab970b75d8412d2094a34c07ffc08bc3c9023e1fbedfa8ead3bb1451303ea2e3"
+      },
+      {
+        "name": "scale",
+        "shape": [
+          2
+        ],
+        "dtype": "float32",
+        "sha256": "3662424c2914db50c2416be625b6f9f1121a678fc92b9e169aa66c8e1127499d"
+      },
+      {
+        "name": "bias",
+        "shape": [
+          2
+        ],
+        "dtype": "float32",
+        "sha256": "a060fc1fa1fe04de4b3a60a19c9d9cb85c0c92d557a091248540009f9f20fd8f"
+      },
+      {
+        "name": "mean",
+        "shape": [
+          2
+        ],
+        "dtype": "float32",
+        "sha256": "d84c414476d9290e4bdc73fd3945d2ed8da2b97d6678d520f2ed62826f05850e"
+      },
+      {
+        "name": "var",
+        "shape": [
+          2
+        ],
+        "dtype": "float32",
+        "sha256": "eba0dc1ea4015c7d18859d070d66a3c33d74a892cc27c68dfb9c0e59aaf54b7b"
+      }
+    ]
+  },
+  "conv_bn_disabled": {
+    "sha256": "2aac5121d743fc119182398028a877de564508af23a2b44035d2cfd70c5e6c89",
+    "ir_version": 10,
+    "opsets": [
+      {
+        "domain": "",
+        "version": 18
+      },
+      {
+        "domain": "com.microsoft.nchwc",
+        "version": 1
+      },
+      {
+        "domain": "ai.onnx.ml",
+        "version": 5
+      },
+      {
+        "domain": "ai.onnx.training",
+        "version": 1
+      },
+      {
+        "domain": "ai.onnx.preview.training",
+        "version": 1
+      },
+      {
+        "domain": "com.microsoft",
+        "version": 1
+      },
+      {
+        "domain": "com.microsoft.experimental",
+        "version": 1
+      },
+      {
+        "domain": "org.pytorch.aten",
+        "version": 1
+      }
+    ],
+    "inputs": [
+      {
+        "name": "x",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          1,
+          8,
+          8
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          2,
+          8,
+          8
+        ]
+      }
+    ],
+    "inferred_values": [
+      {
+        "name": "raw",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          2,
+          8,
+          8
+        ]
+      },
+      {
+        "name": "norm",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          2,
+          8,
+          8
+        ]
+      }
+    ],
+    "nodes": [
+      {
+        "name": "conv",
+        "op_type": "Conv",
+        "inputs": [
+          "x",
+          "W",
+          "B"
+        ],
+        "outputs": [
+          "raw"
+        ],
+        "attributes": {
+          "pads": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "name": "bn",
+        "op_type": "BatchNormalization",
+        "inputs": [
+          "raw",
+          "scale",
+          "bias",
+          "mean",
+          "var"
+        ],
+        "outputs": [
+          "norm"
+        ],
+        "attributes": {
+          "epsilon": 9.999999747378752e-06,
+          "training_mode": 0
+        }
+      },
+      {
+        "name": "relu",
+        "op_type": "Relu",
+        "inputs": [
+          "norm"
+        ],
+        "outputs": [
+          "out"
+        ],
+        "attributes": {}
+      }
+    ],
+    "operator_counts": {
+      "Conv": 1,
+      "BatchNormalization": 1,
+      "Relu": 1
+    },
+    "initializers": [
+      {
+        "name": "W",
+        "shape": [
+          2,
+          1,
+          3,
+          3
+        ],
+        "dtype": "float32",
+        "sha256": "c5c4ee1b24cc30ecb95acf120cf186073697a0a587ad3b7949e1237d384fcae9"
+      },
+      {
+        "name": "B",
+        "shape": [
+          2
+        ],
+        "dtype": "float32",
+        "sha256": "ab970b75d8412d2094a34c07ffc08bc3c9023e1fbedfa8ead3bb1451303ea2e3"
+      },
+      {
+        "name": "scale",
+        "shape": [
+          2
+        ],
+        "dtype": "float32",
+        "sha256": "3662424c2914db50c2416be625b6f9f1121a678fc92b9e169aa66c8e1127499d"
+      },
+      {
+        "name": "bias",
+        "shape": [
+          2
+        ],
+        "dtype": "float32",
+        "sha256": "a060fc1fa1fe04de4b3a60a19c9d9cb85c0c92d557a091248540009f9f20fd8f"
+      },
+      {
+        "name": "mean",
+        "shape": [
+          2
+        ],
+        "dtype": "float32",
+        "sha256": "d84c414476d9290e4bdc73fd3945d2ed8da2b97d6678d520f2ed62826f05850e"
+      },
+      {
+        "name": "var",
+        "shape": [
+          2
+        ],
+        "dtype": "float32",
+        "sha256": "eba0dc1ea4015c7d18859d070d66a3c33d74a892cc27c68dfb9c0e59aaf54b7b"
+      }
+    ]
+  },
+  "conv_bn_basic": {
+    "sha256": "bc084c4e522c680291365f067dd3665ecec1ce0aa94768b46ef14cfaf1392e92",
+    "ir_version": 10,
+    "opsets": [
+      {
+        "domain": "",
+        "version": 18
+      },
+      {
+        "domain": "com.microsoft.nchwc",
+        "version": 1
+      },
+      {
+        "domain": "ai.onnx.ml",
+        "version": 5
+      },
+      {
+        "domain": "ai.onnx.training",
+        "version": 1
+      },
+      {
+        "domain": "ai.onnx.preview.training",
+        "version": 1
+      },
+      {
+        "domain": "com.microsoft",
+        "version": 1
+      },
+      {
+        "domain": "com.microsoft.experimental",
+        "version": 1
+      },
+      {
+        "domain": "org.pytorch.aten",
+        "version": 1
+      }
+    ],
+    "inputs": [
+      {
+        "name": "x",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          1,
+          8,
+          8
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          2,
+          8,
+          8
+        ]
+      }
+    ],
+    "inferred_values": [
+      {
+        "name": "norm",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          2,
+          8,
+          8
+        ]
+      }
+    ],
+    "nodes": [
+      {
+        "name": "conv",
+        "op_type": "Conv",
+        "inputs": [
+          "x",
+          "ConvBnFusion_W_W",
+          "ConvBnFusion_BN_B_bias"
+        ],
+        "outputs": [
+          "norm"
+        ],
+        "attributes": {
+          "pads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "group": 1,
+          "auto_pad": "NOTSET"
+        }
+      },
+      {
+        "name": "relu",
+        "op_type": "Relu",
+        "inputs": [
+          "norm"
+        ],
+        "outputs": [
+          "out"
+        ],
+        "attributes": {}
+      }
+    ],
+    "operator_counts": {
+      "Conv": 1,
+      "Relu": 1
+    },
+    "initializers": [
+      {
+        "name": "ConvBnFusion_W_W",
+        "shape": [
+          2,
+          1,
+          3,
+          3
+        ],
+        "dtype": "float32",
+        "sha256": "0cd7339a738039b4d92e8cac14c9974579eed2df8f4609179ae98e9fd4c4647c"
+      },
+      {
+        "name": "ConvBnFusion_BN_B_bias",
+        "shape": [
+          2
+        ],
+        "dtype": "float32",
+        "sha256": "1708ea38190097e86ccf4736ec61572edd27ea735b0ef571ad520572b24f9309"
+      }
+    ]
+  },
+  "multi_original": {
+    "sha256": "77d155b5f50c25f06e1ffc190b07edb781c2a3ecb25e848f9082610ffc24a83d",
+    "ir_version": 10,
+    "opsets": [
+      {
+        "domain": "",
+        "version": 18
+      }
+    ],
+    "inputs": [
+      {
+        "name": "x",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          1,
+          8,
+          8
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "raw",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          2,
+          8,
+          8
+        ]
+      },
+      {
+        "name": "norm",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          2,
+          8,
+          8
+        ]
+      }
+    ],
+    "inferred_values": [],
+    "nodes": [
+      {
+        "name": "conv",
+        "op_type": "Conv",
+        "inputs": [
+          "x",
+          "W",
+          "B"
+        ],
+        "outputs": [
+          "raw"
+        ],
+        "attributes": {
+          "pads": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "name": "bn",
+        "op_type": "BatchNormalization",
+        "inputs": [
+          "raw",
+          "scale",
+          "bias",
+          "mean",
+          "var"
+        ],
+        "outputs": [
+          "norm"
+        ],
+        "attributes": {
+          "epsilon": 9.999999747378752e-06,
+          "training_mode": 0
+        }
+      }
+    ],
+    "operator_counts": {
+      "Conv": 1,
+      "BatchNormalization": 1
+    },
+    "initializers": [
+      {
+        "name": "W",
+        "shape": [
+          2,
+          1,
+          3,
+          3
+        ],
+        "dtype": "float32",
+        "sha256": "c5c4ee1b24cc30ecb95acf120cf186073697a0a587ad3b7949e1237d384fcae9"
+      },
+      {
+        "name": "B",
+        "shape": [
+          2
+        ],
+        "dtype": "float32",
+        "sha256": "ab970b75d8412d2094a34c07ffc08bc3c9023e1fbedfa8ead3bb1451303ea2e3"
+      },
+      {
+        "name": "scale",
+        "shape": [
+          2
+        ],
+        "dtype": "float32",
+        "sha256": "3662424c2914db50c2416be625b6f9f1121a678fc92b9e169aa66c8e1127499d"
+      },
+      {
+        "name": "bias",
+        "shape": [
+          2
+        ],
+        "dtype": "float32",
+        "sha256": "a060fc1fa1fe04de4b3a60a19c9d9cb85c0c92d557a091248540009f9f20fd8f"
+      },
+      {
+        "name": "mean",
+        "shape": [
+          2
+        ],
+        "dtype": "float32",
+        "sha256": "d84c414476d9290e4bdc73fd3945d2ed8da2b97d6678d520f2ed62826f05850e"
+      },
+      {
+        "name": "var",
+        "shape": [
+          2
+        ],
+        "dtype": "float32",
+        "sha256": "eba0dc1ea4015c7d18859d070d66a3c33d74a892cc27c68dfb9c0e59aaf54b7b"
+      }
+    ]
+  },
+  "multi_disabled": {
+    "sha256": "628c38611875248b028067bc9d5a61cff3ba1e77b49e9ed434d07a8f68f74eda",
+    "ir_version": 10,
+    "opsets": [
+      {
+        "domain": "",
+        "version": 18
+      },
+      {
+        "domain": "com.microsoft.nchwc",
+        "version": 1
+      },
+      {
+        "domain": "ai.onnx.ml",
+        "version": 5
+      },
+      {
+        "domain": "ai.onnx.training",
+        "version": 1
+      },
+      {
+        "domain": "ai.onnx.preview.training",
+        "version": 1
+      },
+      {
+        "domain": "com.microsoft",
+        "version": 1
+      },
+      {
+        "domain": "com.microsoft.experimental",
+        "version": 1
+      },
+      {
+        "domain": "org.pytorch.aten",
+        "version": 1
+      }
+    ],
+    "inputs": [
+      {
+        "name": "x",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          1,
+          8,
+          8
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "raw",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          2,
+          8,
+          8
+        ]
+      },
+      {
+        "name": "norm",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          2,
+          8,
+          8
+        ]
+      }
+    ],
+    "inferred_values": [],
+    "nodes": [
+      {
+        "name": "conv",
+        "op_type": "Conv",
+        "inputs": [
+          "x",
+          "W",
+          "B"
+        ],
+        "outputs": [
+          "raw"
+        ],
+        "attributes": {
+          "pads": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "name": "bn",
+        "op_type": "BatchNormalization",
+        "inputs": [
+          "raw",
+          "scale",
+          "bias",
+          "mean",
+          "var"
+        ],
+        "outputs": [
+          "norm"
+        ],
+        "attributes": {
+          "epsilon": 9.999999747378752e-06,
+          "training_mode": 0
+        }
+      }
+    ],
+    "operator_counts": {
+      "Conv": 1,
+      "BatchNormalization": 1
+    },
+    "initializers": [
+      {
+        "name": "W",
+        "shape": [
+          2,
+          1,
+          3,
+          3
+        ],
+        "dtype": "float32",
+        "sha256": "c5c4ee1b24cc30ecb95acf120cf186073697a0a587ad3b7949e1237d384fcae9"
+      },
+      {
+        "name": "B",
+        "shape": [
+          2
+        ],
+        "dtype": "float32",
+        "sha256": "ab970b75d8412d2094a34c07ffc08bc3c9023e1fbedfa8ead3bb1451303ea2e3"
+      },
+      {
+        "name": "scale",
+        "shape": [
+          2
+        ],
+        "dtype": "float32",
+        "sha256": "3662424c2914db50c2416be625b6f9f1121a678fc92b9e169aa66c8e1127499d"
+      },
+      {
+        "name": "bias",
+        "shape": [
+          2
+        ],
+        "dtype": "float32",
+        "sha256": "a060fc1fa1fe04de4b3a60a19c9d9cb85c0c92d557a091248540009f9f20fd8f"
+      },
+      {
+        "name": "mean",
+        "shape": [
+          2
+        ],
+        "dtype": "float32",
+        "sha256": "d84c414476d9290e4bdc73fd3945d2ed8da2b97d6678d520f2ed62826f05850e"
+      },
+      {
+        "name": "var",
+        "shape": [
+          2
+        ],
+        "dtype": "float32",
+        "sha256": "eba0dc1ea4015c7d18859d070d66a3c33d74a892cc27c68dfb9c0e59aaf54b7b"
+      }
+    ]
+  },
+  "multi_basic": {
+    "sha256": "628c38611875248b028067bc9d5a61cff3ba1e77b49e9ed434d07a8f68f74eda",
+    "ir_version": 10,
+    "opsets": [
+      {
+        "domain": "",
+        "version": 18
+      },
+      {
+        "domain": "com.microsoft.nchwc",
+        "version": 1
+      },
+      {
+        "domain": "ai.onnx.ml",
+        "version": 5
+      },
+      {
+        "domain": "ai.onnx.training",
+        "version": 1
+      },
+      {
+        "domain": "ai.onnx.preview.training",
+        "version": 1
+      },
+      {
+        "domain": "com.microsoft",
+        "version": 1
+      },
+      {
+        "domain": "com.microsoft.experimental",
+        "version": 1
+      },
+      {
+        "domain": "org.pytorch.aten",
+        "version": 1
+      }
+    ],
+    "inputs": [
+      {
+        "name": "x",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          1,
+          8,
+          8
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "raw",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          2,
+          8,
+          8
+        ]
+      },
+      {
+        "name": "norm",
+        "dtype": "FLOAT",
+        "shape": [
+          1,
+          2,
+          8,
+          8
+        ]
+      }
+    ],
+    "inferred_values": [],
+    "nodes": [
+      {
+        "name": "conv",
+        "op_type": "Conv",
+        "inputs": [
+          "x",
+          "W",
+          "B"
+        ],
+        "outputs": [
+          "raw"
+        ],
+        "attributes": {
+          "pads": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "name": "bn",
+        "op_type": "BatchNormalization",
+        "inputs": [
+          "raw",
+          "scale",
+          "bias",
+          "mean",
+          "var"
+        ],
+        "outputs": [
+          "norm"
+        ],
+        "attributes": {
+          "epsilon": 9.999999747378752e-06,
+          "training_mode": 0
+        }
+      }
+    ],
+    "operator_counts": {
+      "Conv": 1,
+      "BatchNormalization": 1
+    },
+    "initializers": [
+      {
+        "name": "W",
+        "shape": [
+          2,
+          1,
+          3,
+          3
+        ],
+        "dtype": "float32",
+        "sha256": "c5c4ee1b24cc30ecb95acf120cf186073697a0a587ad3b7949e1237d384fcae9"
+      },
+      {
+        "name": "B",
+        "shape": [
+          2
+        ],
+        "dtype": "float32",
+        "sha256": "ab970b75d8412d2094a34c07ffc08bc3c9023e1fbedfa8ead3bb1451303ea2e3"
+      },
+      {
+        "name": "scale",
+        "shape": [
+          2
+        ],
+        "dtype": "float32",
+        "sha256": "3662424c2914db50c2416be625b6f9f1121a678fc92b9e169aa66c8e1127499d"
+      },
+      {
+        "name": "bias",
+        "shape": [
+          2
+        ],
+        "dtype": "float32",
+        "sha256": "a060fc1fa1fe04de4b3a60a19c9d9cb85c0c92d557a091248540009f9f20fd8f"
+      },
+      {
+        "name": "mean",
+        "shape": [
+          2
+        ],
+        "dtype": "float32",
+        "sha256": "d84c414476d9290e4bdc73fd3945d2ed8da2b97d6678d520f2ed62826f05850e"
+      },
+      {
+        "name": "var",
+        "shape": [
+          2
+        ],
+        "dtype": "float32",
+        "sha256": "eba0dc1ea4015c7d18859d070d66a3c33d74a892cc27c68dfb9c0e59aaf54b7b"
+      }
+    ]
+  }
+}
