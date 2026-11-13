@@ -1,0 +1,17 @@
+test_fold_formula (test_audit.AuditTests) ... ok
+test_incorrect_scaling_detected (test_audit.AuditTests) ... ok
+test_input_contract (test_audit.AuditTests) ... ok
+test_model_output_and_determinism (test_audit.AuditTests) ... ok
+test_multi_consumers (test_audit.AuditTests) ... ok
+test_mutated_weight_detected (test_audit.AuditTests) ... ok
+test_nonfinite_fails (test_audit.AuditTests) ... ok
+test_not_run_not_pass (test_audit.AuditTests) ... ok
+test_onnx_checker (test_audit.AuditTests) ... ok
+test_optimization_alignment (test_audit.AuditTests) ... ok
+test_parameter_count (test_audit.AuditTests) ... ok
+test_pytorch_vs_ort (test_audit.AuditTests) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.079s
+
+OK

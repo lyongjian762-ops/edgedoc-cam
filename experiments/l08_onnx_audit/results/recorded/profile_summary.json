@@ -1,0 +1,730 @@
+{
+  "tiny_disabled": [
+    {
+      "name": "node_Concat_14_kernel_time",
+      "duration_us": 33,
+      "op_type": "Concat",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_Reshape_10_kernel_time",
+      "duration_us": 8,
+      "op_type": "Reshape",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_conv2d_kernel_time",
+      "duration_us": 90,
+      "op_type": "Conv",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node__native_batch_norm_legit_no_training__0_kernel_time",
+      "duration_us": 14,
+      "op_type": "BatchNormalization",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_relu_kernel_time",
+      "duration_us": 7,
+      "op_type": "Relu",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_avg_pool2d_kernel_time",
+      "duration_us": 9,
+      "op_type": "AveragePool",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_conv2d_1_kernel_time",
+      "duration_us": 24,
+      "op_type": "Conv",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_relu_1_kernel_time",
+      "duration_us": 4,
+      "op_type": "Relu",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_mean_kernel_time",
+      "duration_us": 10,
+      "op_type": "ReduceMean",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_view_kernel_time",
+      "duration_us": 4,
+      "op_type": "Reshape",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_linear_kernel_time",
+      "duration_us": 6,
+      "op_type": "Gemm",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_Concat_14_kernel_time",
+      "duration_us": 6,
+      "op_type": "Concat",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_Reshape_10_kernel_time",
+      "duration_us": 3,
+      "op_type": "Reshape",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_conv2d_kernel_time",
+      "duration_us": 31,
+      "op_type": "Conv",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node__native_batch_norm_legit_no_training__0_kernel_time",
+      "duration_us": 11,
+      "op_type": "BatchNormalization",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_relu_kernel_time",
+      "duration_us": 6,
+      "op_type": "Relu",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_avg_pool2d_kernel_time",
+      "duration_us": 7,
+      "op_type": "AveragePool",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_conv2d_1_kernel_time",
+      "duration_us": 21,
+      "op_type": "Conv",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_relu_1_kernel_time",
+      "duration_us": 4,
+      "op_type": "Relu",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_mean_kernel_time",
+      "duration_us": 6,
+      "op_type": "ReduceMean",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_view_kernel_time",
+      "duration_us": 3,
+      "op_type": "Reshape",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_linear_kernel_time",
+      "duration_us": 5,
+      "op_type": "Gemm",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_Concat_14_kernel_time",
+      "duration_us": 5,
+      "op_type": "Concat",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_Reshape_10_kernel_time",
+      "duration_us": 3,
+      "op_type": "Reshape",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_conv2d_kernel_time",
+      "duration_us": 13,
+      "op_type": "Conv",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node__native_batch_norm_legit_no_training__0_kernel_time",
+      "duration_us": 9,
+      "op_type": "BatchNormalization",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_relu_kernel_time",
+      "duration_us": 5,
+      "op_type": "Relu",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_avg_pool2d_kernel_time",
+      "duration_us": 6,
+      "op_type": "AveragePool",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_conv2d_1_kernel_time",
+      "duration_us": 20,
+      "op_type": "Conv",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_relu_1_kernel_time",
+      "duration_us": 4,
+      "op_type": "Relu",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_mean_kernel_time",
+      "duration_us": 5,
+      "op_type": "ReduceMean",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_view_kernel_time",
+      "duration_us": 3,
+      "op_type": "Reshape",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_linear_kernel_time",
+      "duration_us": 5,
+      "op_type": "Gemm",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_Concat_14_kernel_time",
+      "duration_us": 5,
+      "op_type": "Concat",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_Reshape_10_kernel_time",
+      "duration_us": 3,
+      "op_type": "Reshape",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_conv2d_kernel_time",
+      "duration_us": 12,
+      "op_type": "Conv",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node__native_batch_norm_legit_no_training__0_kernel_time",
+      "duration_us": 8,
+      "op_type": "BatchNormalization",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_relu_kernel_time",
+      "duration_us": 5,
+      "op_type": "Relu",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_avg_pool2d_kernel_time",
+      "duration_us": 6,
+      "op_type": "AveragePool",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_conv2d_1_kernel_time",
+      "duration_us": 20,
+      "op_type": "Conv",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_relu_1_kernel_time",
+      "duration_us": 4,
+      "op_type": "Relu",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_mean_kernel_time",
+      "duration_us": 5,
+      "op_type": "ReduceMean",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_view_kernel_time",
+      "duration_us": 3,
+      "op_type": "Reshape",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_linear_kernel_time",
+      "duration_us": 4,
+      "op_type": "Gemm",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_Concat_14_kernel_time",
+      "duration_us": 5,
+      "op_type": "Concat",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_Reshape_10_kernel_time",
+      "duration_us": 3,
+      "op_type": "Reshape",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_conv2d_kernel_time",
+      "duration_us": 12,
+      "op_type": "Conv",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node__native_batch_norm_legit_no_training__0_kernel_time",
+      "duration_us": 9,
+      "op_type": "BatchNormalization",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_relu_kernel_time",
+      "duration_us": 5,
+      "op_type": "Relu",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_avg_pool2d_kernel_time",
+      "duration_us": 6,
+      "op_type": "AveragePool",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_conv2d_1_kernel_time",
+      "duration_us": 20,
+      "op_type": "Conv",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_relu_1_kernel_time",
+      "duration_us": 3,
+      "op_type": "Relu",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_mean_kernel_time",
+      "duration_us": 5,
+      "op_type": "ReduceMean",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_view_kernel_time",
+      "duration_us": 3,
+      "op_type": "Reshape",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_linear_kernel_time",
+      "duration_us": 4,
+      "op_type": "Gemm",
+      "provider": "CPUExecutionProvider"
+    }
+  ],
+  "tiny_basic": [
+    {
+      "name": "node_conv2d_kernel_time",
+      "duration_us": 91,
+      "op_type": "Conv",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_relu_kernel_time",
+      "duration_us": 10,
+      "op_type": "Relu",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_avg_pool2d_kernel_time",
+      "duration_us": 18,
+      "op_type": "AveragePool",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_conv2d_1_kernel_time",
+      "duration_us": 45,
+      "op_type": "Conv",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_relu_1_kernel_time",
+      "duration_us": 7,
+      "op_type": "Relu",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_mean_kernel_time",
+      "duration_us": 16,
+      "op_type": "ReduceMean",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_view_kernel_time",
+      "duration_us": 7,
+      "op_type": "Reshape",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_linear_kernel_time",
+      "duration_us": 10,
+      "op_type": "Gemm",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_conv2d_kernel_time",
+      "duration_us": 26,
+      "op_type": "Conv",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_relu_kernel_time",
+      "duration_us": 9,
+      "op_type": "Relu",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_avg_pool2d_kernel_time",
+      "duration_us": 15,
+      "op_type": "AveragePool",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_conv2d_1_kernel_time",
+      "duration_us": 36,
+      "op_type": "Conv",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_relu_1_kernel_time",
+      "duration_us": 7,
+      "op_type": "Relu",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_mean_kernel_time",
+      "duration_us": 10,
+      "op_type": "ReduceMean",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_view_kernel_time",
+      "duration_us": 7,
+      "op_type": "Reshape",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_linear_kernel_time",
+      "duration_us": 9,
+      "op_type": "Gemm",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_conv2d_kernel_time",
+      "duration_us": 26,
+      "op_type": "Conv",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_relu_kernel_time",
+      "duration_us": 8,
+      "op_type": "Relu",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_avg_pool2d_kernel_time",
+      "duration_us": 14,
+      "op_type": "AveragePool",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_conv2d_1_kernel_time",
+      "duration_us": 35,
+      "op_type": "Conv",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_relu_1_kernel_time",
+      "duration_us": 7,
+      "op_type": "Relu",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_mean_kernel_time",
+      "duration_us": 10,
+      "op_type": "ReduceMean",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_view_kernel_time",
+      "duration_us": 6,
+      "op_type": "Reshape",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_linear_kernel_time",
+      "duration_us": 8,
+      "op_type": "Gemm",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_conv2d_kernel_time",
+      "duration_us": 25,
+      "op_type": "Conv",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_relu_kernel_time",
+      "duration_us": 8,
+      "op_type": "Relu",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_avg_pool2d_kernel_time",
+      "duration_us": 14,
+      "op_type": "AveragePool",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_conv2d_1_kernel_time",
+      "duration_us": 36,
+      "op_type": "Conv",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_relu_1_kernel_time",
+      "duration_us": 7,
+      "op_type": "Relu",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_mean_kernel_time",
+      "duration_us": 10,
+      "op_type": "ReduceMean",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_view_kernel_time",
+      "duration_us": 7,
+      "op_type": "Reshape",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_linear_kernel_time",
+      "duration_us": 9,
+      "op_type": "Gemm",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_conv2d_kernel_time",
+      "duration_us": 23,
+      "op_type": "Conv",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_relu_kernel_time",
+      "duration_us": 8,
+      "op_type": "Relu",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_avg_pool2d_kernel_time",
+      "duration_us": 13,
+      "op_type": "AveragePool",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_conv2d_1_kernel_time",
+      "duration_us": 35,
+      "op_type": "Conv",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_relu_1_kernel_time",
+      "duration_us": 7,
+      "op_type": "Relu",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_mean_kernel_time",
+      "duration_us": 10,
+      "op_type": "ReduceMean",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_view_kernel_time",
+      "duration_us": 7,
+      "op_type": "Reshape",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "node_linear_kernel_time",
+      "duration_us": 8,
+      "op_type": "Gemm",
+      "provider": "CPUExecutionProvider"
+    }
+  ],
+  "conv_bn_disabled": [
+    {
+      "name": "conv_kernel_time",
+      "duration_us": 24,
+      "op_type": "Conv",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "bn_kernel_time",
+      "duration_us": 9,
+      "op_type": "BatchNormalization",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "relu_kernel_time",
+      "duration_us": 4,
+      "op_type": "Relu",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "conv_kernel_time",
+      "duration_us": 8,
+      "op_type": "Conv",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "bn_kernel_time",
+      "duration_us": 6,
+      "op_type": "BatchNormalization",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "relu_kernel_time",
+      "duration_us": 4,
+      "op_type": "Relu",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "conv_kernel_time",
+      "duration_us": 7,
+      "op_type": "Conv",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "bn_kernel_time",
+      "duration_us": 6,
+      "op_type": "BatchNormalization",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "relu_kernel_time",
+      "duration_us": 3,
+      "op_type": "Relu",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "conv_kernel_time",
+      "duration_us": 7,
+      "op_type": "Conv",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "bn_kernel_time",
+      "duration_us": 6,
+      "op_type": "BatchNormalization",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "relu_kernel_time",
+      "duration_us": 3,
+      "op_type": "Relu",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "conv_kernel_time",
+      "duration_us": 7,
+      "op_type": "Conv",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "bn_kernel_time",
+      "duration_us": 5,
+      "op_type": "BatchNormalization",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "relu_kernel_time",
+      "duration_us": 3,
+      "op_type": "Relu",
+      "provider": "CPUExecutionProvider"
+    }
+  ],
+  "conv_bn_basic": [
+    {
+      "name": "conv_kernel_time",
+      "duration_us": 30,
+      "op_type": "Conv",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "relu_kernel_time",
+      "duration_us": 5,
+      "op_type": "Relu",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "conv_kernel_time",
+      "duration_us": 9,
+      "op_type": "Conv",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "relu_kernel_time",
+      "duration_us": 4,
+      "op_type": "Relu",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "conv_kernel_time",
+      "duration_us": 7,
+      "op_type": "Conv",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "relu_kernel_time",
+      "duration_us": 3,
+      "op_type": "Relu",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "conv_kernel_time",
+      "duration_us": 7,
+      "op_type": "Conv",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "relu_kernel_time",
+      "duration_us": 4,
+      "op_type": "Relu",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "conv_kernel_time",
+      "duration_us": 7,
+      "op_type": "Conv",
+      "provider": "CPUExecutionProvider"
+    },
+    {
+      "name": "relu_kernel_time",
+      "duration_us": 3,
+      "op_type": "Relu",
+      "provider": "CPUExecutionProvider"
+    }
+  ]
+}

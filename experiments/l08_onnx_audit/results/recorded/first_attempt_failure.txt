@@ -1,0 +1,4 @@
+Initial run of run_all.py failed during torch.onnx.export graph capture status printing, before ONNX export finished.
+UnicodeEncodeError: 'gbk' codec can't encode character '\u2705' in position 91: illegal multibyte sequence
+The next run sets PYTHONIOENCODING=utf-8; the dynamo=True, optimize=False exporter settings are unchanged.
+The UTF-8 rerun exported the model but failed when writing alignment JSON because NumPy int64 index components were not JSON serializable. The comparator was corrected to convert indices to Python int before a fresh run.
